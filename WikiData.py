@@ -46,14 +46,18 @@ class WikiData:
 
     def generatePositiveTriplets(self):
         self.posTriplets = set()
+        self.posSentences = ""
         fout = "positiveTriplets.txt"
         fo = open(fout, "w", encoding='latin-1')
         for index, row in self.df.iterrows():
             childTriplet = row['human']+' P40 ' + row['child'] + ' 1'
+            childSentence = row['humanLabel']+' P40 ' + row['childLabel']
             fo.write(childTriplet+ '\n')
             self.posTriplets.add(childTriplet)
+            self.posSentences += childSentence + '\n'
 
             spouseTriplet = row['human']+' P26 ' + row['spouse'] + ' 1'
+            spouseSentence = row['humanLabel']+' P40 ' + row['spouseLabel']
             fo.write(spouseTriplet+ '\n')
             self.posTriplets.add(spouseTriplet)
 
@@ -78,39 +82,55 @@ class WikiData:
             subject = strings[0]
             predicate = strings[1]
             tobject = strings[2]
+            max_for_sp_pair=2
+            count= 0
             for ek, ev in self.entities.items():
                 triplet = subject+' '+predicate+' '+ek
                 if triplet+' 1' not in self.posTriplets and ek!=subject:
-                    self.negTriplets.add(triplet+' 0')
+                    self.negTriplets.add(triplet+' -1')
+                    if count < max_for_sp_pair:
+                        count=count+1
+                    else:
+                        break
         for t in self.negTriplets:
             fo.write(t+ '\n')
 
     def addStringsToVocab(self, strings):
         for s in strings:
             word = ''.join(w for w in re.split(r"\W", s) if w)
-            self.vocab.add(word)
+            self.vocab+= word+ " "
 
     def generateVocabulary(self):
-        self.vocab = set()
+        self.unique_words = set()
+        self.vocab = ""
         self.entities = {}
         for index, row in self.df.iterrows():
             human_strings = row['humanLabel'].split()
             self.addStringsToVocab(human_strings)
+            self.unique_words |= set(human_strings)
             child_strings = row['childLabel'].split()
             self.addStringsToVocab(child_strings)
+            self.unique_words |= set(child_strings)
             spouse_strings = row['spouseLabel'].split()
             self.addStringsToVocab(spouse_strings)
+            self.unique_words |= set(spouse_strings)
             sibling_strings = row['siblingLabel'].split()
             self.addStringsToVocab(sibling_strings)
+            self.unique_words |= set(sibling_strings)
             father_strings = row['fatherLabel'].split()
             self.addStringsToVocab(father_strings)
+            self.unique_words |= set(father_strings)
             mother_strings = row['motherLabel'].split()
             self.addStringsToVocab(mother_strings)
+            self.unique_words |= set(mother_strings)
 
         fout = "vocab.txt"
         fo = open(fout, "w", encoding='latin-1')
-        for e in self.vocab:
-            fo.write(e+ '\n')
+        fo.write(self.vocab+ '\n')
+        fout = "unique.txt"
+        fo = open(fout, "w", encoding='utf8')
+        for s in self.unique_words:
+            fo.write(''.join(w for w in re.split(r"\W", s) if w)+'\n')
 
 
 
