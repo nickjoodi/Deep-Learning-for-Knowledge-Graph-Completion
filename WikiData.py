@@ -2,11 +2,16 @@ import sys
 import numpy as np
 import pandas as pd
 import re
+import pickle as pickle
 
 class WikiData:
     def load(self):
         filename = "wikiData.txt"
         self.df = pd.read_csv(filename,sep='\t',encoding ='latin-1',header=0)
+
+    def save_object(self, obj, filename):
+        with open(filename, 'wb') as output:
+            pickle.dump(obj, output, pickle.HIGHEST_PROTOCOL)
 
         self.nCols = len(self.df.columns)
     def generateEntities(self):
@@ -30,6 +35,8 @@ class WikiData:
         fo = open(fout, "w", encoding='latin-1')
         for k, v in self.entities.items():
             fo.write(v+ '\n')
+
+        self.save_object(self.entities,'entities_map.pkl')
 
     def generatePredicates(self):
         self.predicates = {}
