@@ -4,11 +4,11 @@
 Below is a list of the contents of the repository. Please update when you commit.
 ###  data/ ~ Contains all the data we've built for this project. 
 		EncodedData.csv:		The Main data, already encoded with entity embeddings, and 
-					associated outputs. Of the form 
-					[EntityA|EntityB|a0,a1,...,a299|b0,b1,...,b299|p0,p1,p2,p3,p4]
-					where EntityA/B are the names of the entities, ai/bi are the 
-					embeddings for these entities, and pi is the predicate for this
-					entity-entity pair. Predicates follow {1: True, 0: Unknown, -1: False}.
+						associated outputs. Of the form 
+						[EntityA|EntityB|a0,a1,...,a299|b0,b1,...,b299|p0,p1,p2,p3,p4]
+						where EntityA/B are the names of the entities, ai/bi are the 
+						embeddings for these entities, and pi is the predicate for this
+						entity-entity pair. Predicates follow {1: True, 0: Unknown, -1: False}.
 		Build_Data.py:	  		The Python script used to generate EncodedData.csv
 		Build_Data.ipynb: 		A Jupyter Notebook for the Build_Data.py script
 
