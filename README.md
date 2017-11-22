@@ -3,7 +3,7 @@
 
 Below is a list of the contents of the repository. Please update when you commit.
 ###  data/ Contains all the data we've built for this project. 
-	EncodedData.csv:  The Main data, already encoded with entity embeddings, and 
+	<b>EncodedData.csv:</b>  The Main data, already encoded with entity embeddings, and 
 					  associated outputs. Of the form 
 					  [EntityA|EntityB|a0,a1,...,a299|b0,b1,...,b299|p0,p1,p2,p3,p4]
 					  where EntityA/B are the names of the entities, ai/bi are the 
