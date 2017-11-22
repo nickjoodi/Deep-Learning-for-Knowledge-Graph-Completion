@@ -5,13 +5,13 @@ import pandas as pd
 import pickle
 
 # Load in the pickle files containing the word encodings and the entity map
-words = pickle.load(open('word_vectors.pkl','rb'))
-key = pickle.load(open('entities_map.pkl','rb'))
+words = pickle.load(open('embeddings/word_vectors.pkl','rb'))
+key = pickle.load(open('processed/entities_map.pkl','rb'))
 
 # Load in the files containing the positive and negative triplets of (entity,predicate,entity)
-pos = np.loadtxt('positiveTriplets.txt',delimiter=' ',dtype=str)
-neg = np.loadtxt('negativeTriplets.txt',delimiter=' ',dtype=str)
-
+converter = dict.fromkeys(range(4), lambda s: s.decode('utf-8'))
+pos = np.loadtxt(r'processed/positiveTriplets.txt',delimiter=' ',dtype=str, converters=converter)
+neg = np.loadtxt(r'processed/negativeTriplets.txt',delimiter=' ',dtype=str, converters=converter)
 
 # Make a list of the entities for looping over all of them later
 entities = np.unique(pos[:,0])
@@ -109,4 +109,9 @@ for entity in entities:
 
 # Save the data to a file
 all_rows.to_csv('EncodedData.csv',index=False)
+
+# Encode all entities and save as pickle file for future use
+Encoded = {entity:encode_entity(entity) for entity in entities}
+pickle.dump( Encoded, open( "embeddings/entity_embeddings.pkl", "wb" ) )
+
 
