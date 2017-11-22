@@ -1,0 +1,106 @@
+%% go to the website http://en.wikibooks.org/wiki/LaTeX For Help 
+\documentclass[11.5pt]{article}
+%Math Related Packages
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{relsize}
+% Pseudocode Packages
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[colorinlistoftodos]{todonotes}
+% Automata/Graph Packages
+\usepackage{tikz}
+\usepackage{pgf}
+\usetikzlibrary{arrows,automata}
+\usepackage[latin1]{inputenc}
+\usetikzlibrary{automata,positioning}
+%%%Formatting Options for Pages
+%\usepackage[a4paper,left=2cm,right=2cm]{geometry} %Change Margins
+\usepackage[colorlinks=true, allcolors=blue]{hyperref} % adds hyperlinks
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{perpage}
+\MakePerPage{footnote}
+%%%Graphics Packages and Caption Tools
+\usepackage{graphicx}
+\usepackage{fullpage}
+\newcounter{Figure} 
+\setcounter{Figure}{1}
+\usepackage{slashbox}
+\usepackage{ulem}
+\usepackage{csvsimple}
+%%%Colors Package with Custom Defined Colors
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{codegreen}{rgb}{0,0.6,.2}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+%%Custom Functions and Commands
+\newcommand\indentFour{\indent\indent\indent\indent}
+\newcommand\indentThree{\indent\indent\indent}
+\newcommand\indentTwo{\indent\indent}
+\newcommand\tab{\ \ \ }
+\newcommand\proof{\setcounter{equation}{0}\hfill\fbox{\rule{.02in}{0pt}\rule[0ex]{0pt}{.5ex}}}
+
+%%Math Commands
+\newcommand{\Lbra}{\left\langle}
+\newcommand{\Rbra}{\right|}
+\newcommand{\Rket}{\right\rangle}
+\newcommand{\Lket}{\left|}
+\newcommand{\bra}[1]{\Lbra #1 \Rbra}
+\newcommand{\ket}[1]{\Lket #1 \Rket}
+\newcommand{\braket}[1]{\Lbra #1 \Rket}
+\newcommand{\Exists}{\ \exists \ }
+\newcommand{\Forall}{\ \forall \ }
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\Frac}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\Mat}[1]{\left[\begin{matrix} #1 \end{matrix}\right]}
+\newcommand{\vhi}{\varphi}
+\newcommand{\R}{\ \mathbb{R}}
+\newcommand{\C}{\ \mathbb{C}}
+\newcommand{\N}{\ \mathbb{N}}
+\newcommand{\Z}{\ \mathbb{Z}}
+\newcommand{\I}{\ \mathbb{R/Q}}
+\newcommand{\x}{\mathrm{x}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\Dpart}[2]{\frac{\partial #1}{\partial #2}}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\newcommand{\U}{\underline}
+%Numbering
+\newcounter{graphics}
+\newcounter{tables}
+\renewcommand{\abstractname}{Abstract}
+
+\begin{document}
+\title{Deep Learning for Knowledge Graph Completion}
+\author{Nick, Kevin, Cesar, Doug\\
+	{\small\textit{University of California - Davis}}
+} 
+\date{November 30th, 2017}
+\maketitle
+\rule{\textwidth}{1pt}
+
+
+
+\begin{abstract}
+
+\end{abstract}
+
+\tableofcontents
+
+
+\section{Introduction}
+An example of citing something is \cite{KosticFuso}
+
+\section{Methods}
+
+\section{Results}
+
+\section{Discussion}
+
+\bibliographystyle{ieeetr}
+\bibliography{bib}{}
+
+\end{document}
