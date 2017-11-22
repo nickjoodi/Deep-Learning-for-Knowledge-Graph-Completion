@@ -32,5 +32,8 @@ Below is a list of the contents of the repository. Please update when you commit
 		unique.txt: 			A list of the unique elements of vocab.txt
 		vocab.txt: 			All words used throughout the entities.txt file
 
-
+### 	TeX/				A containing the TeX for our report
+		Project.TeX:  	The main TeX document. I have a standard pre-amble I've been building 
+				over the years, so please excuse how huge it is. I have to say that a lot
+		bib.bib:		The bibliography file. There are some examples already written if you need
 
