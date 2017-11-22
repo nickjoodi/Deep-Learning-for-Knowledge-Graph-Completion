@@ -19,7 +19,7 @@ Below is a list of the contents of the repository. Please update when you commit
 		wikiData.py:			A python script used to generate much of processed/
 
 ### 	data/embeddings/	A directory of word/entity embeddings and their scripts
-		entity_embeddings.pkl:  A dictionary of entity embeddings
+		entity_embeddings.pkl:  	A dictionary of entity embeddings
 		word_vectors.pkl:		A dictionary of word embeddings
 		word_embeddings.py:		Script for generating word_vectors.pkl
 
