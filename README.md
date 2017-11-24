@@ -39,5 +39,5 @@ Below is a list of the contents of the repository. Please update when you commit
 		bib.bib:			The bibliography file. There are some examples already written if you need
 
 ### 	MLP/ ~ A directory containing the code for the MLP model
-		MLP.ipynb:  			A Jupyter Notebook for building 				the MLP model						
+		MLP.ipynb:  			A Jupyter Notebook for building the MLP model						
 
