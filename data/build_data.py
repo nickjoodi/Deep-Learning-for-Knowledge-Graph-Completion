@@ -60,11 +60,12 @@ def build_rows(entity):
     temp_neg = neg[neg[:,0]==entity,:]
     pairs = []
     rows = []
-    for each_obj in np.unique(temp_pos[:,2]):
+    bad_encodings = []
+    for each_obj in np.unique(temp_pos[:,2]):        
         try:
             obj_encode = encode_entity(each_obj)
             
-            if all(obj_encode != np.NaN):
+            if not all(np.isnan(obj_encode)):
                 # Get the positive & negative triplet's objects
                 temp2_pos = temp_pos[temp_pos[:,2]==each_obj,:]
                 temp2_neg = temp_neg[temp_neg[:,2]==each_obj,:]
@@ -78,12 +79,13 @@ def build_rows(entity):
                 row = np.concatenate([encoding,obj_encode,preds])
                 rows.append(row)
                 pairs.append([entity,each_obj])
+                
             else:
-                print('Entity ' + obj_encode + ' has no encoding!')
+                #print('Entity ' + obj_encode + ' has no encoding!')
+                bad_encodings.append(each_obj)
         except:
-            print("didn't work for "+ str(entity) + ", " + str(each_obj))
-            return(np.NaN)
-
+            #print("didn't work for "+ str(entity) + ", " + str(each_obj))  
+            bad_encodings.append(each_obj)
  
     rows = np.array(rows)
     pairs = np.array(pairs)
@@ -92,20 +94,20 @@ def build_rows(entity):
     df = pd.concat([pd.DataFrame(pairs),pd.DataFrame(rows)],ignore_index=True,axis=1)
     col_names = ['EntityA','EntityB']+['a'+str(x) for x in range(300)]+['b'+str(x) for x in range(300)]+['p'+str(x) for x in range(5)]
     df.columns = col_names
-    return(df)
-
-entity = pos[1,0]
-test = build_rows(entity)
-
+    return({'df':df,'bad_encodings':bad_encodings})
 
 # Running build_rows on all the entities to generate the main dataset
 all_rows = pd.DataFrame([])
+bad_encodings = []
 for entity in entities:
-    df = build_rows(entity)
+    rows = build_rows(entity)
     if all(df != np.NaN):
-        all_rows = pd.concat([all_rows,df])
+        all_rows = pd.concat([all_rows,rows['df']])
+        [bad_encodings.append(x) for x in rows['bad_encodings']]
     else:
         print ('Entity: '+entity+ ' failed!')
+        bad_encodings.append(entity)
+bad_encodings = np.unique(np.array(bad_encodings))
 
 # Save the data to a file
 all_rows.to_csv('EncodedData.csv',index=False)
@@ -114,4 +116,6 @@ all_rows.to_csv('EncodedData.csv',index=False)
 Encoded = {entity:encode_entity(entity) for entity in entities}
 pickle.dump( Encoded, open( "embeddings/entity_embeddings.pkl", "wb" ) )
 
+# Save the entities that had no encoding 
+pickle.dump( bad_encodings, open( "embeddings/bad_entities.pkl", "wb") )
 

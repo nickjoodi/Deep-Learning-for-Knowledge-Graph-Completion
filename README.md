@@ -22,6 +22,7 @@ Below is a list of the contents of the repository. Please update when you commit
 		entity_embeddings.pkl:  	A dictionary of entity embeddings
 		word_vectors.pkl:		A dictionary of word embeddings
 		word_embeddings.py:		Script for generating word_vectors.pkl
+		bad_entities.py:		A list of entities with no encoding 
 
 ###		data/processed/ ~ A directory of processed versions of the data in raw/
 		entities_map.pkl:		A dictionary that maps entity labels to their full names
