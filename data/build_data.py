@@ -101,7 +101,7 @@ all_rows = pd.DataFrame([])
 bad_encodings = []
 for entity in entities:
     rows = build_rows(entity)
-    if all(df != np.NaN):
+    if all(rows['df'] != np.NaN):
         all_rows = pd.concat([all_rows,rows['df']])
         [bad_encodings.append(x) for x in rows['bad_encodings']]
     else:

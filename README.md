@@ -39,5 +39,7 @@ Below is a list of the contents of the repository. Please update when you commit
 		bib.bib:			The bibliography file. There are some examples already written if you need
 
 ### 	MLP/ ~ A directory containing the code for the MLP model
-		MLP.ipynb:  			A Jupyter Notebook for building the MLP model						
+		MLP.ipynb:  			A Jupyter Notebook for building the MLP model (not functional yet)
+		RunMLP.r:				Running MLP on R using RSNNS package
+		MLP.rda:				The stored data (like .pkl) for runMLP. Not needed to use the script						
 
