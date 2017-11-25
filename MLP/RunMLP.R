@@ -2,6 +2,8 @@ library(RSNNS)
 library(dplyr)
 # Manual Here
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node143.html
+# Information on parameters available at
+# http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node18.html 
 df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
 df.save <- df
 
@@ -18,7 +20,6 @@ train <- df[trn.idx,]
 gd.trn <- which(apply(train,1,function(x)sum(is.na(x)))==0)
 
 tst.idx <- setdiff(seq(m),trn.idx)
-#tst.idx <- sample(tst.idx,100)
 test <- df[tst.idx,]
 test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
 gd <- which(apply(test,1,function(x)sum(is.na(x)))==0)
@@ -29,12 +30,14 @@ get_acc <- function(preds,test,gd){
   return(temp)
 }
 ## Run a neural net on each predicate (could also do multiclass)
-layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),c(128,128,16),c(128,128,32),c(256),c(256,16),c(256,128),c(256,256),c(512),c(1024))
-layers <- list(c(32,32,32,32),c(600,256),c(256,64,16))
-layers <- list(c(32,32,32,32),c(256),c(128),c(64))
-#cms <- list()
-#all_preds <- list()
-#times <- NULL
+layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),
+               c(128,128,16),c(128,128,32),c(256),c(256,16),c(256,128),
+               c(256,256),c(512),c(1024),c(32,32,32,32),c(600,256),c(256,64,16))
+layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
+
+cms <- list()
+all_preds <- list()
+times <- NULL
 for (lay in seq(length(layers))){
     
     ptm <- proc.time()
@@ -146,6 +149,7 @@ for (lay in seq(length(layers))){
   plotIterativeError(nn,main=paste0('MSE per Epoch of ',paste0('',paste0(layers[[lay]],collapse='/'))))
   preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
   print(paste0('Accuracy for ',paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
+  graphics.off()
   
   for (i in 1:5){
     each.col <- paste0('p',0:4)[i]
