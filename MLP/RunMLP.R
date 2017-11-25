@@ -1,5 +1,6 @@
 library(RSNNS)
 library(dplyr)
+
 # Manual Here
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node143.html
 # Information on parameters available at
@@ -22,7 +23,7 @@ gd.trn <- which(apply(train,1,function(x)sum(is.na(x)))==0)
 tst.idx <- setdiff(seq(m),trn.idx)
 test <- df[tst.idx,]
 test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
-gd <- which(apply(test,1,function(x)sum(is.na(x)))==0)
+
 
 get_acc <- function(preds,test,gd){
   temp <- as.data.frame(t(sapply(seq(5),function(i)sum(preds[,i]==test[gd,n-5+i])/nrow(test))))
@@ -33,144 +34,76 @@ get_acc <- function(preds,test,gd){
 layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),
                c(128,128,16),c(128,128,32),c(256),c(256,16),c(256,128),
                c(256,256),c(512),c(1024),c(32,32,32,32),c(600,256),c(256,64,16))
-layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
 
 cms <- list()
 all_preds <- list()
 times <- NULL
-for (lay in seq(length(layers))){
-    
-    ptm <- proc.time()
-    nn <- mlp(x=train[gd.trn,-c(1,2,(n-4):n)],y=train[gd.trn,(n-4):n],size = layers[[lay]], maxit=100)
-    times <- as.data.frame(cbind(times,cbind(proc.time()-ptm)))
-    names(times)[ncol(times)] <- paste0(layers[[lay]],collapse='/')
-    preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
-        
-    for (i in 1:5){
-      each.col <- paste0('p',0:4)[i]
-      cm <- confusionMatrix(predictions=preds[,i],targets=test[gd,each.col])
-      cms <- append(cms,list(cm))
-      names(cms)[length(cms)] <- paste0('size: ',paste0(layers[[lay]],collapse='/'),' col: ',pred.key$val[which(pred.key$key==each.col)])
-    }
-    cms <- append(cms,list(confusionMatrix(predictions=preds,apply(test[gd,(n-4):n],2,as.numeric))))
-    names(cms)[length(cms)] <- paste0('size: ',paste0(layers[[lay]],collapse='/'),' col: All')
-    
-    cms <- append(cms,list(get_acc(preds,test,gd)))
-    names(cms)[length(cms)] <- paste0('size: ',paste0(layers[[lay]],collapse='/'),' col: Accuracy')
-    
-    all_preds <- append(all_preds,list(preds))
-    names(all_preds)[length(all_preds)] <- paste0(layers[[lay]],collapse='/')
-    
-    print(paste0('Accuracy for ',paste0(layers[[lay]],collapse='/'),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
-    
-    png(filename = paste0('plots/',paste0(layers[[lay]],collapse='-'),'.png'))
-    plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(layers[[lay]],collapse='/')))
-    dev.off()
-    
-}
 
-# Backprop
-for (lay in seq(length(layers))){
+Train.Plot <- function(train,test,name,layers,maxit=250,
+                       learnFunc="Std_Backpropagation",learnFuncParams=c(0.2,0),
+                       initFunc="Randomize_Weights",initFuncParams=c(-0.3,0.3),
+                       updateFunc="Toplogical_Order",updateFuncParams=c(0),
+                       pruneFunc=NULL,pruneFuncparams=NULL,
+                       hiddenActFunc="Act_Logistic",shufflePatterns=T,linOut=F,
+                       outputActFunc=if(linOut)"Act_Identity"else"Act_Logistic"){
   
-  ptm <- proc.time()
-  nn <- mlp(x=train[gd.trn,-c(1,2,(n-4):n)],y=train[gd.trn,(n-4):n],size = layers[[lay]], maxit=100,learnFunc = 'BackpropMomentum')
-  times <- as.data.frame(cbind(times,cbind(proc.time()-ptm)))
-  names(times)[ncol(times)] <- paste0('NoNeg_',paste0(layers[[lay]],collapse='/'))
-  preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
-  
-  for (i in 1:5){
-    each.col <- paste0('p',0:4)[i]
-    cm <- confusionMatrix(predictions=preds[,i],targets=test[gd,each.col])
-    cms <- append(cms,list(cm))
-    names(cms)[length(cms)] <- paste0('size: ',paste0(layers[[lay]],collapse='/'),' col: ',pred.key$val[which(pred.key$key==each.col)])
-  }
-  cms <- append(cms,list(confusionMatrix(predictions=preds,apply(test[gd,(n-4):n],2,as.numeric))))
-  names(cms)[length(cms)] <- paste0('NoNeg size: ',paste0(layers[[lay]],collapse='/'),' col: All')
-  
-  cms <- append(cms,list(get_acc(preds,test,gd)))
-  names(cms)[length(cms)] <- paste0('NoNeg size: ',paste0(layers[[lay]],collapse='/'),' col: Accuracy')
-  
-  all_preds <- append(all_preds,list(preds))
-  names(all_preds)[length(all_preds)] <- paste0('NoNeg_',paste0(layers[[lay]],collapse='/'))
-  
-  print(paste0('Accuracy for ',paste0('NoNeg_',paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
-  
-  png(filename = paste0('plots/',paste0('NoNeg_',paste0(layers[[lay]],collapse='-')),'.png'))
-  plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0('NoNeg_',paste0(layers[[lay]],collapse='/'))))
-  dev.off()
-  
-}
-
-# TDNN
-for (lay in seq(length(layers))){
-  
-  ptm <- proc.time()
-  nn <- mlp(x=train[gd.trn,-c(1,2,(n-4):n)],y=train[gd.trn,(n-4):n],size = layers[[lay]], maxit=100)
-  times <- as.data.frame(cbind(times,cbind(proc.time()-ptm)))
-  names(times)[ncol(times)] <- paste0(layers[[lay]],collapse='/')
-  preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
-  
-  for (i in 1:5){
-    each.col <- paste0('p',0:4)[i]
-    cm <- confusionMatrix(predictions=preds[,i],targets=test[gd,each.col])
-    cms <- append(cms,list(cm))
-    names(cms)[length(cms)] <- paste0('size: ',paste0('TDNN_',paste0(layers[[lay]],collapse='/')),' col: ',pred.key$val[which(pred.key$key==each.col)])
-  }
-  cms <- append(cms,list(confusionMatrix(predictions=preds,apply(test[gd,(n-4):n],2,as.numeric))))
-  names(cms)[length(cms)] <- paste0('size: ',paste0('TDNN_',paste0(layers[[lay]],collapse='/')),' col: All')
-  
-  cms <- append(cms,list(get_acc(preds,test,gd)))
-  names(cms)[length(cms)] <- paste0('size: ',paste0('TDNN_',paste0(layers[[lay]],collapse='/')),' col: Accuracy')
-  
-  all_preds <- append(all_preds,list(preds))
-  names(all_preds)[length(all_preds)] <- paste0('TDNN_',paste0(layers[[lay]],collapse='/'))
-  
-  print(paste0('Accuracy for ',paste0('TDNN_',paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
-  
-  png(filename = paste0('plots/TDNN_',paste0(layers[[lay]],collapse='-'),'.png'))
-  plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0('TDNN_',paste0(layers[[lay]],collapse='/'))))
-  dev.off()
-  
-}
-
-# Momentum, Synch, RBF
-for (lay in seq(length(layers))){
+  gd     <- which(apply(test,1,function(x)sum(is.na(x)))==0)
+  gd.trn <- which(apply(train,1,function(x)sum(is.na(x)))==0)
   
   ptm <- proc.time()
   nn <- mlp(x=train[gd.trn,-c(1,2,(n-4):n)],y=train[gd.trn,(n-4):n],size = layers[[lay]],
-            inputsTest = test[gd,-c(1,2,(n-4):n)],targetsTest = test[gd,(n-4):n],maxit=225, 
-            learnFunc = 'BackpropMomentum',learnFuncParams = c(0.0025,0.001),
-            updateFunc = 'Synchronous_Order', initFunc = 'RBF_Weights', initFuncParams = c(0.5))
+            inputsTest = test[gd,-c(1,2,(n-4):n)],targetsTest = test[gd,(n-4):n],maxit=maxit, 
+            learnFunc=learnFunc,learnFuncParams=learnFuncParams,
+            initFunc=initFunc, initFuncParams=initFuncParams,
+            hiddenActFunc=hiddenActFunc,outputActFunc=outputActFunc,
+            shufflePatterns=shufflePatterns,linOut=linOut)
+            
   print(paste0('Time: ',paste0((proc.time()-ptm)[2],collapse=' '),' s' ))
   times <- as.data.frame(cbind(times,cbind(proc.time()-ptm)))
-  names(times)[ncol(times)] <- paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='/'))
+  names(times)[ncol(times)] <- paste0(name,paste0(layers[[lay]],collapse='/'))
   
-  png(filename = paste0('plots/mse/',paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='-')),'.png'))
-  plotIterativeError(nn,main=paste0('MSE per Epoch of ',paste0('',paste0(layers[[lay]],collapse='/'))))
+  # Plot the MSE per epoch
+  png(filename = paste0('plots/mse/',paste0(name,paste0(layers[[lay]],collapse='-')),'.png'))
+  plotIterativeError(nn,main=paste0('MSE per Epoch of ',paste0(name,paste0(layers[[lay]],collapse='/'))))
   preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
-  print(paste0('Accuracy for ',paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
+  print(paste0('Accuracy for ',paste0(name,paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
   graphics.off()
   
+  # Store the confusion matrix
   for (i in 1:5){
     each.col <- paste0('p',0:4)[i]
     cm <- confusionMatrix(predictions=preds[,i],targets=test[gd,each.col])
     cms <- append(cms,list(cm))
-    names(cms)[length(cms)] <- paste0('BackPropSyncRBF size: ',paste0(layers[[lay]],collapse='/'),' col: ',pred.key$val[which(pred.key$key==each.col)])
+    names(cms)[length(cms)] <- paste0(name,' size: ',paste0(layers[[lay]],collapse='/'),' col: ',pred.key$val[which(pred.key$key==each.col)])
   }
   cms <- append(cms,list(confusionMatrix(predictions=preds,apply(test[gd,(n-4):n],2,as.numeric))))
-  names(cms)[length(cms)] <- paste0('BackPropSyncRBF size: ',paste0(layers[[lay]],collapse='/'),' col: All')
-  
+  names(cms)[length(cms)] <- paste0(name,' size: ',paste0(layers[[lay]],collapse='/'),' col: All')
   cms <- append(cms,list(get_acc(preds,test,gd)))
-  names(cms)[length(cms)] <- paste0('BackPropSyncRBF size: ',paste0(layers[[lay]],collapse='/'),' col: Accuracy')
+  names(cms)[length(cms)] <- paste0(name,' size: ',paste0(layers[[lay]],collapse='/'),' col: Accuracy')
   
+  # Store the predictions
   all_preds <- append(all_preds,list(preds))
-  names(all_preds)[length(all_preds)] <- paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='/'))
-  
-  
-  png(filename = paste0('plots/',paste0('BackPropSyncRBF_',paste0(layers[[lay]],collapse='-')),'.png'))
-  plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub="Backpropagation wtih Momentum, RBF, & Synchronous Updates")
+  names(all_preds)[length(all_preds)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
+
+  # Plot ROC Curves
+  png(filename = paste0('plots/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
+  plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub=name)
   graphics.off()
-  
 }
+
+
+layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
+
+# Standard
+Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
+
+# TDNN
+Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001),
+           hiddenActFunc='Act_TD_Logistic',updateFunc='TimeDelay_Order',learnFunc='TimeDelayBackprop')
+
+# Momentum, Synch, RBF
+Train.Plot(train=train,test=test,name='BackPropSyncRBF',layers=layers,updateFuncParams=c(0.0025,0.001),
+           hiddenActFunc='Act_Logistic',updateFunc='Synchronous_Order',learnFunc='BackpropMomentum',
+           initFunc='RBF_Weights',initFuncParams=c(0.5))
 
 save.image('MLP.rda')
