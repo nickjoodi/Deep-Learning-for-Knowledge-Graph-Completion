@@ -100,9 +100,8 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
     png(filename = paste0('plots/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
     plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub=name)
     graphics.off()
-    
-    return(list(cms=cms,all_preds=all_preds,times=times))
   }
+  return(list(cms=cms,all_preds=all_preds,times=times))
 }
 
 
