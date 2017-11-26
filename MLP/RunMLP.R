@@ -7,6 +7,7 @@ library(dplyr)
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node18.html 
 setwd('Documents/School/ECS289N/Project/Deep-Learning-for-Knowledge-Graph-Completion/MLP')
 df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
+load('MLP.rda')
 df.save <- df
 
 pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),
@@ -40,10 +41,13 @@ layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),
                c(128,128,16),c(128,128,32),c(256),c(256,16),c(256,128),
                c(256,256),c(512),c(1024),c(32,32,32,32),c(600,256),c(256,64,16))
 
-cms <- list()
-all_preds <- list()
-times <- NULL
-results <- list(cms=cms,all_preds=all_preds,times=times)
+# Change to true if running from the beginning
+if (F){
+  cms <- list()
+  all_preds <- list()
+  times <- NULL
+  results <- list(cms=cms,all_preds=all_preds,times=times)
+}
 
 Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
                        learnFunc="Std_Backpropagation",learnFuncParams=c(0.2,0),
@@ -111,6 +115,9 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 
 
 layers <- list(c(64))  # Best set of layers
+
+# CesarsTestRun
+results<-Train.Plot(train=train,test=test,name='Testing',layers=layers,updateFuncParams=c(0.0025,0.001))
 
 # Standard
 results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
