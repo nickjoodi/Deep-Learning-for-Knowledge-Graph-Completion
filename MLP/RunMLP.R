@@ -14,8 +14,11 @@ pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),val=c('isFather','isMothe
 df <- df.save
 m = dim(df)[1]
 n = dim(df)[2]
-good.idx <- apply(df,1,function(x)sum(is.na(x))==0)
-df[good.idx,-c(1:2,(n-4):n)] <- normalizeData(df[good.idx,-c(1:2,(n-4):n)])
+
+if (F){ # Change to true to pre-normalize the data
+  good.idx <- apply(df,1,function(x)sum(is.na(x))==0)
+  df[good.idx,-c(1:2,(n-4):n)] <- normalizeData(df[good.idx,-c(1:2,(n-4):n)])
+}
 
 trn.idx <- sample(m,floor(0.9*m))
 train <- df[trn.idx,]
