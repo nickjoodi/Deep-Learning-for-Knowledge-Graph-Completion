@@ -5,10 +5,12 @@ library(dplyr)
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node143.html
 # Information on parameters available at
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node18.html 
+setwd('Documents/School/ECS289N/Project/Deep-Learning-for-Knowledge-Graph-Completion/MLP')
 df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
 df.save <- df
 
-pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),val=c('isFather','isMother','isSpouse','isSibling','isChild'))
+pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),
+                       val=c('isFather','isMother','isSpouse','isSibling','isChild'))
 
 ## Split the data up into training and testing sets
 df <- df.save
@@ -108,7 +110,7 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 }
 
 
-layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
+layers <- list(c(64))  # Best set of layers
 
 # Standard
 results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
