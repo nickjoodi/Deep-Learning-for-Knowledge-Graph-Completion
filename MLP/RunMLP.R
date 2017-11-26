@@ -14,6 +14,8 @@ pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),val=c('isFather','isMothe
 df <- df.save
 m = dim(df)[1]
 n = dim(df)[2]
+good.idx <- apply(df,1,function(x)sum(is.na(x))==0)
+df[good.idx,-c(1:2,(n-4):n)] <- normalizeData(df[good.idx,-c(1:2,(n-4):n)])
 
 trn.idx <- sample(m,floor(0.9*m))
 train <- df[trn.idx,]
@@ -109,7 +111,7 @@ layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
 results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
 
 # Standard w/ Normalize & Momentum
-results<-Train.Plot(train=train,test=test,name='StdNormMomentum',layers=layers,normalize=T, maxit=100,
+results<-Train.Plot(train=train,test=test,name='StdNormMomentum',layers=layers,normalize=T, maxit=70,
            results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
            learnFuncParams = c(0.005,0.01))
 
