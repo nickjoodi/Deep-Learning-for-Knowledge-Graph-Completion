@@ -15,7 +15,7 @@ df <- df.save
 m = dim(df)[1]
 n = dim(df)[2]
 
-trn.idx <- sample(m,floor(0.7*m))
+trn.idx <- sample(m,floor(0.9*m))
 train <- df[trn.idx,]
 
 tst.idx <- setdiff(seq(m),trn.idx)
@@ -95,7 +95,7 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
     names(all_preds)[length(all_preds)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
   
     # Plot ROC Curves
-    png(filename = paste0('plots/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
+    png(filename = paste0('plots/roc/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
     plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub=name)
     graphics.off()
   }
@@ -109,21 +109,14 @@ layers <- list(c(32,32,32,32),c(256),c(128),c(64)) # Best set of layers
 results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
 
 # Standard w/ Normalize & Momentum
-results<-Train.Plot(train=train,test=test,name='StdNormMomentum_50Epochs_',layers=layers,normalize=T, maxit=50,
+results<-Train.Plot(train=train,test=test,name='StdNormMomentum',layers=layers,normalize=T, maxit=100,
            results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
            learnFuncParams = c(0.005,0.01))
-
-# Standard w/ Normalize & Momentum & RBF
-results<-Train.Plot(train=train,test=test,name='StdNormMomentumRBF',layers=layers,normalize=T, maxit=50,
-                    results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
-                    learnFuncParams = c(0.005,0.01), outputActFunc = 'Act_Logistic', 
-                    hiddenActFunc = 'Act_RBF_Gaussian')
 
 # Standard w/ Normalize & Momentum & RBF
 results<-Train.Plot(train=train,test=test,name='StdNormMomentumRBF',layers=layers,normalize=T, maxit=100,
                     results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
                     learnFuncParams = c(0.005,0.01), hiddenActFunc = 'Act_RBF_Gaussian')
-
 
 
 # TDNN
@@ -135,11 +128,6 @@ results<-Train.Plot(train=train,test=test,name='BackPropSyncRBF',layers=layers,u
                     results=results,hiddenActFunc='Act_Logistic',updateFunc='Synchronous_Order',learnFunc='BackpropMomentum',
                     initFunc='RBF_Weights',initFuncParams=c(0.5))
 
-
-
-print_stats <- function(x){
-  
-}
 
 
 save.image('MLP.rda')
