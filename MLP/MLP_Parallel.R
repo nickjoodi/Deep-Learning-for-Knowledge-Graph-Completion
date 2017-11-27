@@ -89,8 +89,8 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 #c1 <- makeCluster(no_cores,type='FORK')
 
 results <- list(cms=list(),all_preds=list(),targets=list(),nets=list(),times=NULL)
-alphas <- c(0.0001,0.0005,0.001,0.005,0.01,0.05)[c(6:1)]
-betas <- c(0.01,0.001)
+alphas <- c(0.0001,0.0005,0.001)[c(6:1)]
+betas <- c(0.01,0.001,0001)
 layers <- list(c(256))
 for (beta in betas){
   for (alpha in alphas){
@@ -99,9 +99,9 @@ for (beta in betas){
     tst.idx <- setdiff(seq(m),trn.idx)
     test <- df[tst.idx,]
     test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
-    name <- paste0('StdNormMomentum a=',alpha,' b=',beta)
+    maxiter <- max(c(50,1/(8*alpha)))
+    name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter)
     print(paste0('Running............................... ',name))
-    maxiter <- max(c(50,1/(20*alpha)))
     results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
                         results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
                         learnFuncParams = c(alpha,beta))
