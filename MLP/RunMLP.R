@@ -45,21 +45,23 @@ layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),
 if (F){
   cms <- list()
   all_preds <- list()
+  targets <- list()
   times <- NULL
-  results <- list(cms=cms,all_preds=all_preds,times=times)
+  results <- list(cms=cms,all_preds=all_preds,times=times,targets=targets)
 }
 
 Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
                        learnFunc="Std_Backpropagation",learnFuncParams=c(0.2,0),
                        initFunc="Randomize_Weights",initFuncParams=c(-0.3,0.3),
                        updateFunc="Toplogical_Order",updateFuncParams=c(0),
-                       pruneFunc=NULL,pruneFuncparams=NULL,
+                       pruneFunc=NULL,pruneFuncparams=NULL, outdir='plots/',
                        hiddenActFunc="Act_Logistic",shufflePatterns=T,linOut=F,
                        outputActFunc=if(linOut)"Act_Identity"else"Act_Logistic"){
   
   cms <- results$cms
   all_preds <- results$all_preds
   times <- results$times
+  targets <- results$targets
   
   gd     <- which(apply(test,1,function(x)sum(is.na(x)))==0)
   gd.trn <- which(apply(train,1,function(x)sum(is.na(x)))==0)
@@ -83,7 +85,7 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
     names(times)[ncol(times)] <- paste0(name,paste0(layers[[lay]],collapse='/'))
     
     # Plot the MSE per epoch
-    png(filename = paste0('plots/mse/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
+    png(filename = paste0(outdir,'mse/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
     plotIterativeError(nn,main=paste0('MSE per Epoch of ',paste0(name,paste0(layers[[lay]],collapse='/'))))
     preds <- round(predict(nn,test[gd,-c(1,2,(n-4):n)]),0)
     print(paste0('Accuracy for ',paste0(name,paste0(layers[[lay]],collapse='/')),': ',round(mean(t(get_acc(preds,test,gd)),na.rm=T),3)*100,' %' ))
@@ -104,13 +106,15 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
     # Store the predictions
     all_preds <- append(all_preds,list(preds))
     names(all_preds)[length(all_preds)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
-  
+    targets <- append(targets,list(test[gd,(n-4):n]))
+    names(targets)[length(targets)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
+    
     # Plot ROC Curves
-    png(filename = paste0('plots/roc/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
+    png(filename = paste0(outdir,'roc/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
     plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub=name)
     graphics.off()
   }
-  return(list(cms=cms,all_preds=all_preds,times=times))
+  return(list(cms=cms,all_preds=all_preds,times=times,targets=targets))
 }
 
 
@@ -132,7 +136,6 @@ results<-Train.Plot(train=train,test=test,name='StdNormMomentumRBF',layers=layer
                     results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
                     learnFuncParams = c(0.005,0.01), hiddenActFunc = 'Act_RBF_Gaussian')
 
-
 # TDNN
 results<-Train.Plot(train=train,test=test,name='TDNN',layers=layers,updateFuncParams=c(0.0025,0.001),
                     results=results,hiddenActFunc='Act_TD_Logistic',updateFunc='TimeDelay_Order',learnFunc='TimeDelayBackprop')
@@ -142,6 +145,27 @@ results<-Train.Plot(train=train,test=test,name='BackPropSyncRBF',layers=layers,u
                     results=results,hiddenActFunc='Act_Logistic',updateFunc='Synchronous_Order',learnFunc='BackpropMomentum',
                     initFunc='RBF_Weights',initFuncParams=c(0.5))
 
-
-
 save.image('MLP.rda')
+
+# Test many params
+alphas <- c(0.0001,0.0005,0.001,0.005,0.01,0.05)
+betas <- c(0.01,0.001)
+layers <- list(c(256))
+for (alpha in alphas){
+  for (beta in betas){
+  trn.idx <- sample(m,floor(0.9*m))
+  train <- df[trn.idx,]
+  tst.idx <- setdiff(seq(m),trn.idx)
+  test <- df[tst.idx,]
+  test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
+  name <- paste0('StdNormMomentum a=',alpha,' b=',beta)
+  print(paste0('Running............................... ',name))
+  maxiter <- max(c(50,1/(20*alpha)))
+  results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
+                      results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
+                      learnFuncParams = c(alpha,beta))
+  }
+}
+save.image('plots/grid/MLP_grid.rda')
+
+
