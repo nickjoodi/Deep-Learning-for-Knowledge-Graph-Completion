@@ -1,5 +1,6 @@
 library(RSNNS)
 library(dplyr)
+library(parallel)
 
 # Manual Here
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node143.html
@@ -125,10 +126,10 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 layers <- list(c(64))  # Best set of layers
 
 # CesarsTestRun
-results<-Train.Plot(train=train,test=test,name='Testing',layers=layers,updateFuncParams=c(0.0025,0.001))
+results<-Train.Plot(train=train,test=test,name='Testing',layers=layers,updateFuncParams=c(0.0025,0.001),results=results)
 
 # Standard
-results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001))
+results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncParams=c(0.0025,0.001),results=results)
 
 # Standard w/ Normalize & Momentum
 results<-Train.Plot(train=train,test=test,name='StdNormMomentum',layers=layers,normalize=T, maxit=70,
@@ -152,24 +153,3 @@ results<-Train.Plot(train=train,test=test,name='BackPropSyncRBF',layers=layers,u
 save.image('MLP.rda')
 
 # Test many params
-alphas <- c(0.0001,0.0005,0.001,0.005,0.01,0.05)
-betas <- c(0.01,0.001)
-layers <- list(c(256))
-for (alpha in alphas){
-  for (beta in betas){
-  trn.idx <- sample(m,floor(0.9*m))
-  train <- df[trn.idx,]
-  tst.idx <- setdiff(seq(m),trn.idx)
-  test <- df[tst.idx,]
-  test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
-  name <- paste0('StdNormMomentum a=',alpha,' b=',beta)
-  print(paste0('Running............................... ',name))
-  maxiter <- max(c(50,1/(20*alpha)))
-  results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
-                      results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
-                      learnFuncParams = c(alpha,beta))
-  }
-}
-save.image('plots/grid/MLP_grid.rda')
-
-
