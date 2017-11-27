@@ -7,7 +7,7 @@ library(dplyr)
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node18.html 
 setwd('Documents/School/ECS289N/Project/Deep-Learning-for-Knowledge-Graph-Completion/MLP')
 df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
-load('MLP.rda')
+#load('MLP.rda')
 df.save <- df
 
 pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),
@@ -42,12 +42,13 @@ layers <- list(c(16),c(64),c(128),c(128,16),c(128,64),c(128,128),
                c(256,256),c(512),c(1024),c(32,32,32,32),c(600,256),c(256,64,16))
 
 # Change to true if running from the beginning
-if (F){
+if (T){
   cms <- list()
   all_preds <- list()
   targets <- list()
   times <- NULL
-  results <- list(cms=cms,all_preds=all_preds,times=times,targets=targets)
+  nets <- list()
+  results <- list(cms=cms,all_preds=all_preds,targets=targets,nets=nets,times=times)
 }
 
 Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
@@ -62,6 +63,7 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
   all_preds <- results$all_preds
   times <- results$times
   targets <- results$targets
+  nets <- results$nets
   
   gd     <- which(apply(test,1,function(x)sum(is.na(x)))==0)
   gd.trn <- which(apply(train,1,function(x)sum(is.na(x)))==0)
@@ -79,7 +81,7 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
               initFunc=initFunc, initFuncParams=initFuncParams,
               hiddenActFunc=hiddenActFunc,outputActFunc=outputActFunc,
               shufflePatterns=shufflePatterns,linOut=linOut)
-              
+    
     print(paste0('Time: ',paste0(round((proc.time()-ptm)[3],2),collapse=' '),' s' ))
     times <- as.data.frame(cbind(times,cbind(proc.time()-ptm)))
     names(times)[ncol(times)] <- paste0(name,paste0(layers[[lay]],collapse='/'))
@@ -108,13 +110,15 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
     names(all_preds)[length(all_preds)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
     targets <- append(targets,list(test[gd,(n-4):n]))
     names(targets)[length(targets)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
+    nets <- append(nets,list(nn))
+    names(nets)[length(nets)] <- paste0(name,'_',paste0(layers[[lay]],collapse='/'))
     
     # Plot ROC Curves
     png(filename = paste0(outdir,'roc/',paste0(name,'_',paste0(layers[[lay]],collapse='-')),'.png'))
     plotROC(T=preds,D=apply(test[gd,(n-4):n],2,as.numeric),main=paste0('ROC Curve for Model ',paste0(paste0(layers[[lay]],collapse='/'))),sub=name)
     graphics.off()
   }
-  return(list(cms=cms,all_preds=all_preds,times=times,targets=targets))
+  return(list(cms=cms,all_preds=all_preds,targets=targets,nets=nets,times=times))
 }
 
 
