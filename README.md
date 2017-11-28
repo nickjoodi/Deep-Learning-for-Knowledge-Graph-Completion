@@ -22,6 +22,7 @@ Below is a list of the contents of the repository. Please update when you commit
 		entity_embeddings.pkl:  	A dictionary of entity embeddings
 		word_vectors.pkl:		A dictionary of word embeddings
 		word_embeddings.py:		Script for generating word_vectors.pkl
+		bad_entities.py:		A list of entities with no encoding 
 
 ###		data/processed/ ~ A directory of processed versions of the data in raw/
 		entities_map.pkl:		A dictionary that maps entity labels to their full names
@@ -36,4 +37,9 @@ Below is a list of the contents of the repository. Please update when you commit
 		Project.TeX:  			The main TeX document. I have a standard pre-amble I've been building 
 						over the years, so please excuse how huge it is. I have to say that a lot
 		bib.bib:			The bibliography file. There are some examples already written if you need
+
+### 	MLP/ ~ A directory containing the code for the MLP model
+		MLP.ipynb:  			A Jupyter Notebook for building the MLP model (not functional yet)
+		RunMLP.r:				Running MLP on R using RSNNS package
+		MLP.rda:				The stored data (like .pkl) for runMLP. Not needed to use the script						
 
