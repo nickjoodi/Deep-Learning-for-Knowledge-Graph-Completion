@@ -89,8 +89,8 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 #c1 <- makeCluster(no_cores,type='FORK')
 
 results <- list(cms=list(),all_preds=list(),targets=list(),nets=list(),times=NULL)
-alphas <- c(0.0001,0.0005,0.001)[c(6:1)]
-betas <- c(0.01,0.001,0001)
+alphas <- c(1e-4,5e-5,1e-5)
+betas <- c(0.001,0.0001)
 layers <- list(c(256))
 for (beta in betas){
   for (alpha in alphas){
@@ -99,7 +99,8 @@ for (beta in betas){
     tst.idx <- setdiff(seq(m),trn.idx)
     test <- df[tst.idx,]
     test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
-    maxiter <- max(c(50,1/(8*alpha)))
+    #maxiter <- max(c(50,1/(8*alpha)))
+    maxiter <- 500
     name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter)
     print(paste0('Running............................... ',name))
     results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
@@ -108,7 +109,58 @@ for (beta in betas){
   }
 }
 
+
+get_vals <- function(cm){
+  pos = cm[which(row.names(cm)=='1'),]
+  sens = pos[which(names(pos)=='1')]/sum(pos,na.rm=T)
+  
+  neg = cm[which(row.names(cm)=='0'),]
+  spec = neg[which(names(neg)=='0')]/sum(neg,na.rm=T)
+  
+  pos = t(cm)[which(row.names(t(cm))=='1'),]
+  prec = pos[which(names(pos)=='1')]/sum(pos,na.rm=T)
+  
+  neg = t(cm)[which(row.names(t(cm))=='0'),]
+  recall = neg[which(names(neg)=='0')]/sum(neg,na.rm=T)
+  
+  out = data.frame(fallout=1-spec,sensitivity=sens,precision=prec,recall=sens,stringsAsFactors=F)
+  return(out)
+}
+
+library(plyr)
+all_targets <- NULL
+all_preds <- NULL
+for (i in seq(length(results$targets))){
+  targs <- results$targets[[i]]
+  targs <- targs[match(seq(nrow(df)),row.names(targs)),]
+  targs[is.na(targs)] <- -1
+  
+  preds <- results$all_preds[[i]]
+  preds <- preds[match(seq(nrow(df)),row.names(preds)),]
+  preds[is.na(preds)] <- -1
+  
+  if (is.null(all_targets)){
+    all_targets <- targs
+  }else{
+    all_targets <- cbind(all_targets,targs)
+  }
+   
+  if (is.null(all_preds)){
+    all_preds <- preds
+  }else{
+    all_preds <- cbind(all_preds,preds)
+  } 
+  
+  #plotROC(T=all_preds,D=all_targets)
+    
+}
+
+
+
+
+
 #stopCluster(c1)
 save.image('plots/grid/MLP_grid.rda')
+
 
 
