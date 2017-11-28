@@ -22,7 +22,13 @@ preds = {'P26':'spouse',
     'P22':'father',
     'P25':'mother',
     'P3373':'sibling'}
-
+    
+# Implementation of the Neural tensor network in tensorflow 1.3
+# Used the following works to develop the architecture:
+# Original code provided by the authors of the NTN: http://www-nlp.stanford.edu/~socherr/codeDeepDB.zip
+# A python implementation using numpy and Scipy: https://github.com/siddharth-agrawal/Neural-Tensor-Network
+# An implementation in Tensorflow 0.5.0: https://github.com/dddoss/tensorflow-socher-ntn
+# The original article: https://nlp.stanford.edu/~socherr/SocherChenManningNg_NIPS2013.pdf
 
 def load_word_vecs():
     f = open(r"../data/embeddings/large_set/random_init_word_vectors_clean_complete_large.pkl", "rb") 
@@ -90,7 +96,7 @@ def create_indexed_embeds(word_vecs, entities_to_words, words_dic, entity_dic):
 training_data = load_data("../data/processed/large_set/training_large.txt")
 testing_data = load_data("../data/processed/large_set/test_large.txt")
 dev_data = load_data("../data/processed/large_set/dev_large.txt")
-pred_dic = create_dic("../data/processed/large_set/predicates.txt")
+pred_dic = create_dic("../data/processed/predicates.txt")
 entity_dic = create_dic("../data/processed/large_set/entityIds_large.txt")
 word_vecs = load_word_vecs()
 entities_to_words = load_entities_to_words()
@@ -101,7 +107,7 @@ indexed_dev_data = index_testing_data(dev_data,entity_dic,pred_dic)
 indexed_test_data = index_testing_data(testing_data,entity_dic,pred_dic)
 indexed_train_data = index_testing_data(training_data,entity_dic,pred_dic)
 
-num_iters = 500
+num_iters = 200
 batch_size=10000
 corrupt_size = 10
 slice_size = 3
@@ -350,7 +356,7 @@ with g.as_default():
         print('Plot loss per iteration')
         fig = plt.figure()
         ax1 = fig.add_subplot(111)
-        ax1.plot(iter_list, iter_loss, lw=2, color='darkorange')
+        ax1.plot(iter_list, loss_list, lw=2, color='darkorange')
         plt.xlabel("Iteration #")
         plt.ylabel("Loss")
         plt.title("Loss per Iteration of Training")
