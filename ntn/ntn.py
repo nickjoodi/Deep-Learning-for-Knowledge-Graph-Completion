@@ -307,7 +307,7 @@ with g.as_default():
         plt.ylabel("True Positive Rate")
         plt.title("ROC({!s})".format('ntn'))
         plt.legend(loc="lower right")
-        filename = '{!s}_ROC_{!s}.pdf'.format('ntn', 'all')
+        filename = 'img/{!s}_ROC_{!s}.pdf'.format('ntn', 'all')
         plt.savefig(filename)
 
         accuracy = sum(1 for x,y in zip(flattened_test_labels,flattened_classifications) if x == y) / len(flattened_test_labels)
@@ -322,7 +322,7 @@ with g.as_default():
         word_vectors = word_vectors[:500,:]
         words = words[:500]
 
-        def plot_with_labels(low_dim_embs, labels, filename='tsne_words_ntn.png'):
+        def plot_with_labels(low_dim_embs, labels, filename='img/tsne_words_ntn.png'):
             plt.figure(figsize=(18, 18)) 
             for i, label in enumerate(labels):
                 x, y = low_dim_embs[i, :]
@@ -354,7 +354,7 @@ with g.as_default():
         plt.xlabel("Iteration #")
         plt.ylabel("Loss")
         plt.title("Loss per Iteration of Training")
-        filename = '_loss_.pdf'
+        filename = 'img/_loss_.pdf'
         plt.savefig(filename)
 
 
