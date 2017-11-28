@@ -1,5 +1,3 @@
-import sklearn as sk 
-import scipy as sci 
 import numpy as np 
 import pandas as pd
 import pickle
