@@ -25,13 +25,13 @@ preds = {'P26':'spouse',
 
 
 def load_word_vecs():
-    f = open(r"../data/embeddings/random_init_word_vectors_clean_complete_large.pkl", "rb") 
+    f = open(r"../data/embeddings/large_set/random_init_word_vectors_clean_complete_large.pkl", "rb") 
     w = pickle.load(f)
     f.close
     return w
 
 def load_entities_to_words():
-    f = open(r"../data/processed/entities_to_strings_clean_map_large.pkl", "rb") 
+    f = open(r"../data/processed/large_set/entities_to_strings_clean_map_large.pkl", "rb") 
     w = pickle.load(f)
     f.close
     return w
@@ -87,11 +87,11 @@ def create_indexed_embeds(word_vecs, entities_to_words, words_dic, entity_dic):
             indexed_entities[v].append(words_dic[s])
     return (indexed_word_vecs,indexed_entities)
 
-training_data = load_data("../data/processed/training_large.txt")
-testing_data = load_data("../data/processed/test_large.txt")
-dev_data = load_data("../data/processed/dev_large.txt")
-pred_dic = create_dic("../data/processed/predicates.txt")
-entity_dic = create_dic("../data/processed/entityIds_large.txt")
+training_data = load_data("../data/processed/large_set/training_large.txt")
+testing_data = load_data("../data/processed/large_set/test_large.txt")
+dev_data = load_data("../data/processed/large_set/dev_large.txt")
+pred_dic = create_dic("../data/processed/large_set/predicates.txt")
+entity_dic = create_dic("../data/processed/large_set/entityIds_large.txt")
 word_vecs = load_word_vecs()
 entities_to_words = load_entities_to_words()
 words_dic = create_dic_from_word_vec(word_vecs)
@@ -101,7 +101,7 @@ indexed_dev_data = index_testing_data(dev_data,entity_dic,pred_dic)
 indexed_test_data = index_testing_data(testing_data,entity_dic,pred_dic)
 indexed_train_data = index_testing_data(training_data,entity_dic,pred_dic)
 
-num_iters = 2
+num_iters = 500
 batch_size=10000
 corrupt_size = 10
 slice_size = 3
