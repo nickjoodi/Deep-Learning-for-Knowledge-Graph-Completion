@@ -1,5 +1,5 @@
-fatherIs
-motherIs
-siblingIs
-spouseIs
-childIs
+P22
+P25
+P3373
+P26
+P40
