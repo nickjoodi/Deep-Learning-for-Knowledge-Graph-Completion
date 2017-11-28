@@ -95,7 +95,6 @@
 An example of citing something is \cite{KosticFuso}
 
 
-I'm righting something here for testing with github.
 
 \section{Methods}
 \subsection*{Multilayer Perceptron Model (MLP)}
@@ -107,8 +106,6 @@ The multiyaler perceptron (MLP) model was built using the the Stuttgart Neural N
 Different  MLP architectures are built, varying number of hidden layers, nodes and iterations in order to improve the accuracy and precision of our model.
 
 Weighted SSE by number of iterations of the training and tetsing sets in addition to ROC curves will provide the references in our model architecture selection.
-
-writing something here too for testing with github
 
 \section{Results}
 
@@ -130,8 +127,6 @@ In a second running of the model, we have added a new hidden layer  with differe
   \includegraphics[width=1\textwidth]{report_mlp/128-16_64_128.png}
 \end{figure}
 
-writing something here for testing with github
-
 In  a following set of tests, we compared different Neural Networks structures, increasing the number of hidden layers (hidden layers/nodes: 128, 128/16 and 128/128/16).  Figure ~\ref{fig:50.png} shows that for the model with three hidden layers the training error is not decreasing considerably before 40 iteration. Suddently, the SSE in this NN structure drops abruptaly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model. \par
 
 Ths trend described above is similar for two hidden layers. For teh case of just one hidden layer with 128 nodes, the error does not drop abruptaly for the training set but we can see an increase in the error for after 30 iterations aproximately. \par 
@@ -151,8 +146,6 @@ This decision is confirmed comparing their ROC curves for each NN structure.
   \caption{MSE and ROC curves for different levels of hidden layers}
   \includegraphics[width=1\textwidth]{report_mlp/different_layers_MSE_ROC.png}
 \end{figure}
-
-more tests for github
 
 
 
