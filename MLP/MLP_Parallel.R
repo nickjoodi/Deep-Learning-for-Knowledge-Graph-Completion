@@ -2,12 +2,15 @@ library(parallel)
 library(RSNNS)
 library(dplyr)
 
-df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
+df <- read.csv('../data/EncodedDataLrg.csv',stringsAsFactors=F)
+df.save <- df
+negs <- read.table('../data/processed/large_set/negativeTriplets_more_large.txt',stringsAsFactors=F,sep=' ')
 m = dim(df)[1]
 n = dim(df)[2]
 
 pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),
-                       val=c('isFather','isMother','isSpouse','isSibling','isChild'))
+                       val=c('isFather','isMother','isSpouse','isSibling','isChild'),
+                       name=c('P22','P25','P26','P3373','P40'))
 
 get_acc <- function(preds,test,gd){
   temp <- as.data.frame(t(sapply(seq(5),function(i)sum(preds[,i]==test[gd,n-5+i])/nrow(test))))
@@ -94,9 +97,9 @@ betas <- c(0.001,0.0001)
 layers <- list(c(256))
 for (beta in betas){
   for (alpha in alphas){
-    trn.idx <- sample(m,floor(0.9*m))
+    trn.idx <- sample(m,floor(0.05*m))
     train <- df[trn.idx,]
-    tst.idx <- setdiff(seq(m),trn.idx)
+    tst.idx <- sample(setdiff(seq(m),trn.idx),500)
     test <- df[tst.idx,]
     test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
     #maxiter <- max(c(50,1/(8*alpha)))
@@ -155,12 +158,8 @@ for (i in seq(length(results$targets))){
     
 }
 
-
-
-
-
 #stopCluster(c1)
 save.image('plots/grid/MLP_grid.rda')
-
+save.image('plots/random/MLP_random.rda')
 
 
