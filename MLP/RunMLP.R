@@ -133,7 +133,7 @@ results<-Train.Plot(train=train,test=test,name='Std',layers=layers,updateFuncPar
 
 # Standard w/ Normalize & Momentum
 results<-Train.Plot(train=train,test=test,name='StdNormMomentum',layers=layers,normalize=T, maxit=70,
-           results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
+           results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),outdir='plots/random/',
            learnFuncParams = c(0.005,0.01))
 
 # Standard w/ Normalize & Momentum & RBF
