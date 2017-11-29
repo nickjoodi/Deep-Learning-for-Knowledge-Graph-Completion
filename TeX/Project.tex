@@ -92,14 +92,40 @@
 
 
 \section{Introduction}
-An example of citing something is \cite{KosticFuso}
 
 
 
 \section{Methods}
 \subsection*{Multilayer Perceptron Model (MLP)}
 
-The multiyaler perceptron (MLP) model was built using the the Stuttgart Neural Network Simulator implemented in language R (RSNNS)\cite{RSNNS}. Where we have used standard backpropagation and backpropagation with momentum methods in our simulation models.
+
+\paragraph{} The dataset we considered was queried from the WikiData, a free opensource knowledge base that acts as the central storage device for its sister projects including Wikipedia, Wikivoyage, and Wikisource \cite{Wikidata}. Wikidata offers a SPARQL type queries for obtaining data on a variety of sources. We queried data regarding the lineage of many famous people in history including: Frederik, Crown Prince of Denmark, George Windsor, Earl of St Andrews, and Shigeko Higashikuni. The relations we considered were if one person, or entity, was the Father, Mother, Spouse, Sibling, or Child of another. See Figure \ref{query} for an example of the query we used to obtain our dataset. 
+
+
+\begin{figure}[h!]
+ \lstinputlisting[language=Matlab]{code/SparqlQuery.txt}
+ \caption{SPARQL query used to obtain our raw data from Wikidata}
+ \label{query}
+\end{figure}
+
+
+\paragraph{} The raw data is a table of values that lists each person and their Father, Mother, spouse, sibling, and child; leaving an entry empty if unknown. We processed this table into positive triplets of the form \texttt{(Q193752, P25, Q229279, 1)} where \texttt{Q193752} and \texttt{Q229279} are a unique encoding of the target and related entities respectively, \texttt{P25} represents one of the relations, or predictes, and \texttt{1} indicates that this statement is true. In english this triplet implies that \texttt{Q229279} is the \texttt{P25} of \texttt{Q193752}. These positive facts represent all the data we can pull directly from the knowledge graphs. However, to increase the robustness of our data, we can create negative facts as well. For example, since we know that Cleopatra VII Philopator, the last active pharaoh of Ptolemaic Egypt, was the daughter of Ptolemy XII Auletes, we can conclude she was not the daughter of Richard Nixon. Thus we can extend our data to contain these negative triplets of the form \texttt{(Q1,P1,Q2,-1)}. In all, we were able to produce 37395 positive triplets and 37391 negative triplets from our raw data. 
+
+\paragraph{} In an effor to exploit the uniqueness in the names for each of our entities, we used word embeddings of each of the words in a name to generate entity embeddings. We used the Fasttext model to generate word embeddings from semantic anaylsis across Wikipedia. Fasttext is a library that represents words as bags of character $n$-grams for fast and efficient classification \cite{BojanowskiGJM16,JoulinGBM16}. Thus, we used Fasttext to obtain $300\times 1$ word embeddings of each of the unique words found in all of our entitie's names. For example, the name "Charles Stuart, 1st Earl of Lennox", we found an 300 dimensional embedding vector for Charles, Stuart, 1st, Earl, of, Lennox. Once each of the words had embeddings, we could construct entity embeddings for each of our entities. The method we used for this was to aggregate the word embeddings by taking the mean across each of the words within an entity name. For the MLP model, if Fasttext could not produce a valid embedding for a given word, then that word was ignored. Moreover, if an entity consisted entirely of unknown words, then that entity was thrown out. We did this to preserve the integrity of our input data because in the standard MLP model we would not be training these embeddings. However, for more complex models, another suitable technique is to randomize the embeddings for these entities, or all entities, to guarantee a more representative dataset. Overall, only about 6.4\% of the entities had no suitable embedding. Once we encoded each entity with their embedding we produced a dataset where each row contains the numeric representation of a triplet. Hence, for a triplet given by \texttt{(EntityA,Pred2,EntityB,1)}, where the embedding for \texttt{EntityA} and \texttt{EntityB }is $[a_1,a_2,\cdots,a_{300}]^T$ and $[b_1,b_2,\cdots,b_{300}]^T$ respectively, the associated row in our data set is given by
+$$ \Mat{a_1,a_2,a_3,\cdots,a_{300},b_1,b_2,\cdots,b_{300},0,1,0,0,0} $$
+where the last 5 columns represents the truth values for each of the 5 predicates (Father, Mother, Spouse, Sibling, Child).
+
+\paragraph{} One we had a comprehensive dataset to train on, we designed our predictive model. We implimented a Multiyaler Perceptron (MLP) model using the RSNNS package following the Stuttgart Neural Network Simulator\cite{RSNNS}. Figure \ref{MLPArch} shows a general look at the architecture for our MLP design. We tested a few variations of the MLP model to determine the suitable parameters for our dataset; including a variable number of layers, activation functions, and nodes per layer. Moreover, we tuned the hyperparameters such as the learning rate and momentum term for backpropagation. We will reference Figure \ref{MLPArch} as we discuss the effects of the different architectures. 
+
+
+\begin{figure}[h!]
+ \includegraphics[width=1\textwidth]{report_mlp/GenArchitecture.png}
+  \caption{A general look at the Neural Network architecture used for a MLP model with $k$ hidden layers with $N_{L_i}$ nodes for the $i$th layer, a common activation function $a_h(z)$ for each layer, and a final output activation function $a_{out}(z)$. We have 600 features from our input, 1 for each dimension of both entity embeddings, and we are predicting the true/false value of our 5 output predicates. Note that $l(p_1)$ is the likelihood that the predicate $p_1$ is true.  }
+  \label{MLPArch}
+\end{figure}
+
+
+Where we have used standard backpropagation and backpropagation with momentum methods in our simulation models.
 
 Different  MLP architectures are built, varying number of hidden layers, nodes and iterations in order to improve the accuracy and precision of our model.
 
@@ -107,13 +133,13 @@ Weighted SSE by number of iterations of the training and tetsing sets in additio
 
 \section{Results}
 
-In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure ~\ref{fig:50_100_128.png}). We can notice that under 100 iterations, the trainin error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.\par
+In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_128.png}). We can notice that under 100 iterations, the trainin error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.\par
  
 
 \begin{figure}[h!]
+ \includegraphics[width=1\textwidth]{report_mlp/50_100_128.png}
   \caption{MSE at different iterations. The structure presents a single hidden layer with 128 nodes}
-  \includegraphics[width=1\textwidth]{report_mlp/50_100_128.png}
-
+  \label{50_100_128.png}
 \end{figure}
 
 
@@ -121,11 +147,12 @@ In a second running of the model, we have added a new hidden layer  with differe
 
 
 \begin{figure}[h!]
+\includegraphics[width=1\textwidth]{report_mlp/128-16_64_128.png}
   \caption{MSE for A NN with two hidden layers with different nodes at second hidden layer.}
-  \includegraphics[width=1\textwidth]{report_mlp/128-16_64_128.png}
+\label{128-16_64_128.png}
 \end{figure}
 
-In  a following set of tests, we compared different Neural Networks structures, increasing the number of hidden layers (hidden layers/nodes: 128, 128/16 and 128/128/16).  Figure ~\ref{fig:50.png} shows that for the model with three hidden layers the training error is not decreasing considerably before 40 iteration. Suddently, the SSE in this NN structure drops abruptaly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model. \par
+In  a following set of tests, we compared different Neural Networks structures, increasing the number of hidden layers (hidden layers/nodes: 128, 128/16 and 128/128/16).  Figure \ref{128-16_64_128.png} shows that for the model with three hidden layers the training error is not decreasing considerably before 40 iteration. Suddently, the SSE in this NN structure drops abruptaly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model. \par
 
 Ths trend described above is similar for two hidden layers. For teh case of just one hidden layer with 128 nodes, the error does not drop abruptaly for the training set but we can see an increase in the error for after 30 iterations aproximately. \par 
 
@@ -141,8 +168,9 @@ This decision is confirmed comparing their ROC curves for each NN structure.
 
 
 \begin{figure}[h!]
-  \caption{MSE and ROC curves for different levels of hidden layers}
   \includegraphics[width=1\textwidth]{report_mlp/different_layers_MSE_ROC.png}
+    \caption{MSE and ROC curves for different levels of hidden layers}
+    \label{different_layers_MSE_ROC.png}
 \end{figure}
 
 
