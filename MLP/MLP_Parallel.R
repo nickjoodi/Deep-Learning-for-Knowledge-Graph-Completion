@@ -2,7 +2,7 @@ library(parallel)
 library(RSNNS)
 library(dplyr)
 
-df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
+df <- read.csv('../data/EncodedDataLrg.csv',stringsAsFactors=F)
 m = dim(df)[1]
 n = dim(df)[2]
 
@@ -89,9 +89,9 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 #c1 <- makeCluster(no_cores,type='FORK')
 
 results <- list(cms=list(),all_preds=list(),targets=list(),nets=list(),times=NULL)
-alphas <- c(1e-4,5e-5,1e-5)
-betas <- c(0.001,0.0001)
-layers <- list(c(256))
+alphas <- c(1e-4,5e-3)
+betas <- c(0.001)
+layers <- list(c(256),c(256,256),c(1024))
 for (beta in betas){
   for (alpha in alphas){
     trn.idx <- sample(m,floor(0.9*m))
@@ -101,9 +101,9 @@ for (beta in betas){
     test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
     #maxiter <- max(c(50,1/(8*alpha)))
     maxiter <- 500
-    name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter)
+    name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter,' ')
     print(paste0('Running............................... ',name))
-    results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
+    results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/random/',
                         results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
                         learnFuncParams = c(alpha,beta))
   }
