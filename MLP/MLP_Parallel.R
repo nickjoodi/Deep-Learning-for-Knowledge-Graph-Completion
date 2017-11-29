@@ -13,7 +13,7 @@ pred.key <- data.frame(key=c('p0','p1','p2','p3','p4'),
                        name=c('P22','P25','P26','P3373','P40'))
 
 get_acc <- function(preds,test,gd){
-  temp <- as.data.frame(t(sapply(seq(5),function(i)sum(preds[,i]==test[gd,n-5+i])/nrow(test))))
+  temp <- as.data.frame(t(sapply(seq(5),function(i)sum(preds[,i]==sapply(test[gd,n-5+i],function(x)max(c(0,x))))/nrow(test))))
   names(temp) <- pred.key$val
   return(temp)
 }
@@ -90,28 +90,31 @@ Train.Plot <- function(train,test,name,layers,results,maxit=250,normalize=F,
 
 #no_cores <- detectCores() - 1
 #c1 <- makeCluster(no_cores,type='FORK')
-
+bin.sz <- 5
+idx <- sample(m,m)
+bins <- lapply(seq(bin.sz),function(i)idx[((i-1)*length(idx)/bin.sz+1):min(length(idx),i*length(idx)/bin.sz)])
 results <- list(cms=list(),all_preds=list(),targets=list(),nets=list(),times=NULL)
-alphas <- c(1e-4,5e-3)
+alphas <- c(1e-4)
 betas <- c(0.001)
-layers <- list(c(256),c(256,256),c(1024))
-for (beta in betas){
-  for (alpha in alphas){
-    trn.idx <- sample(m,floor(0.05*m))
-    train <- df[trn.idx,]
-    tst.idx <- sample(setdiff(seq(m),trn.idx),500)
-    test <- df[tst.idx,]
-    test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
-    #maxiter <- max(c(50,1/(8*alpha)))
-    maxiter <- 500
-    name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter,' ')
-    print(paste0('Running............................... ',name))
-    results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/random/',
-                        results=results,learnFunc = "BackpropMomentum",updateFuncParams=c(0.0025,0.001),
-                        learnFuncParams = c(alpha,beta))
+layers <- list(c(256))
+for (bin.num in seq(length(bins))){
+  for (beta in betas){
+    for (alpha in alphas){
+      
+      trn.idx <- unlist(bins[-c(bin.num)])
+      train <- df[trn.idx,]
+      tst.idx <- setdiff(seq(m),trn.idx)
+      test <- df[tst.idx,]
+      test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
+      
+      maxiter <- 120
+      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter)
+      print(paste0('Running............................... ',name))
+      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
+                          results=results,learnFunc = "BackpropMomentum",learnFuncParams = c(alpha,beta))
+    }
   }
 }
-
 
 get_vals <- function(cm){
   pos = cm[which(row.names(cm)=='1'),]
