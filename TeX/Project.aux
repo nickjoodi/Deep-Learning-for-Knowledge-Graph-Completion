@@ -16,11 +16,32 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{KosticFuso}
-\bibstyle{ieeetr}
-\bibdata{bib}
-\bibcite{KosticFuso}{1}
+\citation{Wikidata}
+\citation{BojanowskiGJM16}
+\citation{JoulinGBM16}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{1}{section.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{1}{section.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{1}{section.4}}
+\@writefile{toc}{\contentsline {paragraph}{}{1}{section*.3}}
+\@writefile{toc}{\contentsline {paragraph}{}{1}{section*.4}}
+\citation{RSNNS}
+\@writefile{lol}{\contentsline {lstlisting}{code/SparqlQuery.txt}{2}{lstlisting.-1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces SPARQL query used to obtain our raw data from Wikidata}}{2}{figure.1}}
+\newlabel{query}{{1}{2}{SPARQL query used to obtain our raw data from Wikidata}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{}{2}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{}{2}{section*.6}}
+\bibstyle{ieeetr}
+\bibdata{bib}
+\bibcite{Wikidata}{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A general look at the Neural Network architecture used for a MLP model with $k$ hidden layers with $N_{L_i}$ nodes for the $i$th layer, a common activation function $a_h(z)$ for each layer, and a final output activation function $a_{out}(z)$. We have 600 features from our input, 1 for each dimension of both entity embeddings, and we are predicting the true/false value of our 5 output predicates. Note that $l(p_1)$ is the likelihood that the predicate $p_1$ is true. }}{3}{figure.2}}
+\newlabel{MLPArch}{{2}{3}{A general look at the Neural Network architecture used for a MLP model with $k$ hidden layers with $N_{L_i}$ nodes for the $i$th layer, a common activation function $a_h(z)$ for each layer, and a final output activation function $a_{out}(z)$. We have 600 features from our input, 1 for each dimension of both entity embeddings, and we are predicting the true/false value of our 5 output predicates. Note that $l(p_1)$ is the likelihood that the predicate $p_1$ is true}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{3}{section.3}}
+\bibcite{BojanowskiGJM16}{2}
+\bibcite{JoulinGBM16}{3}
+\bibcite{RSNNS}{4}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces MSE at different iterations. The structure presents a single hidden layer with 128 nodes}}{4}{figure.3}}
+\newlabel{50_100_128.png}{{3}{4}{MSE at different iterations. The structure presents a single hidden layer with 128 nodes}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces MSE for A NN with two hidden layers with different nodes at second hidden layer.}}{4}{figure.4}}
+\newlabel{128-16_64_128.png}{{4}{4}{MSE for A NN with two hidden layers with different nodes at second hidden layer}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{4}{section.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces MSE and ROC curves for different levels of hidden layers}}{5}{figure.5}}
+\newlabel{different_layers_MSE_ROC.png}{{5}{5}{MSE and ROC curves for different levels of hidden layers}{figure.5}{}}

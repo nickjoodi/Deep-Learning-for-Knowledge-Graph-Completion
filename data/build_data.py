@@ -3,13 +3,13 @@ import pandas as pd
 import pickle
 
 # Load in the pickle files containing the word encodings and the entity map
-words = pickle.load(open('embeddings/large_set/random_init_word_vectors_clean_complete_large.pkl','rb'))
+words = pickle.load(open('embeddings/word_vectors.pkl','rb'))
 key = pickle.load(open('processed/large_set/entities_map_large.pkl','rb'))
 
 # Load in the files containing the positive and negative triplets of (entity,predicate,entity)
 converter = dict.fromkeys(range(4), lambda s: s.decode('utf-8'))
 pos = np.loadtxt(r'processed/large_set/positiveTriplets_unique_large.txt',delimiter=' ',dtype=str, converters=converter)
-neg = np.loadtxt(r'processed/negativeTriplets_more.txt',delimiter=' ',dtype=str, converters=converter)
+neg = np.loadtxt(r'processed/large_set/negativeTriplets_more_large.txt',delimiter=' ',dtype=str, converters=converter)
 
 # Make a list of the entities for looping over all of them later
 pred_key = {'P22':'isFather','P25':'isMother','P26':'isSpouse','P3373':'isSibling','P40':'isChild'}
@@ -62,7 +62,7 @@ def build_rows(entity):
     pairs = []
     rows = []
     bad_encodings = []
-    for each_obj in np.unique(temp_pos[:,2]):        
+    for each_obj in np.concatenate([np.unique(temp_pos[:,2]),np.unique(temp_neg[:,2])]):        
         try:
             obj_encode = encode_entity(each_obj)
             
@@ -108,7 +108,8 @@ for entity in entities:
         [bad_encodings.append(x) for x in rows['bad_encodings']]
     except:
         print ('Entity: '+entity+ ' failed!')
-        bad_encodings.append(entity)    
+        bad_encodings.append(entity)
+        
 bad_encodings = np.unique(np.array(bad_encodings))
 
 # Save the data to a file
