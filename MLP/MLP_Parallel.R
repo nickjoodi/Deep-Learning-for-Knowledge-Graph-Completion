@@ -108,9 +108,9 @@ for (bin.num in seq(length(bins))){
       test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
       
       maxiter <- 120
-      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' iter=',maxiter)
+      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' bin=',bin.num)
       print(paste0('Running............................... ',name))
-      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/grid/',
+      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/cv/',
                           results=results,learnFunc = "BackpropMomentum",learnFuncParams = c(alpha,beta))
     }
   }
@@ -162,6 +162,7 @@ for (i in seq(length(results$targets))){
 }
 
 #stopCluster(c1)
+save.image('plots/cv/MLP_cv.rda')
 save.image('plots/grid/MLP_grid.rda')
 save.image('plots/random/MLP_random.rda')
 
