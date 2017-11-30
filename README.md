@@ -52,5 +52,6 @@ Below is a list of the contents of the repository. Please update when you commit
 ### 	ntn/ ~ A directory containing the code for the ntn model
 		ntn.py:  			        A tensor flow 1.3 implementation of the neural tensor network over a 
 							subset of the wikidata knowledge graph
-		img/:				        Evaluation metrics of the ntn model - ROC curve, Max - Margin Loss with respect to 							   the iteration, TSNE plots of the word vectors before and after training the model
+		img/:				        Evaluation metrics of the ntn model - ROC curve, Max - Margin Loss with respect to
+							the iteration, TSNE plots of the word vectors before and after training the model
 
