@@ -22,13 +22,27 @@ preds = {'P26':'spouse',
     'P22':'father',
     'P25':'mother',
     'P3373':'sibling'}
-    
+
 # Implementation of the Neural tensor network in tensorflow 1.3
 # Used the following works to develop the architecture:
 # Original code provided by the authors of the NTN: http://www-nlp.stanford.edu/~socherr/codeDeepDB.zip
 # A python implementation using numpy and Scipy: https://github.com/siddharth-agrawal/Neural-Tensor-Network
 # An implementation in Tensorflow 0.5.0: https://github.com/dddoss/tensorflow-socher-ntn
 # The original article: https://nlp.stanford.edu/~socherr/SocherChenManningNg_NIPS2013.pdf
+
+
+def plot_with_labels_for_TSNE(low_dim_embs, labels, filename='img/tsne_words_init.png'):
+    plt.figure(figsize=(18, 18)) 
+    for i, label in enumerate(labels):
+        x, y = low_dim_embs[i, :]
+        plt.scatter(x, y)
+        plt.annotate(label,
+                 xy=(x, y),
+                 xytext=(5, 2),
+                 textcoords='offset points',
+                 ha='right',
+                 va='bottom')
+    plt.savefig(filename)
 
 def load_word_vecs():
     f = open(r"../data/embeddings/large_set/random_init_word_vectors_clean_complete_large.pkl", "rb") 
@@ -107,7 +121,31 @@ indexed_dev_data = index_testing_data(dev_data,entity_dic,pred_dic)
 indexed_test_data = index_testing_data(testing_data,entity_dic,pred_dic)
 indexed_train_data = index_testing_data(training_data,entity_dic,pred_dic)
 
-num_iters = 200
+word_vectos_init = np.array(indexed_word_vecs)
+embedding_init = np.array([])
+words_init = [None] * len(words_dic)
+for k,v in words_dic.items():
+    words_init[v] = k
+word_vectos_init = word_vectos_init[:500,:]
+words_init = words_init[:500]
+
+
+
+
+
+embedding_init = np.array(word_vectos_init)
+limit=500
+vector_dim = 300
+
+embedding_init = embedding_init.reshape(limit, vector_dim)
+print('TSNE')
+tsne = TSNE(perplexity=30.0, n_components=2, init='pca', n_iter=5000)
+
+low_dim_embedding_init = tsne.fit_transform(embedding_init)
+print('Plot semantic space')
+plot_with_labels_for_TSNE(low_dim_embedding_init, words_init)
+
+num_iters = 1500
 batch_size=10000
 corrupt_size = 10
 slice_size = 3
@@ -117,7 +155,7 @@ embedding_size = 300
 reg = 0.0001
 
 def calculate_loss(predictions):
-    max_with_margin_sum =tf.reduce_sum(tf.maximum(tf.subtract(predictions[1, :], predictions[0, :]) + 1, 0))
+    max_with_margin_sum =tf.reduce_sum(tf.maximum(tf.subtract( predictions[0, :],predictions[1, :]) + 1, 0))
     l2 = tf.sqrt(sum([tf.reduce_sum(tf.square(var)) for var in tf.trainable_variables()]))
     return max_with_margin_sum + (reg * l2)
 
@@ -166,7 +204,7 @@ def compute_ideal_thresholds(min_score, max_score, predictions_list, dev_labels,
     increment = 0.01
     while(score <= max_score):
         for i in range(num_preds):
-            predictions = (predictions_list[i] > score) * 2 - 1
+            predictions = (predictions_list[i] <= score) * 2 - 1
             accuracy = np.mean((predictions == dev_labels[i]))
             if(accuracy > best_accuracies[i, 0]):
                 best_accuracies[i, 0] = accuracy
@@ -178,7 +216,7 @@ def classify(predictions_list,best_thresholds):
     classifications = [[] for i in range(num_preds)]
     for i in range(num_preds):
         for test_score in predictions_list[i]:
-            if(test_score > best_thresholds[i, 0]):
+            if(test_score <= best_thresholds[i, 0]):
                 classifications[i].append(1)
             else:
                 classifications[i].append(-1)
@@ -263,11 +301,15 @@ with g.as_default():
         
         init = tf.global_variables_initializer()
         sess.run(init)
-        saver = tf.train.Saver()
+        # saver = tf.train.Saver()
+        # reg_list = [0.00007,0.00008,0.00009,0.0001,0.00011,0.00012,0.00013]
+        # list_of_lost_list = [None]*len(num_iters)
+        # for j in range(len(reg_list)):
+        #     reg = reg_list[j]
         iter_list = []
         loss_list = []
         print('Begin training...')
-        for i in range(1, num_iters):
+        for i in range(0, num_iters):
             print(str(datetime.datetime.now())+" - iteration "+str(i))
             data_batch = get_batch(indexed_data)
             pred_batches = distribute_batch(data_batch)
@@ -276,6 +318,8 @@ with g.as_default():
             iter_list.append(i)
             loss_list.append(iter_loss)
             print('loss at current iteration = ' )
+            # if i==num_iters:
+            #     list_of_lost_list.append(loss_list)
             print(iter_loss)
         print('Calculate thresholds for each predicate')
         dev_batch,dev_labels = distribute_testing_data( indexed_dev_data )
@@ -290,7 +334,10 @@ with g.as_default():
         print('Perform predictions')
         min_score, max_score, predictions_list = sess.run(predictions, feed_dict=feed_testing_dict)
         classifications = classify(predictions_list,best_thresholds)
+        print('test_labels')
         print(test_labels)
+        print('predictions')
+        print(predictions_list)
         for i in range(num_preds):
             accuracy = sum(1 for x,y in zip(test_labels[i],classifications[i]) if x == y) / len(test_labels[i])
             print('pred')
@@ -300,8 +347,10 @@ with g.as_default():
         flattened_predictions = np.concatenate(predictions_list).ravel()
         flattened_classifications = np.concatenate(classifications).ravel()
 
+        # Since Socher is using all predictions below the threshold as a true label, 
+        # I need to invert the label
         print('plot ROC')
-        fpr, tpr , _ = metrics.roc_curve(flattened_test_labels, flattened_predictions, pos_label=1)
+        fpr, tpr , _ = metrics.roc_curve(flattened_test_labels, flattened_predictions, pos_label=-1)
         aucROC = metrics.auc(fpr, tpr)
         print('auc')
         print(aucROC)
@@ -351,7 +400,7 @@ with g.as_default():
 
         low_dim_embedding = tsne.fit_transform(embedding)
         print('Plot semantic space')
-        plot_with_labels(low_dim_embedding, words)
+        plot_with_labels_for_TSNE(low_dim_embedding, words)
 
         print('Plot loss per iteration')
         fig = plt.figure()
