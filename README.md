@@ -41,5 +41,11 @@ Below is a list of the contents of the repository. Please update when you commit
 ### 	MLP/ ~ A directory containing the code for the MLP model
 		MLP.ipynb:  			A Jupyter Notebook for building the MLP model (not functional yet)
 		RunMLP.r:				Running MLP on R using RSNNS package
-		MLP.rda:				The stored data (like .pkl) for runMLP. Not needed to use the script						
+		MLP.rda:				The stored data (like .pkl) for runMLP. Not needed to use the script	
+
+### 	ntn/ ~ A directory containing the code for the ntn model
+		ntn.py:  			        A tensor flow 1.3 implementation of the neural tensor network over a 
+							subset of the wikidata knowledge graph
+		img/:				        Evaluation metrics of the ntn model - ROC curve, Max - Margin Loss with respect to 							   the iteration, TSNE plots of the word vectors before and after training the model
+		MLP.rda:				The stored data (like .pkl) for runMLP. Not needed to use the script	
 
