@@ -11,4 +11,4 @@ WHERE {
    ?human wdt:P25 ?mother .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
-LIMIT 10000
+LIMIT 100000
