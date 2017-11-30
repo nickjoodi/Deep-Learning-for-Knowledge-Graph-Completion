@@ -4,7 +4,6 @@ library(dplyr)
 
 df <- read.csv('../data/EncodedDataLrg.csv',stringsAsFactors=F)
 df.save <- df
-negs <- read.table('../data/processed/large_set/negativeTriplets_more_large.txt',stringsAsFactors=F,sep=' ')
 m = dim(df)[1]
 n = dim(df)[2]
 

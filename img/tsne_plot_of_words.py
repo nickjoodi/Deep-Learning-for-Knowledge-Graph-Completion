@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 from gensim.models import KeyedVectors
 import numpy as np
 
-with open(r"word_vectors.pkl", "rb") as input_file:
+with open(r"../data/embeddings/random_init_word_vectors_clean_complete.pkl", "rb") as input_file:
     e = pickle.load(input_file)
 
     print(e['the'])
 
-def plot_with_labels(low_dim_embs, labels, filename='tsne_words.png'):
+def plot_with_labels(low_dim_embs, labels, filename='tsne_words_random.png'):
     plt.figure(figsize=(18, 18)) 
     for i, label in enumerate(labels):
         x, y = low_dim_embs[i, :]
