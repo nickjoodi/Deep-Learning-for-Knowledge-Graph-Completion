@@ -1,7 +1,9 @@
 # Deep-Learning-for-Knowledge-Graph-Completion
 
+For this project, we took Deep Learning approaches to knowledge graph completion. Rather than using one of the standard knoweldge bases that many literary articles reference, we decided to apply our models on a subset of the Wikidata knowledge base. We built two models with differing architectures : the neural tensor network and the multi layered perceptron.
 
 Below is a list of the contents of the repository. Please update when you commit.
+
 ###  data/ ~ Contains all the data we've built for this project. 
 		EncodedData.csv:		The Main data, already encoded with entity embeddings, and 
 						associated outputs. Of the form 
