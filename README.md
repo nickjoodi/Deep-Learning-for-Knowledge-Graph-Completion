@@ -17,12 +17,16 @@ Below is a list of the contents of the repository. Please update when you commit
 		wikiData.txt:			The result of the above query on WikiData
 		wikiData.csv:			Same as wikiData.txt but in .csv format
 		wikiData.py:			A python script used to generate much of processed/
+		wikiData_Large.txt              A more realistic size data set to train the models. 10 times more
+						data being pulled
 
 ### 	data/embeddings/ ~ A directory of word/entity embeddings and their scripts
 		entity_embeddings.pkl:  	A dictionary of entity embeddings
 		word_vectors.pkl:		A dictionary of word embeddings
 		word_embeddings.py:		Script for generating word_vectors.pkl
 		bad_entities.py:		A list of entities with no encoding 
+		large_set/:                     A folder containing a more realistic size data set to train the models. 10 times more
+						data being pulled
 
 ###		data/processed/ ~ A directory of processed versions of the data in raw/
 		entities_map.pkl:		A dictionary that maps entity labels to their full names
@@ -32,6 +36,8 @@ Below is a list of the contents of the repository. Please update when you commit
 		predicates.txt: 		A list of the 5 predicates used for this project
 		unique.txt: 			A list of the unique elements of vocab.txt
 		vocab.txt: 			All words used throughout the entities.txt file
+		large_set/:                     A folder containing a more realistic size data set to train the models. 10 times more
+						data being pulled
 
 ### 	TeX/ ~ A directory containing the TeX for our report
 		Project.TeX:  			The main TeX document. I have a standard pre-amble I've been building 
