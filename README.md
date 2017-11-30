@@ -55,3 +55,8 @@ Below is a list of the contents of the repository. Please update when you commit
 		img/:				        Evaluation metrics of the ntn model - ROC curve, Max - Margin Loss with respect to
 							the iteration, TSNE plots of the word vectors before and after training the model
 
+### 	img/ ~ A directory containing a TSNE plot for the word embeddings pulled from a pretrained model using fastext
+		We decided to not use the pretrained word embeddings due to a decent sized portio of words contained in the entities
+		missing from the model. Additionally, some entities in the Wikidata knowledge graph had no words associated to them, just 
+		identifiers
+
