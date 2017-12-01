@@ -1,8 +1,8 @@
-library(parallel)
+#library(parallel)
 library(RSNNS)
 library(dplyr)
 
-df <- read.csv('../data/EncodedDataLrg.csv',stringsAsFactors=F)
+df <- read.csv('../data/EncodedDataRandomLrg.csv',stringsAsFactors=F)
 df.save <- df
 m = dim(df)[1]
 n = dim(df)[2]
@@ -107,13 +107,15 @@ for (bin.num in seq(length(bins))){
       test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
       
       maxiter <- 120
-      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' bin.num=',bin.num)
+      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' bin.num=',bin.num,' ')
       print(paste0('Running............................... ',name))
-      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/cv/',
+      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/cv/rand/',
                           results=results,learnFunc = "BackpropMomentum",learnFuncParams = c(alpha,beta))
     }
   }
 }
+
+save.image('plots/cv/rand/MLP_cv_rand.rda')
 
 z <- function(x){
   if (length(x)==0)
