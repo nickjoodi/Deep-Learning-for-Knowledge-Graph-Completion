@@ -1,17 +1,18 @@
-import sklearn as sk 
-import scipy as sci 
 import numpy as np 
 import pandas as pd
 import pickle
 
 # Load in the pickle files containing the word encodings and the entity map
 words = pickle.load(open('embeddings/word_vectors.pkl','rb'))
-key = pickle.load(open('processed/entities_map.pkl','rb'))
+key = pickle.load(open('processed/large_set/entities_map_large.pkl','rb'))
 
 # Load in the files containing the positive and negative triplets of (entity,predicate,entity)
 converter = dict.fromkeys(range(4), lambda s: s.decode('utf-8'))
-pos = np.loadtxt(r'processed/positiveTriplets.txt',delimiter=' ',dtype=str, converters=converter)
-neg = np.loadtxt(r'processed/negativeTriplets.txt',delimiter=' ',dtype=str, converters=converter)
+pos = np.loadtxt(r'processed/large_set/positiveTriplets_unique_large.txt',delimiter=' ',dtype=str, converters=converter)
+neg = np.loadtxt(r'processed/large_set/negativeTriplets_more_large.txt',delimiter=' ',dtype=str, converters=converter)
+
+# Make a list of the entities for looping over all of them later
+pred_key = {'P22':'isFather','P25':'isMother','P26':'isSpouse','P3373':'isSibling','P40':'isChild'}
 
 # Make a list of the entities for looping over all of them later
 entities = np.unique(pos[:,0])
@@ -61,7 +62,7 @@ def build_rows(entity):
     pairs = []
     rows = []
     bad_encodings = []
-    for each_obj in np.unique(temp_pos[:,2]):        
+    for each_obj in np.concatenate([np.unique(temp_pos[:,2]),np.unique(temp_neg[:,2])]):        
         try:
             obj_encode = encode_entity(each_obj)
             
@@ -90,32 +91,35 @@ def build_rows(entity):
     rows = np.array(rows)
     pairs = np.array(pairs)
     if rows.shape[0] == 0:
-        return(np.NaN)
+        return({'df':np.NaN,'bad_encodings':np.NaN})
     df = pd.concat([pd.DataFrame(pairs),pd.DataFrame(rows)],ignore_index=True,axis=1)
     col_names = ['EntityA','EntityB']+['a'+str(x) for x in range(300)]+['b'+str(x) for x in range(300)]+['p'+str(x) for x in range(5)]
     df.columns = col_names
     return({'df':df,'bad_encodings':bad_encodings})
+
 
 # Running build_rows on all the entities to generate the main dataset
 all_rows = pd.DataFrame([])
 bad_encodings = []
 for entity in entities:
     rows = build_rows(entity)
-    if all(rows['df'] != np.NaN):
+    try:
         all_rows = pd.concat([all_rows,rows['df']])
         [bad_encodings.append(x) for x in rows['bad_encodings']]
-    else:
+    except:
         print ('Entity: '+entity+ ' failed!')
         bad_encodings.append(entity)
+        
 bad_encodings = np.unique(np.array(bad_encodings))
 
 # Save the data to a file
-all_rows.to_csv('EncodedData.csv',index=False)
+all_rows.to_csv('EncodedDataLrg.csv',index=False)
 
 # Encode all entities and save as pickle file for future use
 Encoded = {entity:encode_entity(entity) for entity in entities}
-pickle.dump( Encoded, open( "embeddings/entity_embeddings.pkl", "wb" ) )
-
+pickle.dump( Encoded, open( "embeddings/entity_embeddings_lrg.pkl", "wb" ) )
 # Save the entities that had no encoding 
-pickle.dump( bad_encodings, open( "embeddings/bad_entities.pkl", "wb") )
+pickle.dump( bad_encodings, open( "embeddings/bad_entities_lrg.pkl", "wb") )
+
+
 
