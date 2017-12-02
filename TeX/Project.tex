@@ -93,7 +93,17 @@
 
 \section{Introduction}
 
+\paragraph{} With the advent of Google's knowledge Graph, Wikidata, Freebase, and many others, the representation of data in the form of a knowledge base or ontology is affecting our lives everyday. Data in this format has been used to power advanced reasoning systems, chat bots, and in general, Artificial Intelligence. However, these knowledge bases are many times incomplete. To counter this, knowledge graph completion has been researched extensively over recent years. 
 
+\paragraph{} Knowledge graph completion is the act of inferring new "facts" over an existing knowledge base. To represent a knowledge base as a knowledge graph, one can treat the concepts/entities/objects within the knowledge base as nodes, and the relations/predicates between these concepts as edges. After applying this conversion, the knowledge will be a large interlinking web of objects relating to one another, I.e a knowledge graph. A fact, in this case, is an instance in a knowledge graph where two objects are linked by a predicate. The common notation for this fact, or triplet, is the following:  (s,p,o) where s and o are nodes in the graph, and p is the edge. Given two objects, knowledge graph completion gives us the ability to predict, with a measurable certainty, whether or not a triplet exists.
+
+\paragraph{} There have been a variety of techniques used to perform knowledge graph completion: translation, logically based, and deep learning techniques. This paper will focus on applying deep learning to this problem domain. The two neural network architectures that we will apply are the neural tensor network and the multi layered perceptron. 
+
+\paragraph{} The neural tensor network, introduced by Socher et. al, has been shown to provide intriguing results. Since its emergence, it has been used as a baseline to evaluate the newer architectures in the field. This model incorporates a tensor layer in addition to the standard components of a neural network, to express the relationship between two entities. More over, this work also incorporated the useful approach in representing each entity as a composition of its word embeddings. They've shown, that using pretrained word embeddings enhances the performance of the overall model.
+
+\paragraph{}Conversely, a more standard, simpler approach to this problem is the use of a multi layered perceptron. [citation] has shown comparable results to the more computationally intensive neural tensor network.
+
+\paragraph{}This paper has the following outline. In the next section, we will cover the methods and assumptions that we used to build and trained our models, followed by a section describing our results, then a discussion, and then a conclusion to summarize as well as state potential future work.
 
 \section{Methods}
 \subsection*{Multilayer Perceptron Model (MLP)}
@@ -154,7 +164,7 @@ Weighted SSE by number of iterations of the training and tetsing sets in additio
 
 \section{Results}
 
-In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_128.png}). We can notice that under 100 iterations, the trainin error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.\par
+In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_128.png}). We can notice that under 100 iterations, the training error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.\par
  
 
 \begin{figure}[h!]

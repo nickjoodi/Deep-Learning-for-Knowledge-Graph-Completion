@@ -1,10 +1,9 @@
-library(parallel)
+#library(parallel)
 library(RSNNS)
 library(dplyr)
 
-df <- read.csv('../data/EncodedDataLrg.csv',stringsAsFactors=F)
+df <- read.csv('../data/EncodedDataRandomLrg.csv',stringsAsFactors=F)
 df.save <- df
-negs <- read.table('../data/processed/large_set/negativeTriplets_more_large.txt',stringsAsFactors=F,sep=' ')
 m = dim(df)[1]
 n = dim(df)[2]
 
@@ -108,26 +107,34 @@ for (bin.num in seq(length(bins))){
       test[,(n-4):n] <- apply(test[,(n-4):n],2,function(x)sapply(x,function(y)max(c(y,0))))
       
       maxiter <- 120
-      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' bin=',bin.num)
+      name <- paste0('StdNormMomentum a=',alpha,' b=',beta, ' bin.num=',bin.num,' ')
       print(paste0('Running............................... ',name))
-      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/cv/',
+      results<-Train.Plot(train=train,test=test,name=name,layers=layers,normalize=T, maxit=maxiter,outdir='plots/cv/rand/',
                           results=results,learnFunc = "BackpropMomentum",learnFuncParams = c(alpha,beta))
     }
   }
 }
 
+save.image('plots/cv/rand/MLP_cv_rand.rda')
+
+z <- function(x){
+  if (length(x)==0)
+    return(NA)
+  return(x)
+}
+
 get_vals <- function(cm){
-  pos = cm[which(row.names(cm)=='1'),]
-  sens = pos[which(names(pos)=='1')]/sum(pos,na.rm=T)
+  pos  = cm[which(row.names(cm)=='1'),]
+  sens = z(pos[which(names(pos)=='1')]/sum(pos,na.rm=T))
   
-  neg = cm[which(row.names(cm)=='0'),]
-  spec = neg[which(names(neg)=='0')]/sum(neg,na.rm=T)
+  neg  = cm[which(row.names(cm)=='0'),]
+  spec = z(neg[which(names(neg)=='0')]/sum(neg,na.rm=T))
   
-  pos = t(cm)[which(row.names(t(cm))=='1'),]
-  prec = pos[which(names(pos)=='1')]/sum(pos,na.rm=T)
+  pos  = t(cm)[which(row.names(t(cm))=='1'),]
+  prec = z(pos[which(names(pos)=='1')]/sum(pos,na.rm=T))
   
-  neg = t(cm)[which(row.names(t(cm))=='0'),]
-  recall = neg[which(names(neg)=='0')]/sum(neg,na.rm=T)
+  neg    = t(cm)[which(row.names(t(cm))=='0'),]
+  recall = z(neg[which(names(neg)=='0')]/sum(neg,na.rm=T))
   
   out = data.frame(fallout=1-spec,sensitivity=sens,precision=prec,recall=sens,stringsAsFactors=F)
   return(out)
@@ -166,4 +173,32 @@ save.image('plots/cv/MLP_cv.rda')
 save.image('plots/grid/MLP_grid.rda')
 save.image('plots/random/MLP_random.rda')
 
+
+
+
+re.predict <- function(nn,test,name,thresh=0.5){
+  
+  gd     <- which(apply(test,1,function(x)sum(is.na(x)))==0)
+  
+  preds <- predict(nn,test[gd,-c(1,2,(n-4):n)])
+  preds[preds> thresh] <- 1
+  preds[preds<=thresh] <- 0
+  acc <- get_acc(preds,test,gd)
+  print(paste0('Accuracy for ',paste0(name,': ',round(mean(t(acc),na.rm=T),3)*100,' %' )))
+  
+  # Store the confusion matrix
+  cms <- list()
+  for (i in 1:5){
+    each.col <- paste0('p',0:4)[i]
+    cm <- confusionMatrix(predictions=preds[,i],targets=test[gd,each.col])
+    cms <- append(cms,list(cm))
+    names(cms)[length(cms)] <- paste0(name,' col: ',pred.key$val[which(pred.key$key==each.col)])
+  }
+  cms <- append(cms,list(confusionMatrix(predictions=preds,apply(test[gd,(n-4):n],2,as.numeric))))
+  names(cms)[length(cms)] <- paste0(name,' col: All')
+  cms <- append(cms,list(get_acc(preds,test,gd)))
+  names(cms)[length(cms)] <- paste0(name,' col: Accuracy')
+  
+  return(list(cms=cms,preds=preds))
+}
 
