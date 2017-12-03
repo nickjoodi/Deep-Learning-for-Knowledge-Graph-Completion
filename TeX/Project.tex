@@ -223,6 +223,26 @@ This decision is confirmed comparing their ROC curves for each NN structure  (Fi
     \label{MSE_ROC}
 \end{figure}
 
+
+\paragraph{} Another aspect of our MLP is its accuracy. For a structure of 256/64/16 the model reveals a better accuracy determining the relation of the parents "Is Mother" and "Is Father". On  the other hand, the relation of "Is Sibling" and  "Is Child" are our lest accurate relation predictions (Table).
+
+\begin{table}[h!]
+\centering
+\caption{Accuracy of MLP model for a structure with 156/64/16 nodes}
+\label{MLP-accuracy}
+\begin{tabular}{lllll}
+\textbf{Is Father}        & \textbf{Is Mother}        & \textbf{Is Spouse}        & \textbf{Is Sibling}       & \textbf{Is child}         \\
+\multicolumn{1}{c}{0.905} & \multicolumn{1}{c}{0.913} & \multicolumn{1}{c}{0.883} & \multicolumn{1}{c}{0.666} & \multicolumn{1}{c}{0.673} \\
+ 
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
 \subsection{NTN}
 \paragraph{} When training the NTN, the embedding size was set to 300 to be inline with the FastText pretrained embedding size, corruption size set to 10, tensor layer slice size set to 3, L2 regularization set to .0001, and the number of iterations set to 1500 with a batch size of 10000. We cross validated over a development set to determine the threshold for each relation network. 
 
