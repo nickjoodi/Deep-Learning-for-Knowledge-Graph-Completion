@@ -17,6 +17,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 import unicodecsv as csv
+import time
 
 preds = {'P26':'spouse',
     'P40':'child',
@@ -231,7 +232,7 @@ low_dim_embedding_init = tsne.fit_transform(embedding_init)
 print('Plot semantic space')
 plot_with_labels_for_TSNE(low_dim_embedding_init, words_init, "img/tsne_words_init.png")
 
-num_iters = 2 
+num_iters = 1000 
 batch_size=10000
 corrupt_size = 10
 slice_size = 4
@@ -410,6 +411,7 @@ with g.as_default():
         iter_list = []
         loss_list = []
         print('Begin training...')
+        start = time.time()
         with open('tSNE.csv', 'wb') as csvfile:
             filewriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
@@ -426,6 +428,9 @@ with g.as_default():
                 loss_list.append(iter_loss)
                 print('loss at current iteration = ' )
                 print(iter_loss)
+        end = time.time()
+        print('elapsed time: ')
+        print(end - start)
         print('Calculate thresholds for each predicate')
         dev_batch,dev_labels = distribute_testing_data( indexed_dev_data )
         feed_dev_dict = fill_dev_feed_dict(dev_batch, test_batch_placeholders)
