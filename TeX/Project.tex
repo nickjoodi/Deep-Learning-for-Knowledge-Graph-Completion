@@ -260,15 +260,19 @@ This decision is confirmed comparing their ROC curves for each NN structure  (Fi
 
 \section{Discussion}
 
-\paragraph{} The implementation of NTN in TensorFlow is relatively lightweight and provides a high true positive to false positive rate. While the accuracy is not as high as anticipated, there are several ways we could improve this. Due to the limiting nature of our pretrained model which contributed to losing over 2300 embeddings , our best improvement would most likely come from enhancing our pretraining. Unintuitively, our pretraining was a limiting factor, and the quality of the pretrained model imposed a distinct disadvantage to random initialization. This demonstrates the effectiveness of poor pretraining. 
+\subsection{Implementation and Training}
+\paragraph{} The relative simplicity of an MLP implementation is attractive compared to the complexity of an NTN. In an MLP implementation, adjusting hyperparameters is simple and ease of training allows for quick reevaluations. Furthermore, the training time was significant between the two; the MLP model converges in a few hundred iterations and trained in about 1.5 hours as compared to the NTN which required thousands of iterations to converge. This is expected as an NTN requires tuning weights for word embeddings, hidden layers, regularization terms, and linear transformations where as the MLP model only adjusts a single hidden layer with constant hyper parameters.
+
+\paragraph{}The cost of NTN training was significantly more than MLP; this permitted exploring more hyper parameters, test more hidden layer architectures, various activation functions, and backpropagation routines. Improving the training costs for NTN would provide potential improvements by finding more optimal hyperparameters and architectural design features. While the training time favors MLP, the results demonstrated that this training time was worthwhile.
+
+\subsection{Precision and Pretrained Embeddings}
+\paragraph{} The NTN model, implemented in  TensorFlow, provides a high true positive to false positive rate. While the accuracy is not as high as anticipated, there are several ways we could improve this. Due to consistency issues between the pretrained and data embeddings (duplicates and misspellings), our NTN trained on 2300 less embeddings and had lower accuracy than random embeddings. We can likely improve our loss by improving the consistency of our data and pretrained embeddings. Our pretraining was likely a limiting factor, and the quality of the pretrained model imposed a distinct disadvantage to random initialization. This demonstrates the effectiveness of good pretraining.
+
+\paragraph{} MLP with random initialized word embeddings performed worse than NTN with random initialized word embeddings. However MLP was more robust initially to bad pretrained embeddings and improved by almost 10\% accuracy. 
 
 \paragraph{} While negative triplets prove to be an effective tool there was a lack of consistent symmetry in our data. Providing a completed set of complementary relationships could provide better validation results. However, enforcing strict symmetry throughout a knowledge base is extremely unrealistic and won't provide a significant enough improvement for low relational entities.
 
-
-
-\section{Future Work}
-
-
+\paragraph{} In our analysis of both MLP and NTN we can deduct reasons for choosing each of the models. When training time is of concern and design iterations need to happen more frequently, MLP can be a better solution. However, NTN demonstrated better precision at a cost of training time.
 
 \bibliographystyle{ieeetr}
 \bibliography{bib}{}
