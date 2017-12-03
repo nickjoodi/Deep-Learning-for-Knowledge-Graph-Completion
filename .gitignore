@@ -1,6 +1,7 @@
 # Ignore the giant data files, they must be built on the fly
 data/*.csv
-data/**/*.pkl
+data/embeddings/*.pkl
+
 
 # Ignore .ipynb checkpoints
 .ipynb_checkpoints/
