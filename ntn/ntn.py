@@ -16,7 +16,7 @@ import random
 from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
-import csv
+import unicodecsv as csv
 
 preds = {'P26':'spouse',
     'P40':'child',
@@ -410,7 +410,7 @@ with g.as_default():
         iter_list = []
         loss_list = []
         print('Begin training...')
-        with open('tSNE.csv', 'w') as csvfile:
+        with open('tSNE.csv', 'wb') as csvfile:
             filewriter = csv.writer(csvfile, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
             for i in range(0, num_iters):

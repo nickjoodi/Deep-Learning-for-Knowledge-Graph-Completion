@@ -1,5 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{nickel2016review}
+M.~Nickel, K.~Murphy, V.~Tresp, and E.~Gabrilovich, ``A review of relational
+  machine learning for knowledge graphs,'' {\em Proceedings of the IEEE},
+  vol.~104, no.~1, pp.~11--33, 2016.
+
+\bibitem{socher2013reasoning}
+R.~Socher, D.~Chen, C.~D. Manning, and A.~Ng, ``Reasoning with neural tensor
+  networks for knowledge base completion,'' in {\em Advances in neural
+  information processing systems}, pp.~926--934, 2013.
+
+\bibitem{RSNNS}
+C.~Bergmeir and J.~M. Ben\'itez, ``Neural networks in {R} using the stuttgart
+  neural network simulator: {RSNNS},'' {\em Journal of Statistical Software},
+  vol.~46, no.~7, pp.~1--26, 2012.
+
 \bibitem{Wikidata}
 ``Wikidata knowledge base (main page).''
   \url{https://www.wikidata.org/wiki/Wikidata:Main_Page}.
@@ -12,10 +27,5 @@ P.~Bojanowski, E.~Grave, A.~Joulin, and T.~Mikolov, ``Enriching word vectors
 \bibitem{JoulinGBM16}
 A.~Joulin, E.~Grave, P.~Bojanowski, and T.~Mikolov, ``Bag of tricks for
   efficient text classification,'' {\em CoRR}, vol.~abs/1607.01759, 2016.
-
-\bibitem{RSNNS}
-C.~Bergmeir and J.~M. Ben\'itez, ``Neural networks in {R} using the stuttgart
-  neural network simulator: {RSNNS},'' {\em Journal of Statistical Software},
-  vol.~46, no.~7, pp.~1--26, 2012.
 
 \end{thebibliography}
