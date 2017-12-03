@@ -6,7 +6,8 @@ library(parallel)
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node143.html
 # Information on parameters available at
 # http://www.ra.cs.uni-tuebingen.de/SNNS/UserManual/node18.html 
-setwd('Documents/School/ECS289N/Project/Deep-Learning-for-Knowledge-Graph-Completion/MLP')
+
+##setwd('Documents/School/ECS289N/Project/Deep-Learning-for-Knowledge-Graph-Completion/MLP')
 df <- read.csv('../data/EncodedData.csv',stringsAsFactors=F)
 #load('MLP.rda')
 df.save <- df
