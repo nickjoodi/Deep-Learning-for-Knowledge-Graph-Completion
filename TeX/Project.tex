@@ -241,13 +241,13 @@ This decision is confirmed comparing their ROC curves for each NN structure.
 
 \begin{figure}[h!]
 \centerline{\includegraphics[width=1\textwidth]{report_ntn/random_init_tsne.jpg}}
-  \caption{The left tSNE plot visualizes the word embeddings at the start of training. The right tSNE plot visualizes the word embeddings at the end of training}
+  \caption{The left tSNE plot visualizes the word embeddings at the start of training. The right tSNE plot visualizes the word embeddings at the end of training. There is a noticeable clustering of the word embeddings after training the model.}
 \label{random_init_tsne.jpg}
 \end{figure}
 
 \begin{figure}[h!]
 \centerline{\includegraphics[width=1\textwidth]{report_ntn/pretrain_perf.jpg}}
-  \caption{From left to right:Contrastive Max margin loss with respect to iteration for pretrained initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve. Note: There was a significant portion of words that were missing from the pretrained FastText embedding model the more than likely impacted the results}
+  \caption{From left to right:Contrastive Max margin loss with respect to iteration for pretrained initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve. Note: There was a significant portion of words that were missing from the pretrained FastText embedding model that more than likely impacted the results}
 \label{pretrain_perf.jpg}
 \end{figure}
 
