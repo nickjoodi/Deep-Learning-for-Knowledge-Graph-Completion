@@ -56,11 +56,59 @@ def load_entities_to_words():
     f.close
     return w
 
+# this method is just to run the model on the pretrained word embeddings...
+def load_entities_to_words_pretrained(word_vecs):
+    f = open(r"../data/processed/large_set/entities_to_strings_clean_map_large.pkl", "rb") 
+    w = pickle.load(f)
+    f.close
+    new_dic = {}
+    dropped = 0
+    print(len(w))
+    total_dropped_words=0
+    total = 0
+    unique_words_missing = set()
+    for k,v in w.items():
+        temp_list = []
+        for s in v:
+            if s in word_vecs:
+                temp_list.append(s)
+            else:
+                total_dropped_words+=1
+                unique_words_missing.add(s)
+            total+=1
+        if len(temp_list) > 0:
+            new_dic[k] = temp_list
+        else:
+            dropped+=1
+    print("total dropped from entities to words: " +str(dropped))
+    print('total dropped words: ' +str(total_dropped_words))
+    print('total words: ' +str(total))
+    print("unique words missing: "+ str(len(unique_words_missing)))
+    print("size of word vector: "+ str(len(word_vecs)))
+    return new_dic
+
 
 def load_data(fname):
     f = open(fname, encoding='utf8')
     training_data = [l.split() for l in f.read().strip().split('\n')]
     return np.array(training_data)
+
+# for pretrain
+def does_not_exist(x,entity_dic):
+    if x[0] not in entity_dic or x[2] not in entity_dic:
+        return True
+    else:
+        return False
+
+# for pretrained
+def load_data_pretrained(fname,entity_dic):
+    f = open(fname, encoding='utf8')
+    training_data = [l.split() for l in f.read().strip().split('\n')]
+    new_data = [x for x in training_data if not does_not_exist(x,entity_dic)]
+    total_dropped = len(training_data) - len(new_data)
+    print('total dropped from data set: ' + str(total_dropped))
+    return np.array(new_data)
+
 
 def create_dic(file_name):
     file_object = open(file_name, 'r', encoding='utf8')
@@ -72,6 +120,21 @@ def create_dic(file_name):
         index += 1
     return dictionary
 
+# created for pretrain run
+def create_dic_entities_pretrained(file_name,entities_to_words):
+    file_object = open(file_name, 'r', encoding='utf8')
+    data = file_object.read().splitlines()
+    dictionary = {}
+    index = 0
+    dropped = 0
+    for entity in data:
+        if entity in entities_to_words:
+            dictionary[entity] = index
+            index += 1
+        else:
+            dropped+=1
+    print("total dropped from entities dic index: " + str(dropped))
+    return dictionary
 
 def create_dic_from_word_vec(word_vecs):
     words_dic ={}
@@ -82,9 +145,26 @@ def create_dic_from_word_vec(word_vecs):
     return words_dic
 
 
+
 def index_data(training_data,entity_dic,pred_dic):
     indexed_data = [(entity_dic[training_data[i][0]], pred_dic[training_data[i][1]], entity_dic[training_data[i][2]]) for i in range(len(training_data))]
     return indexed_data
+
+#created for pretrain run
+# def index_data_pretrained(training_data,entity_dic,pred_dic):
+#     indexed_data = [(entity_dic[training_data[i][0]], pred_dic[training_data[i][1]], entity_dic[training_data[i][2]]) for i in range(len(training_data))]
+#     new_indexed_data = [x for x in indexed_data if not does_not_exist(x,entity_dic)]
+#     total_dropped = len(indexed_data) - len(new_indexed_data)
+#     print('total dropped from training: ' + str(total_dropped))
+#     return new_indexed_data
+
+#created for pretrain run
+# def index_testing_data_pretrained(training_data,entity_dic,pred_dic):
+#     indexed_data = [(entity_dic[training_data[i][0]], pred_dic[training_data[i][1]], entity_dic[training_data[i][2]], float(training_data[i][3])) for i in range(len(training_data))]
+#     new_indexed_data = [x for x in indexed_data if not does_not_exist(x,entity_dic)]
+#     total_dropped = len(indexed_data) - len(new_indexed_data)
+#     print('total dropped from testin/dev: ' + str(total_dropped))
+#     return new_indexed_data
 
 def index_testing_data(training_data,entity_dic,pred_dic):
     indexed_data = [(entity_dic[training_data[i][0]], pred_dic[training_data[i][1]], entity_dic[training_data[i][2]], float(training_data[i][3])) for i in range(len(training_data))]
@@ -107,15 +187,20 @@ def create_indexed_embeds(word_vecs, entities_to_words, words_dic, entity_dic):
             indexed_entities[v].append(words_dic[s])
     return (indexed_word_vecs,indexed_entities)
 
+
+pred_dic = create_dic("../data/processed/predicates.txt")
+word_vecs = load_word_vecs()
+entities_to_words = load_entities_to_words()
+entity_dic = create_dic("../data/processed/large_set/entityIds_large.txt")
+
+# changed the following for pretrained
 training_data = load_data("../data/processed/large_set/training_large.txt")
 testing_data = load_data("../data/processed/large_set/test_large.txt")
 dev_data = load_data("../data/processed/large_set/dev_large.txt")
-pred_dic = create_dic("../data/processed/predicates.txt")
-entity_dic = create_dic("../data/processed/large_set/entityIds_large.txt")
-word_vecs = load_word_vecs()
-entities_to_words = load_entities_to_words()
+
 words_dic = create_dic_from_word_vec(word_vecs)
 indexed_word_vecs,indexed_entities  =create_indexed_embeds(word_vecs, entities_to_words, words_dic, entity_dic)
+
 indexed_data = index_data(training_data,entity_dic,pred_dic)
 indexed_dev_data = index_testing_data(dev_data,entity_dic,pred_dic)
 indexed_test_data = index_testing_data(testing_data,entity_dic,pred_dic)
@@ -143,9 +228,9 @@ tsne = TSNE(perplexity=30.0, n_components=2, init='pca', n_iter=5000)
 
 low_dim_embedding_init = tsne.fit_transform(embedding_init)
 print('Plot semantic space')
-plot_with_labels_for_TSNE(low_dim_embedding_init, words_init)
+plot_with_labels_for_TSNE(low_dim_embedding_init, words_init, "img/tsne_words_init.png")
 
-num_iters = 1500
+num_iters = 800
 batch_size=10000
 corrupt_size = 10
 slice_size = 3
@@ -360,7 +445,7 @@ with g.as_default():
         ax1.plot([0, 1], [0, 1], color='navy', linestyle='--')
         plt.xlabel("False Positive Rate")
         plt.ylabel("True Positive Rate")
-        plt.title("ROC({!s})".format('ntn'))
+        plt.title("pretrain ROC({!s})".format('ntn'))
         plt.legend(loc="lower right")
         filename = 'img/{!s}_ROC_{!s}.pdf'.format('ntn', 'all')
         plt.savefig(filename)
@@ -388,7 +473,7 @@ with g.as_default():
 
         low_dim_embedding = tsne.fit_transform(embedding)
         print('Plot semantic space')
-        plot_with_labels_for_TSNE(low_dim_embedding, words)
+        plot_with_labels_for_TSNE(low_dim_embedding, words, "img/tsne_words_ntn.png")
 
         print('Plot loss per iteration')
         fig = plt.figure()
@@ -397,7 +482,7 @@ with g.as_default():
         plt.xlabel("Iteration #")
         plt.ylabel("Loss")
         plt.title("Loss per Iteration of Training")
-        filename = 'img/_loss_.pdf'
+        filename = 'img/_loss_pretrain.pdf'
         plt.savefig(filename)
 
 
