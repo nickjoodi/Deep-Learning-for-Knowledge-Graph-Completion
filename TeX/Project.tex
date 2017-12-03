@@ -191,13 +191,13 @@ where the last 5 columns represents the truth values for each of the 5 predicate
 
 \section{Results}
 \subsection{MLP}
-\paragraph{} In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_256.png}). We can notice that under 100 iterations, the training error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.
+\paragraph{} In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{256-epoch50-100}). We can notice that under 100 iterations, the training error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.
  
 
 \begin{figure}[h!]
  \includegraphics[width=1\textwidth]{report_mlp/50_100_256.png}
-  \caption{\small MSE at different iterations. The structure presents a single hidden layer with 128 nodes}
-  \label{50_100_256.png}
+  \caption{\small MSE at different iterations. The structure presents a single hidden layer with 256 nodes}
+  \label{256-epoch50-100}
 \end{figure}
 
 
@@ -215,12 +215,12 @@ where the last 5 columns represents the truth values for each of the 5 predicate
 \paragraph{} Ths trend described above is similar for two hidden layers. For the case of just one hidden layer with 256 nodes, the error does not drop abruptly for the training set but we can see an increase in the error for after 30 iterations, aproximately.
 
 \paragraph{} These results, make us suggest that only one hidden layer is enough for our MLP model, since there is not a big improvement in the reduction of error with more layers added and with the benefit of less computational resources are required.
-This decision is confirmed comparing their ROC curves for each NN structure  (Figure \ref{different_layers_MSE_ROC_2.png}).
+This decision is confirmed comparing their ROC curves for each NN structure  (Figure \ref{MSE_ROC}).
  
 \begin{figure}[h!]
   \includegraphics[width=1\textwidth]{report_mlp/different_layers_MSE_ROC_2.png}
     \caption{\small MSE and ROC curves for different levels of hidden layers}
-    \label{different_layers_MSE_ROC_2.png}
+    \label{MSE_ROC}
 \end{figure}
 
 \subsection{NTN}
