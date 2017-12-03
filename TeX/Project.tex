@@ -260,6 +260,16 @@ This decision is confirmed comparing their ROC curves for each NN structure  (Fi
 
 \section{Discussion}
 
+The implementation of NTN in TensorFlow is relatively lightweight and provides a high true positive to false positive rate. While the accuracy is not as high as anticipated, there are several ways we could improve this. Due to the limiting nature of our pretrained model which contributed to losing over 2300 embeddings , our best improvement would most likely come from enhancing our pretraining. Unintuitively, our pretraining was a limiting factor, and the quality of the pretrained model imposed a distinct disadvantage to random initialization. This demonstrates the effectiveness of poor pretraining. 
+
+While negative triplets prove to be an effective tool there was a lack of consistent symmetry in our data. Providing a completed set of complementary relationships could provide better validation results. However, enforcing strict symmetry throughout a knowledge base is extremely unrealistic and won't provide a significant enough improvement for low relational entities.
+
+
+
+\section{Future Work}
+
+
+
 \bibliographystyle{ieeetr}
 \bibliography{bib}{}
 
