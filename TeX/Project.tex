@@ -191,36 +191,36 @@ where the last 5 columns represents the truth values for each of the 5 predicate
 
 \section{Results}
 \subsection{MLP}
-In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_128.png}). We can notice that under 100 iterations, the training error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.\par
+\paragraph{} In order to prevent overfitting in our model, we have compared our model with 100 and 50 interations (Figure \ref{50_100_256.png}). We can notice that under 100 iterations, the training error drops to a weigthed SSE of almost 500. However, our testing error, start increasing after 30 itearions aproximately. From this results, we can infer that we have reached an overfitting in our model and a smaller number of iterations are enougth. In that sense, we have run our model with 50 iterations, avoiding the increase in the SSE.
  
 
 \begin{figure}[h!]
- \includegraphics[width=1\textwidth]{report_mlp/50_100_128.png}
+ \includegraphics[width=1\textwidth]{report_mlp/50_100_256.png}
   \caption{\small MSE at different iterations. The structure presents a single hidden layer with 128 nodes}
-  \label{50_100_128.png}
+  \label{50_100_256.png}
 \end{figure}
 
 
-In a second running of the model, we have added a new hidden layer  with different number of nodes (16,64 and 128). Before 50 iterations, adding nodes to the second hidden layer, reduce the error in our model. However, after 50 iteration, the higher number of nodes, increase rapidly the overfitting  of the model. \par 
+\paragraph{} In a second running of the model, we have added a new hidden layer  with different number of nodes (16,128 and 256). Before 50 iterations, adding nodes to the second hidden layer, reduce the error in our model. However, after 50 iteration, the higher number of nodes, increase rapidly the overfitting  of the model. 
 
 
 \begin{figure}[h!]
-\includegraphics[width=1\textwidth]{report_mlp/128-16_64_128.png}
+\includegraphics[width=1\textwidth]{report_mlp/256-16_128_256.png}
   \caption{\small MSE for A NN with two hidden layers with different nodes at second hidden layer.}
-\label{128-16_64_128.png}
+\label{256-16_128_256.png}
 \end{figure}
 
-In  a following set of tests, we compared different Neural Networks structures, increasing the number of hidden layers (hidden layers/nodes: 128, 128/16 and 128/128/16).  Figure \ref{128-16_64_128.png} shows that for the model with three hidden layers the training error is not decreasing considerably before 40 iteration. Suddently, the SSE in this NN structure drops abruptaly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model. \par
+\paragraph{} In  a following set of tests, we compared different Neural Networks structures, increasing the number of hidden layers (hidden layers/nodes: 256, 256/16 and 256/64/16).  Figure \ref{256-16_128_256.png} shows that for the model with three hidden layers the training error is not decreasing considerably before 40 iteration. Suddently, the SSE in this NN structure drops abruptaly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model. 
 
-Ths trend described above is similar for two hidden layers. For the case of just one hidden layer with 128 nodes, the error does not drop abruptly for the training set but we can see an increase in the error for after 30 iterations aproximately. \par 
+\paragraph{} Ths trend described above is similar for two hidden layers. For the case of just one hidden layer with 256 nodes, the error does not drop abruptly for the training set but we can see an increase in the error for after 30 iterations, aproximately.
 
-These results, make us suggest that only one hidden layer is enough for our MLP model, since there is not a big improvement in the reduction of error with more layers added and with the benefit of less computational resources are required.
-This decision is confirmed comparing their ROC curves for each NN structure.
+\paragraph{} These results, make us suggest that only one hidden layer is enough for our MLP model, since there is not a big improvement in the reduction of error with more layers added and with the benefit of less computational resources are required.
+This decision is confirmed comparing their ROC curves for each NN structure  (Figure \ref{different_layers_MSE_ROC_2.png}).
  
 \begin{figure}[h!]
-  \includegraphics[width=1\textwidth]{report_mlp/different_layers_MSE_ROC.png}
+  \includegraphics[width=1\textwidth]{report_mlp/different_layers_MSE_ROC_2.png}
     \caption{\small MSE and ROC curves for different levels of hidden layers}
-    \label{different_layers_MSE_ROC.png}
+    \label{different_layers_MSE_ROC_2.png}
 \end{figure}
 
 \subsection{NTN}
