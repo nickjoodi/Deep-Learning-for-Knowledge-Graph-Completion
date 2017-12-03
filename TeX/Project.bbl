@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{Wikidata}
+``Wikidata knowledge base (main page).''
+  \url{https://www.wikidata.org/wiki/Wikidata:Main_Page}.
+\newblock Accessed: 2017-11-26.
+
+\bibitem{BojanowskiGJM16}
+P.~Bojanowski, E.~Grave, A.~Joulin, and T.~Mikolov, ``Enriching word vectors
+  with subword information,'' {\em CoRR}, vol.~abs/1607.04606, 2016.
+
+\bibitem{JoulinGBM16}
+A.~Joulin, E.~Grave, P.~Bojanowski, and T.~Mikolov, ``Bag of tricks for
+  efficient text classification,'' {\em CoRR}, vol.~abs/1607.01759, 2016.
+
+\bibitem{RSNNS}
+C.~Bergmeir and J.~M. Ben\'itez, ``Neural networks in {R} using the stuttgart
+  neural network simulator: {RSNNS},'' {\em Journal of Statistical Software},
+  vol.~46, no.~7, pp.~1--26, 2012.
+
+\end{thebibliography}
