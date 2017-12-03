@@ -1,0 +1,4516 @@
+2017-12-03 00:28:30.882574: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-03 00:28:30.882669: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+TSNE
+Plot semantic space
+create graph...
+Begin training...
+2017-12-03 00:35:05.304520 - iteration 0
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:36:24.845490 - iteration 1
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:37:27.184817 - iteration 2
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:38:05.280339 - iteration 3
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:38:44.147086 - iteration 4
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:39:29.704304 - iteration 5
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:40:21.559737 - iteration 6
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:41:00.266071 - iteration 7
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:41:37.845934 - iteration 8
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:42:25.241711 - iteration 9
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:43:04.018887 - iteration 10
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:43:54.523284 - iteration 11
+TSNE
+loss at current iteration = 
+100000.0
+2017-12-03 00:44:30.999766 - iteration 12
+TSNE
+loss at current iteration = 
+99967.9
+2017-12-03 00:45:09.929191 - iteration 13
+TSNE
+loss at current iteration = 
+99676.5
+2017-12-03 00:45:53.757604 - iteration 14
+TSNE
+loss at current iteration = 
+98437.0
+2017-12-03 00:46:38.796165 - iteration 15
+TSNE
+loss at current iteration = 
+96113.1
+2017-12-03 00:47:16.628889 - iteration 16
+TSNE
+loss at current iteration = 
+92286.3
+2017-12-03 00:47:59.664412 - iteration 17
+TSNE
+loss at current iteration = 
+87947.5
+2017-12-03 00:48:34.825367 - iteration 18
+TSNE
+loss at current iteration = 
+83586.2
+2017-12-03 00:49:11.922308 - iteration 19
+TSNE
+loss at current iteration = 
+79893.7
+2017-12-03 00:49:48.001544 - iteration 20
+TSNE
+loss at current iteration = 
+80231.9
+2017-12-03 00:50:20.185625 - iteration 21
+TSNE
+loss at current iteration = 
+76498.7
+2017-12-03 00:51:02.178336 - iteration 22
+TSNE
+loss at current iteration = 
+71574.2
+2017-12-03 00:51:36.809212 - iteration 23
+TSNE
+loss at current iteration = 
+71552.8
+2017-12-03 00:52:08.852849 - iteration 24
+TSNE
+loss at current iteration = 
+68952.5
+2017-12-03 00:52:44.726397 - iteration 25
+TSNE
+loss at current iteration = 
+66898.7
+2017-12-03 00:53:18.819794 - iteration 26
+TSNE
+loss at current iteration = 
+64709.2
+2017-12-03 00:53:49.942815 - iteration 27
+TSNE
+loss at current iteration = 
+61045.7
+2017-12-03 00:54:29.185349 - iteration 28
+TSNE
+loss at current iteration = 
+58505.3
+2017-12-03 00:55:01.833951 - iteration 29
+TSNE
+loss at current iteration = 
+56212.9
+2017-12-03 00:55:41.041121 - iteration 30
+TSNE
+loss at current iteration = 
+57612.0
+2017-12-03 00:56:23.280045 - iteration 31
+TSNE
+loss at current iteration = 
+52121.7
+2017-12-03 00:57:01.404567 - iteration 32
+TSNE
+loss at current iteration = 
+50145.2
+2017-12-03 00:57:36.014761 - iteration 33
+TSNE
+loss at current iteration = 
+48571.7
+2017-12-03 00:58:13.287693 - iteration 34
+TSNE
+loss at current iteration = 
+52558.5
+2017-12-03 00:58:47.364967 - iteration 35
+TSNE
+loss at current iteration = 
+46674.6
+2017-12-03 00:59:20.141733 - iteration 36
+TSNE
+loss at current iteration = 
+46599.5
+2017-12-03 01:00:01.964585 - iteration 37
+TSNE
+loss at current iteration = 
+49912.2
+2017-12-03 01:00:34.716307 - iteration 38
+TSNE
+loss at current iteration = 
+43419.1
+2017-12-03 01:01:06.846106 - iteration 39
+TSNE
+loss at current iteration = 
+42317.9
+2017-12-03 01:01:38.613284 - iteration 40
+TSNE
+loss at current iteration = 
+46940.9
+2017-12-03 01:02:16.444984 - iteration 41
+TSNE
+loss at current iteration = 
+40807.4
+2017-12-03 01:02:52.074989 - iteration 42
+TSNE
+loss at current iteration = 
+45105.2
+2017-12-03 01:03:24.465816 - iteration 43
+TSNE
+loss at current iteration = 
+44590.3
+2017-12-03 01:04:14.631421 - iteration 44
+TSNE
+loss at current iteration = 
+43225.8
+2017-12-03 01:04:50.063966 - iteration 45
+TSNE
+loss at current iteration = 
+44193.0
+2017-12-03 01:05:28.843093 - iteration 46
+TSNE
+loss at current iteration = 
+37323.7
+2017-12-03 01:06:05.870648 - iteration 47
+TSNE
+loss at current iteration = 
+39981.4
+2017-12-03 01:06:39.571917 - iteration 48
+TSNE
+loss at current iteration = 
+35418.9
+2017-12-03 01:07:11.139511 - iteration 49
+TSNE
+loss at current iteration = 
+39046.2
+2017-12-03 01:07:50.930438 - iteration 50
+TSNE
+loss at current iteration = 
+39022.1
+2017-12-03 01:08:30.033602 - iteration 51
+TSNE
+loss at current iteration = 
+35937.9
+2017-12-03 01:09:04.563852 - iteration 52
+TSNE
+loss at current iteration = 
+32967.6
+2017-12-03 01:09:38.709265 - iteration 53
+TSNE
+loss at current iteration = 
+35858.7
+2017-12-03 01:10:23.083315 - iteration 54
+TSNE
+loss at current iteration = 
+35067.8
+2017-12-03 01:10:56.816838 - iteration 55
+TSNE
+loss at current iteration = 
+34094.2
+2017-12-03 01:11:47.422206 - iteration 56
+TSNE
+loss at current iteration = 
+34146.7
+2017-12-03 01:12:22.708212 - iteration 57
+TSNE
+loss at current iteration = 
+32837.0
+2017-12-03 01:13:07.699475 - iteration 58
+TSNE
+loss at current iteration = 
+33078.3
+2017-12-03 01:13:44.072773 - iteration 59
+TSNE
+loss at current iteration = 
+31709.0
+2017-12-03 01:14:29.093236 - iteration 60
+TSNE
+loss at current iteration = 
+28663.3
+2017-12-03 01:15:14.743662 - iteration 61
+TSNE
+loss at current iteration = 
+27151.6
+2017-12-03 01:16:09.244491 - iteration 62
+TSNE
+loss at current iteration = 
+26865.3
+2017-12-03 01:16:53.183410 - iteration 63
+TSNE
+loss at current iteration = 
+25464.6
+2017-12-03 01:17:39.460006 - iteration 64
+TSNE
+loss at current iteration = 
+30145.4
+2017-12-03 01:18:16.681894 - iteration 65
+TSNE
+loss at current iteration = 
+28297.3
+2017-12-03 01:18:58.578227 - iteration 66
+TSNE
+loss at current iteration = 
+24812.3
+2017-12-03 01:19:31.726294 - iteration 67
+TSNE
+loss at current iteration = 
+23305.4
+2017-12-03 01:20:15.679820 - iteration 68
+TSNE
+loss at current iteration = 
+27194.8
+2017-12-03 01:20:49.393148 - iteration 69
+TSNE
+loss at current iteration = 
+22826.4
+2017-12-03 01:21:20.829400 - iteration 70
+TSNE
+loss at current iteration = 
+22946.2
+2017-12-03 01:22:02.561081 - iteration 71
+TSNE
+loss at current iteration = 
+25388.7
+2017-12-03 01:22:34.692706 - iteration 72
+TSNE
+loss at current iteration = 
+20935.2
+2017-12-03 01:23:15.224393 - iteration 73
+TSNE
+loss at current iteration = 
+23912.9
+2017-12-03 01:23:54.422541 - iteration 74
+TSNE
+loss at current iteration = 
+20164.8
+2017-12-03 01:24:35.316523 - iteration 75
+TSNE
+loss at current iteration = 
+19508.8
+2017-12-03 01:25:15.299462 - iteration 76
+TSNE
+loss at current iteration = 
+23153.7
+2017-12-03 01:25:49.468390 - iteration 77
+TSNE
+loss at current iteration = 
+22391.5
+2017-12-03 01:26:35.191377 - iteration 78
+TSNE
+loss at current iteration = 
+22500.2
+2017-12-03 01:27:13.748801 - iteration 79
+TSNE
+loss at current iteration = 
+21784.0
+2017-12-03 01:27:45.788115 - iteration 80
+TSNE
+loss at current iteration = 
+22404.7
+2017-12-03 01:28:20.529681 - iteration 81
+TSNE
+loss at current iteration = 
+18268.9
+2017-12-03 01:28:55.820450 - iteration 82
+TSNE
+loss at current iteration = 
+18097.0
+2017-12-03 01:29:40.709770 - iteration 83
+TSNE
+loss at current iteration = 
+17047.2
+2017-12-03 01:30:22.619055 - iteration 84
+TSNE
+loss at current iteration = 
+17012.1
+2017-12-03 01:31:17.276101 - iteration 85
+TSNE
+loss at current iteration = 
+16801.9
+2017-12-03 01:31:53.634903 - iteration 86
+TSNE
+loss at current iteration = 
+16607.7
+2017-12-03 01:32:32.478805 - iteration 87
+TSNE
+loss at current iteration = 
+19222.0
+2017-12-03 01:33:05.003544 - iteration 88
+TSNE
+loss at current iteration = 
+19017.3
+2017-12-03 01:33:42.145588 - iteration 89
+TSNE
+loss at current iteration = 
+15790.7
+2017-12-03 01:34:29.423576 - iteration 90
+TSNE
+loss at current iteration = 
+19135.8
+2017-12-03 01:35:08.592560 - iteration 91
+TSNE
+loss at current iteration = 
+18101.2
+2017-12-03 01:35:42.384948 - iteration 92
+TSNE
+loss at current iteration = 
+15167.7
+2017-12-03 01:36:12.761388 - iteration 93
+TSNE
+loss at current iteration = 
+14499.3
+2017-12-03 01:36:51.619610 - iteration 94
+TSNE
+loss at current iteration = 
+17319.0
+2017-12-03 01:37:23.852198 - iteration 95
+TSNE
+loss at current iteration = 
+16828.8
+2017-12-03 01:38:03.490864 - iteration 96
+TSNE
+loss at current iteration = 
+16952.6
+2017-12-03 01:38:39.520149 - iteration 97
+TSNE
+loss at current iteration = 
+13976.9
+2017-12-03 01:39:12.339548 - iteration 98
+TSNE
+loss at current iteration = 
+13917.5
+2017-12-03 01:39:51.001307 - iteration 99
+TSNE
+loss at current iteration = 
+15971.3
+2017-12-03 01:40:22.021705 - iteration 100
+TSNE
+loss at current iteration = 
+13193.9
+2017-12-03 01:40:51.186591 - iteration 101
+TSNE
+loss at current iteration = 
+12830.0
+2017-12-03 01:41:31.057858 - iteration 102
+TSNE
+loss at current iteration = 
+12601.0
+2017-12-03 01:42:02.377098 - iteration 103
+TSNE
+loss at current iteration = 
+12607.6
+2017-12-03 01:42:35.093509 - iteration 104
+TSNE
+loss at current iteration = 
+14908.6
+2017-12-03 01:43:20.566071 - iteration 105
+TSNE
+loss at current iteration = 
+14508.6
+2017-12-03 01:43:53.344174 - iteration 106
+TSNE
+loss at current iteration = 
+12271.8
+2017-12-03 01:44:23.821301 - iteration 107
+TSNE
+loss at current iteration = 
+11810.9
+2017-12-03 01:45:12.056777 - iteration 108
+TSNE
+loss at current iteration = 
+11606.4
+2017-12-03 01:45:51.886752 - iteration 109
+TSNE
+loss at current iteration = 
+13952.9
+2017-12-03 01:46:22.970105 - iteration 110
+TSNE
+loss at current iteration = 
+11307.8
+2017-12-03 01:46:59.190123 - iteration 111
+TSNE
+loss at current iteration = 
+11198.5
+2017-12-03 01:47:30.853194 - iteration 112
+TSNE
+loss at current iteration = 
+11021.2
+2017-12-03 01:48:07.304478 - iteration 113
+TSNE
+loss at current iteration = 
+10919.9
+2017-12-03 01:48:41.274746 - iteration 114
+TSNE
+loss at current iteration = 
+12856.0
+2017-12-03 01:49:14.305274 - iteration 115
+TSNE
+loss at current iteration = 
+10650.8
+2017-12-03 01:49:59.713191 - iteration 116
+TSNE
+loss at current iteration = 
+10814.4
+2017-12-03 01:50:32.479234 - iteration 117
+TSNE
+loss at current iteration = 
+10307.8
+2017-12-03 01:51:09.565666 - iteration 118
+TSNE
+loss at current iteration = 
+12680.0
+2017-12-03 01:51:48.827079 - iteration 119
+TSNE
+loss at current iteration = 
+10239.3
+2017-12-03 01:52:17.856560 - iteration 120
+TSNE
+loss at current iteration = 
+12771.6
+2017-12-03 01:52:54.954184 - iteration 121
+TSNE
+loss at current iteration = 
+12119.6
+2017-12-03 01:53:34.565348 - iteration 122
+TSNE
+loss at current iteration = 
+12053.5
+2017-12-03 01:54:04.014201 - iteration 123
+TSNE
+loss at current iteration = 
+9855.64
+2017-12-03 01:54:50.157660 - iteration 124
+TSNE
+loss at current iteration = 
+9763.28
+2017-12-03 01:55:25.541655 - iteration 125
+TSNE
+loss at current iteration = 
+9424.0
+2017-12-03 01:55:58.394448 - iteration 126
+TSNE
+loss at current iteration = 
+9399.11
+2017-12-03 01:56:25.439664 - iteration 127
+TSNE
+loss at current iteration = 
+11077.6
+2017-12-03 01:56:54.747665 - iteration 128
+TSNE
+loss at current iteration = 
+9121.1
+2017-12-03 01:57:24.577467 - iteration 129
+TSNE
+loss at current iteration = 
+8980.88
+2017-12-03 01:57:57.537282 - iteration 130
+TSNE
+loss at current iteration = 
+8806.32
+2017-12-03 01:58:28.305974 - iteration 131
+TSNE
+loss at current iteration = 
+10746.7
+2017-12-03 01:59:06.886326 - iteration 132
+TSNE
+loss at current iteration = 
+10592.4
+2017-12-03 01:59:36.762928 - iteration 133
+TSNE
+loss at current iteration = 
+10356.3
+2017-12-03 02:00:06.587654 - iteration 134
+TSNE
+loss at current iteration = 
+8735.27
+2017-12-03 02:00:50.163503 - iteration 135
+TSNE
+loss at current iteration = 
+8706.71
+2017-12-03 02:01:23.214815 - iteration 136
+TSNE
+loss at current iteration = 
+10336.5
+2017-12-03 02:01:55.156193 - iteration 137
+TSNE
+loss at current iteration = 
+8397.9
+2017-12-03 02:02:32.514649 - iteration 138
+TSNE
+loss at current iteration = 
+9938.71
+2017-12-03 02:03:00.817866 - iteration 139
+TSNE
+loss at current iteration = 
+8104.18
+2017-12-03 02:03:39.445182 - iteration 140
+TSNE
+loss at current iteration = 
+9810.29
+2017-12-03 02:04:18.042784 - iteration 141
+TSNE
+loss at current iteration = 
+9433.63
+2017-12-03 02:04:54.196039 - iteration 142
+TSNE
+loss at current iteration = 
+9537.97
+2017-12-03 02:05:23.224291 - iteration 143
+TSNE
+loss at current iteration = 
+9662.12
+2017-12-03 02:05:54.454774 - iteration 144
+TSNE
+loss at current iteration = 
+7796.36
+2017-12-03 02:06:33.465668 - iteration 145
+TSNE
+loss at current iteration = 
+7756.98
+2017-12-03 02:07:15.707116 - iteration 146
+TSNE
+loss at current iteration = 
+7812.46
+2017-12-03 02:08:00.982052 - iteration 147
+TSNE
+loss at current iteration = 
+9052.35
+2017-12-03 02:08:42.541904 - iteration 148
+TSNE
+loss at current iteration = 
+9474.85
+2017-12-03 02:09:21.496717 - iteration 149
+TSNE
+loss at current iteration = 
+8842.36
+2017-12-03 02:10:00.953711 - iteration 150
+TSNE
+loss at current iteration = 
+7342.63
+2017-12-03 02:10:38.997550 - iteration 151
+TSNE
+loss at current iteration = 
+8885.96
+2017-12-03 02:11:29.756107 - iteration 152
+TSNE
+loss at current iteration = 
+7384.07
+2017-12-03 02:12:13.501342 - iteration 153
+TSNE
+loss at current iteration = 
+7406.42
+2017-12-03 02:12:59.174502 - iteration 154
+TSNE
+loss at current iteration = 
+7183.51
+2017-12-03 02:13:30.823927 - iteration 155
+TSNE
+loss at current iteration = 
+7151.61
+2017-12-03 02:14:06.147096 - iteration 156
+TSNE
+loss at current iteration = 
+7025.96
+2017-12-03 02:14:39.667287 - iteration 157
+TSNE
+loss at current iteration = 
+8529.84
+2017-12-03 02:15:19.378183 - iteration 158
+TSNE
+loss at current iteration = 
+8617.24
+2017-12-03 02:15:59.769783 - iteration 159
+TSNE
+loss at current iteration = 
+7016.7
+2017-12-03 02:16:35.141055 - iteration 160
+TSNE
+loss at current iteration = 
+6981.79
+2017-12-03 02:17:12.574409 - iteration 161
+TSNE
+loss at current iteration = 
+8293.46
+2017-12-03 02:17:53.587421 - iteration 162
+TSNE
+loss at current iteration = 
+8178.52
+2017-12-03 02:18:47.078514 - iteration 163
+TSNE
+loss at current iteration = 
+8231.03
+2017-12-03 02:19:29.632912 - iteration 164
+TSNE
+loss at current iteration = 
+8167.46
+2017-12-03 02:20:05.647082 - iteration 165
+TSNE
+loss at current iteration = 
+6634.12
+2017-12-03 02:20:43.222222 - iteration 166
+TSNE
+loss at current iteration = 
+6606.2
+2017-12-03 02:21:32.686870 - iteration 167
+TSNE
+loss at current iteration = 
+6465.11
+2017-12-03 02:22:10.063719 - iteration 168
+TSNE
+loss at current iteration = 
+7825.35
+2017-12-03 02:22:46.882207 - iteration 169
+TSNE
+loss at current iteration = 
+7914.0
+2017-12-03 02:23:25.547220 - iteration 170
+TSNE
+loss at current iteration = 
+7734.53
+2017-12-03 02:23:54.154070 - iteration 171
+TSNE
+loss at current iteration = 
+7777.09
+2017-12-03 02:24:35.713936 - iteration 172
+TSNE
+loss at current iteration = 
+6266.77
+2017-12-03 02:25:21.153866 - iteration 173
+TSNE
+loss at current iteration = 
+6408.34
+2017-12-03 02:26:03.962514 - iteration 174
+TSNE
+loss at current iteration = 
+7331.95
+2017-12-03 02:26:37.176147 - iteration 175
+TSNE
+loss at current iteration = 
+6349.83
+2017-12-03 02:27:06.059855 - iteration 176
+TSNE
+loss at current iteration = 
+7335.3
+2017-12-03 02:27:38.186983 - iteration 177
+TSNE
+loss at current iteration = 
+7151.02
+2017-12-03 02:28:07.503007 - iteration 178
+TSNE
+loss at current iteration = 
+6124.22
+2017-12-03 02:28:43.577540 - iteration 179
+TSNE
+loss at current iteration = 
+7310.7
+2017-12-03 02:29:14.680529 - iteration 180
+TSNE
+loss at current iteration = 
+7242.86
+2017-12-03 02:29:56.503976 - iteration 181
+TSNE
+loss at current iteration = 
+6097.85
+2017-12-03 02:30:36.662791 - iteration 182
+TSNE
+loss at current iteration = 
+7044.45
+2017-12-03 02:31:24.740497 - iteration 183
+TSNE
+loss at current iteration = 
+7108.16
+2017-12-03 02:31:56.296170 - iteration 184
+TSNE
+loss at current iteration = 
+5975.47
+2017-12-03 02:32:38.916228 - iteration 185
+TSNE
+loss at current iteration = 
+6994.76
+2017-12-03 02:33:09.711280 - iteration 186
+TSNE
+loss at current iteration = 
+5710.78
+2017-12-03 02:33:47.907588 - iteration 187
+TSNE
+loss at current iteration = 
+6695.63
+2017-12-03 02:34:16.105087 - iteration 188
+TSNE
+loss at current iteration = 
+6914.84
+2017-12-03 02:34:45.884999 - iteration 189
+TSNE
+loss at current iteration = 
+6800.31
+2017-12-03 02:35:25.700347 - iteration 190
+TSNE
+loss at current iteration = 
+5745.28
+2017-12-03 02:35:57.122758 - iteration 191
+TSNE
+loss at current iteration = 
+5687.41
+2017-12-03 02:36:38.920007 - iteration 192
+TSNE
+loss at current iteration = 
+5565.86
+2017-12-03 02:37:17.254635 - iteration 193
+TSNE
+loss at current iteration = 
+6745.63
+2017-12-03 02:37:50.948371 - iteration 194
+TSNE
+loss at current iteration = 
+6761.06
+2017-12-03 02:38:34.611571 - iteration 195
+TSNE
+loss at current iteration = 
+5743.55
+2017-12-03 02:39:07.092385 - iteration 196
+TSNE
+loss at current iteration = 
+5416.62
+2017-12-03 02:39:59.264004 - iteration 197
+TSNE
+loss at current iteration = 
+6499.08
+2017-12-03 02:40:35.462802 - iteration 198
+TSNE
+loss at current iteration = 
+5570.87
+2017-12-03 02:41:11.425617 - iteration 199
+TSNE
+loss at current iteration = 
+6483.29
+2017-12-03 02:41:48.842184 - iteration 200
+TSNE
+loss at current iteration = 
+5468.88
+2017-12-03 02:42:15.184625 - iteration 201
+TSNE
+loss at current iteration = 
+6415.71
+2017-12-03 02:42:51.788817 - iteration 202
+TSNE
+loss at current iteration = 
+5487.53
+2017-12-03 02:43:26.023765 - iteration 203
+TSNE
+loss at current iteration = 
+6263.09
+2017-12-03 02:44:29.262332 - iteration 204
+TSNE
+loss at current iteration = 
+5363.29
+2017-12-03 02:45:16.800046 - iteration 205
+TSNE
+loss at current iteration = 
+5355.25
+2017-12-03 02:45:48.528357 - iteration 206
+TSNE
+loss at current iteration = 
+5211.6
+2017-12-03 02:46:22.753096 - iteration 207
+TSNE
+loss at current iteration = 
+5118.04
+2017-12-03 02:46:55.670486 - iteration 208
+TSNE
+loss at current iteration = 
+5069.05
+2017-12-03 02:47:37.448714 - iteration 209
+TSNE
+loss at current iteration = 
+6104.95
+2017-12-03 02:48:04.967127 - iteration 210
+TSNE
+loss at current iteration = 
+5131.29
+2017-12-03 02:48:50.864010 - iteration 211
+TSNE
+loss at current iteration = 
+5162.32
+2017-12-03 02:49:27.589429 - iteration 212
+TSNE
+loss at current iteration = 
+6008.12
+2017-12-03 02:50:01.957779 - iteration 213
+TSNE
+loss at current iteration = 
+4974.84
+2017-12-03 02:50:37.962016 - iteration 214
+TSNE
+loss at current iteration = 
+5894.89
+2017-12-03 02:51:11.192890 - iteration 215
+TSNE
+loss at current iteration = 
+5855.68
+2017-12-03 02:51:46.458043 - iteration 216
+TSNE
+loss at current iteration = 
+5663.65
+2017-12-03 02:52:23.358498 - iteration 217
+TSNE
+loss at current iteration = 
+5794.2
+2017-12-03 02:53:02.663497 - iteration 218
+TSNE
+loss at current iteration = 
+5758.48
+2017-12-03 02:53:36.952955 - iteration 219
+TSNE
+loss at current iteration = 
+4918.81
+2017-12-03 02:54:20.077418 - iteration 220
+TSNE
+loss at current iteration = 
+4833.09
+2017-12-03 02:54:56.474126 - iteration 221
+TSNE
+loss at current iteration = 
+5754.23
+2017-12-03 02:55:34.015387 - iteration 222
+TSNE
+loss at current iteration = 
+5731.98
+2017-12-03 02:56:06.668898 - iteration 223
+TSNE
+loss at current iteration = 
+5662.27
+2017-12-03 02:56:55.672192 - iteration 224
+TSNE
+loss at current iteration = 
+4738.14
+2017-12-03 02:57:52.482071 - iteration 225
+TSNE
+loss at current iteration = 
+4691.86
+2017-12-03 02:58:29.935652 - iteration 226
+TSNE
+loss at current iteration = 
+4674.85
+2017-12-03 02:59:11.328883 - iteration 227
+TSNE
+loss at current iteration = 
+5483.86
+2017-12-03 02:59:39.135529 - iteration 228
+TSNE
+loss at current iteration = 
+4789.78
+2017-12-03 03:00:07.954142 - iteration 229
+TSNE
+loss at current iteration = 
+5449.83
+2017-12-03 03:00:44.518141 - iteration 230
+TSNE
+loss at current iteration = 
+4611.22
+2017-12-03 03:01:20.752713 - iteration 231
+TSNE
+loss at current iteration = 
+5772.6
+2017-12-03 03:02:12.692605 - iteration 232
+TSNE
+loss at current iteration = 
+5534.6
+2017-12-03 03:02:49.097935 - iteration 233
+TSNE
+loss at current iteration = 
+5402.6
+2017-12-03 03:03:19.904873 - iteration 234
+TSNE
+loss at current iteration = 
+4495.52
+2017-12-03 03:03:56.746218 - iteration 235
+TSNE
+loss at current iteration = 
+4531.4
+2017-12-03 03:04:25.771273 - iteration 236
+TSNE
+loss at current iteration = 
+4408.34
+2017-12-03 03:04:57.396320 - iteration 237
+TSNE
+loss at current iteration = 
+4549.86
+2017-12-03 03:05:33.687888 - iteration 238
+TSNE
+loss at current iteration = 
+5249.13
+2017-12-03 03:06:10.549245 - iteration 239
+TSNE
+loss at current iteration = 
+5115.69
+2017-12-03 03:06:50.046557 - iteration 240
+TSNE
+loss at current iteration = 
+5321.02
+2017-12-03 03:07:18.476570 - iteration 241
+TSNE
+loss at current iteration = 
+4481.65
+2017-12-03 03:07:54.988089 - iteration 242
+TSNE
+loss at current iteration = 
+5188.15
+2017-12-03 03:08:28.431464 - iteration 243
+TSNE
+loss at current iteration = 
+5201.48
+2017-12-03 03:09:04.170780 - iteration 244
+TSNE
+loss at current iteration = 
+5179.81
+2017-12-03 03:09:35.034877 - iteration 245
+TSNE
+loss at current iteration = 
+5243.24
+2017-12-03 03:10:05.691428 - iteration 246
+TSNE
+loss at current iteration = 
+5110.05
+2017-12-03 03:10:35.963167 - iteration 247
+TSNE
+loss at current iteration = 
+5050.5
+2017-12-03 03:11:15.181165 - iteration 248
+TSNE
+loss at current iteration = 
+5033.03
+2017-12-03 03:12:04.890101 - iteration 249
+TSNE
+loss at current iteration = 
+4892.51
+2017-12-03 03:12:51.073999 - iteration 250
+TSNE
+loss at current iteration = 
+4880.53
+2017-12-03 03:13:35.124700 - iteration 251
+TSNE
+loss at current iteration = 
+4869.49
+2017-12-03 03:14:05.716817 - iteration 252
+TSNE
+loss at current iteration = 
+4806.33
+2017-12-03 03:14:41.268581 - iteration 253
+TSNE
+loss at current iteration = 
+4954.19
+2017-12-03 03:15:19.368283 - iteration 254
+TSNE
+loss at current iteration = 
+4979.78
+2017-12-03 03:16:02.812377 - iteration 255
+TSNE
+loss at current iteration = 
+4865.12
+2017-12-03 03:16:41.354616 - iteration 256
+TSNE
+loss at current iteration = 
+4884.36
+2017-12-03 03:17:30.837358 - iteration 257
+TSNE
+loss at current iteration = 
+4871.3
+2017-12-03 03:18:06.221636 - iteration 258
+TSNE
+loss at current iteration = 
+4111.18
+2017-12-03 03:18:37.471294 - iteration 259
+TSNE
+loss at current iteration = 
+4681.53
+2017-12-03 03:19:21.286474 - iteration 260
+TSNE
+loss at current iteration = 
+4160.93
+2017-12-03 03:20:04.614747 - iteration 261
+TSNE
+loss at current iteration = 
+4855.31
+2017-12-03 03:20:54.370654 - iteration 262
+TSNE
+loss at current iteration = 
+4674.2
+2017-12-03 03:21:37.314250 - iteration 263
+TSNE
+loss at current iteration = 
+4720.52
+2017-12-03 03:22:20.625800 - iteration 264
+TSNE
+loss at current iteration = 
+4610.6
+2017-12-03 03:22:57.879814 - iteration 265
+TSNE
+loss at current iteration = 
+4086.97
+2017-12-03 03:23:38.658063 - iteration 266
+TSNE
+loss at current iteration = 
+4012.76
+2017-12-03 03:24:13.526848 - iteration 267
+TSNE
+loss at current iteration = 
+4727.78
+2017-12-03 03:24:51.748364 - iteration 268
+TSNE
+loss at current iteration = 
+4503.92
+2017-12-03 03:25:29.159623 - iteration 269
+TSNE
+loss at current iteration = 
+3978.06
+2017-12-03 03:26:21.267310 - iteration 270
+TSNE
+loss at current iteration = 
+4524.01
+2017-12-03 03:26:54.118852 - iteration 271
+TSNE
+loss at current iteration = 
+4034.72
+2017-12-03 03:27:26.381035 - iteration 272
+TSNE
+loss at current iteration = 
+3990.79
+2017-12-03 03:27:56.472462 - iteration 273
+TSNE
+loss at current iteration = 
+4599.77
+2017-12-03 03:28:32.145337 - iteration 274
+TSNE
+loss at current iteration = 
+3875.76
+2017-12-03 03:29:18.680803 - iteration 275
+TSNE
+loss at current iteration = 
+3817.35
+2017-12-03 03:30:08.485331 - iteration 276
+TSNE
+loss at current iteration = 
+4411.98
+2017-12-03 03:30:44.991736 - iteration 277
+TSNE
+loss at current iteration = 
+4292.94
+2017-12-03 03:31:22.762315 - iteration 278
+TSNE
+loss at current iteration = 
+3910.08
+2017-12-03 03:32:01.667275 - iteration 279
+TSNE
+loss at current iteration = 
+3687.84
+2017-12-03 03:32:37.288769 - iteration 280
+TSNE
+loss at current iteration = 
+4325.81
+2017-12-03 03:33:26.771749 - iteration 281
+TSNE
+loss at current iteration = 
+3857.45
+2017-12-03 03:33:58.724083 - iteration 282
+TSNE
+loss at current iteration = 
+4287.56
+2017-12-03 03:34:43.088531 - iteration 283
+TSNE
+loss at current iteration = 
+4313.88
+2017-12-03 03:35:17.256694 - iteration 284
+TSNE
+loss at current iteration = 
+3796.19
+2017-12-03 03:36:03.639217 - iteration 285
+TSNE
+loss at current iteration = 
+4211.57
+2017-12-03 03:36:37.759527 - iteration 286
+TSNE
+loss at current iteration = 
+3774.77
+2017-12-03 03:37:10.784129 - iteration 287
+TSNE
+loss at current iteration = 
+4329.09
+2017-12-03 03:37:52.191379 - iteration 288
+TSNE
+loss at current iteration = 
+4195.87
+2017-12-03 03:38:37.914266 - iteration 289
+TSNE
+loss at current iteration = 
+3771.58
+2017-12-03 03:39:19.399231 - iteration 290
+TSNE
+loss at current iteration = 
+4267.49
+2017-12-03 03:40:01.843540 - iteration 291
+TSNE
+loss at current iteration = 
+4307.33
+2017-12-03 03:40:42.665327 - iteration 292
+TSNE
+loss at current iteration = 
+3722.94
+2017-12-03 03:41:26.362843 - iteration 293
+TSNE
+loss at current iteration = 
+3579.26
+2017-12-03 03:41:58.568798 - iteration 294
+TSNE
+loss at current iteration = 
+4098.15
+2017-12-03 03:42:54.753742 - iteration 295
+TSNE
+loss at current iteration = 
+4058.94
+2017-12-03 03:43:32.352399 - iteration 296
+TSNE
+loss at current iteration = 
+3675.92
+2017-12-03 03:44:06.488174 - iteration 297
+TSNE
+loss at current iteration = 
+3635.15
+2017-12-03 03:44:45.038050 - iteration 298
+TSNE
+loss at current iteration = 
+4103.15
+2017-12-03 03:45:20.836551 - iteration 299
+TSNE
+loss at current iteration = 
+4087.62
+2017-12-03 03:46:03.112412 - iteration 300
+TSNE
+loss at current iteration = 
+3456.31
+2017-12-03 03:46:57.321719 - iteration 301
+TSNE
+loss at current iteration = 
+3587.33
+2017-12-03 03:47:34.075213 - iteration 302
+TSNE
+loss at current iteration = 
+4063.77
+2017-12-03 03:48:21.086937 - iteration 303
+TSNE
+loss at current iteration = 
+4015.34
+2017-12-03 03:48:51.233008 - iteration 304
+TSNE
+loss at current iteration = 
+4090.38
+2017-12-03 03:49:23.587883 - iteration 305
+TSNE
+loss at current iteration = 
+3970.2
+2017-12-03 03:49:54.160477 - iteration 306
+TSNE
+loss at current iteration = 
+3953.53
+2017-12-03 03:50:33.833199 - iteration 307
+TSNE
+loss at current iteration = 
+3455.52
+2017-12-03 03:51:15.090906 - iteration 308
+TSNE
+loss at current iteration = 
+3832.96
+2017-12-03 03:51:50.232339 - iteration 309
+TSNE
+loss at current iteration = 
+3462.56
+2017-12-03 03:52:22.764474 - iteration 310
+TSNE
+loss at current iteration = 
+4016.66
+2017-12-03 03:52:55.498901 - iteration 311
+TSNE
+loss at current iteration = 
+3376.98
+2017-12-03 03:53:32.796955 - iteration 312
+TSNE
+loss at current iteration = 
+3898.05
+2017-12-03 03:54:41.470863 - iteration 313
+TSNE
+loss at current iteration = 
+3397.12
+2017-12-03 03:55:20.230686 - iteration 314
+TSNE
+loss at current iteration = 
+3803.02
+2017-12-03 03:56:05.854754 - iteration 315
+TSNE
+loss at current iteration = 
+3942.26
+2017-12-03 03:56:40.945254 - iteration 316
+TSNE
+loss at current iteration = 
+3792.76
+2017-12-03 03:57:21.856741 - iteration 317
+TSNE
+loss at current iteration = 
+3391.25
+2017-12-03 03:57:52.190821 - iteration 318
+TSNE
+loss at current iteration = 
+3918.24
+2017-12-03 03:58:30.714742 - iteration 319
+TSNE
+loss at current iteration = 
+3770.99
+2017-12-03 03:59:06.027684 - iteration 320
+TSNE
+loss at current iteration = 
+3400.01
+2017-12-03 03:59:42.975780 - iteration 321
+TSNE
+loss at current iteration = 
+3220.28
+2017-12-03 04:00:29.814728 - iteration 322
+TSNE
+loss at current iteration = 
+3824.83
+2017-12-03 04:01:06.817076 - iteration 323
+TSNE
+loss at current iteration = 
+3332.24
+2017-12-03 04:01:49.707110 - iteration 324
+TSNE
+loss at current iteration = 
+3388.42
+2017-12-03 04:02:28.294172 - iteration 325
+TSNE
+loss at current iteration = 
+3685.35
+2017-12-03 04:03:17.047991 - iteration 326
+TSNE
+loss at current iteration = 
+3315.45
+2017-12-03 04:03:49.213329 - iteration 327
+TSNE
+loss at current iteration = 
+3670.07
+2017-12-03 04:04:36.750205 - iteration 328
+TSNE
+loss at current iteration = 
+3250.99
+2017-12-03 04:05:11.345557 - iteration 329
+TSNE
+loss at current iteration = 
+3276.15
+2017-12-03 04:05:59.197803 - iteration 330
+TSNE
+loss at current iteration = 
+3197.52
+2017-12-03 04:06:50.690146 - iteration 331
+TSNE
+loss at current iteration = 
+3225.4
+2017-12-03 04:07:36.554493 - iteration 332
+TSNE
+loss at current iteration = 
+3600.85
+2017-12-03 04:08:20.802911 - iteration 333
+TSNE
+loss at current iteration = 
+3761.66
+2017-12-03 04:09:05.328824 - iteration 334
+TSNE
+loss at current iteration = 
+3213.55
+2017-12-03 04:09:42.768671 - iteration 335
+TSNE
+loss at current iteration = 
+3193.72
+2017-12-03 04:10:20.474776 - iteration 336
+TSNE
+loss at current iteration = 
+3171.39
+2017-12-03 04:10:59.209280 - iteration 337
+TSNE
+loss at current iteration = 
+3050.0
+2017-12-03 04:11:28.799860 - iteration 338
+TSNE
+loss at current iteration = 
+3128.39
+2017-12-03 04:12:11.746695 - iteration 339
+TSNE
+loss at current iteration = 
+3659.27
+2017-12-03 04:12:49.242079 - iteration 340
+TSNE
+loss at current iteration = 
+3211.95
+2017-12-03 04:13:33.038760 - iteration 341
+TSNE
+loss at current iteration = 
+3694.64
+2017-12-03 04:14:02.693482 - iteration 342
+TSNE
+loss at current iteration = 
+3534.48
+2017-12-03 04:14:41.140765 - iteration 343
+TSNE
+loss at current iteration = 
+3215.59
+2017-12-03 04:15:19.378105 - iteration 344
+TSNE
+loss at current iteration = 
+3610.46
+2017-12-03 04:15:58.615700 - iteration 345
+TSNE
+loss at current iteration = 
+3083.67
+2017-12-03 04:16:35.372263 - iteration 346
+TSNE
+loss at current iteration = 
+3093.85
+2017-12-03 04:17:19.816631 - iteration 347
+TSNE
+loss at current iteration = 
+3062.0
+2017-12-03 04:18:04.210043 - iteration 348
+TSNE
+loss at current iteration = 
+2964.95
+2017-12-03 04:18:39.649180 - iteration 349
+TSNE
+loss at current iteration = 
+3138.57
+2017-12-03 04:19:35.031513 - iteration 350
+TSNE
+loss at current iteration = 
+3498.95
+2017-12-03 04:20:08.000808 - iteration 351
+TSNE
+loss at current iteration = 
+3092.14
+2017-12-03 04:20:56.770805 - iteration 352
+TSNE
+loss at current iteration = 
+3044.32
+2017-12-03 04:21:38.155964 - iteration 353
+TSNE
+loss at current iteration = 
+3004.51
+2017-12-03 04:22:26.675718 - iteration 354
+TSNE
+loss at current iteration = 
+3590.83
+2017-12-03 04:23:05.248338 - iteration 355
+TSNE
+loss at current iteration = 
+3543.73
+2017-12-03 04:23:44.837141 - iteration 356
+TSNE
+loss at current iteration = 
+3427.41
+2017-12-03 04:24:46.530215 - iteration 357
+TSNE
+loss at current iteration = 
+3494.29
+2017-12-03 04:25:24.855912 - iteration 358
+TSNE
+loss at current iteration = 
+3054.16
+2017-12-03 04:26:23.690567 - iteration 359
+TSNE
+loss at current iteration = 
+3080.17
+2017-12-03 04:27:09.873304 - iteration 360
+TSNE
+loss at current iteration = 
+3481.63
+2017-12-03 04:27:56.454548 - iteration 361
+TSNE
+loss at current iteration = 
+3490.22
+2017-12-03 04:28:33.512699 - iteration 362
+TSNE
+loss at current iteration = 
+3386.74
+2017-12-03 04:29:13.464294 - iteration 363
+TSNE
+loss at current iteration = 
+2947.96
+2017-12-03 04:29:50.265558 - iteration 364
+TSNE
+loss at current iteration = 
+2849.62
+2017-12-03 04:30:27.101073 - iteration 365
+TSNE
+loss at current iteration = 
+3323.59
+2017-12-03 04:31:08.689179 - iteration 366
+TSNE
+loss at current iteration = 
+2990.1
+2017-12-03 04:31:40.998890 - iteration 367
+TSNE
+loss at current iteration = 
+3356.23
+2017-12-03 04:32:17.632500 - iteration 368
+TSNE
+loss at current iteration = 
+3355.56
+2017-12-03 04:32:51.782984 - iteration 369
+TSNE
+loss at current iteration = 
+2877.3
+2017-12-03 04:33:27.084102 - iteration 370
+TSNE
+loss at current iteration = 
+2764.52
+2017-12-03 04:33:58.344569 - iteration 371
+TSNE
+loss at current iteration = 
+3414.89
+2017-12-03 04:34:37.441469 - iteration 372
+TSNE
+loss at current iteration = 
+2908.93
+2017-12-03 04:35:13.477328 - iteration 373
+TSNE
+loss at current iteration = 
+2974.93
+2017-12-03 04:35:44.382431 - iteration 374
+TSNE
+loss at current iteration = 
+3325.17
+2017-12-03 04:36:16.268681 - iteration 375
+TSNE
+loss at current iteration = 
+3342.81
+2017-12-03 04:36:55.915835 - iteration 376
+TSNE
+loss at current iteration = 
+2909.28
+2017-12-03 04:37:35.212535 - iteration 377
+TSNE
+loss at current iteration = 
+2986.47
+2017-12-03 04:38:12.382192 - iteration 378
+TSNE
+loss at current iteration = 
+2740.17
+2017-12-03 04:39:00.093928 - iteration 379
+TSNE
+loss at current iteration = 
+3303.03
+2017-12-03 04:39:30.782140 - iteration 380
+TSNE
+loss at current iteration = 
+2854.54
+2017-12-03 04:39:59.044891 - iteration 381
+TSNE
+loss at current iteration = 
+2768.23
+2017-12-03 04:40:34.529300 - iteration 382
+TSNE
+loss at current iteration = 
+2768.76
+2017-12-03 04:41:16.343689 - iteration 383
+TSNE
+loss at current iteration = 
+2653.89
+2017-12-03 04:41:53.928329 - iteration 384
+TSNE
+loss at current iteration = 
+2800.92
+2017-12-03 04:42:36.608737 - iteration 385
+TSNE
+loss at current iteration = 
+2793.98
+2017-12-03 04:43:08.801639 - iteration 386
+TSNE
+loss at current iteration = 
+2841.32
+2017-12-03 04:43:42.651912 - iteration 387
+TSNE
+loss at current iteration = 
+2850.48
+2017-12-03 04:44:20.018843 - iteration 388
+TSNE
+loss at current iteration = 
+2750.46
+2017-12-03 04:44:52.921184 - iteration 389
+TSNE
+loss at current iteration = 
+3132.54
+2017-12-03 04:45:30.188947 - iteration 390
+TSNE
+loss at current iteration = 
+3255.36
+2017-12-03 04:46:01.859523 - iteration 391
+TSNE
+loss at current iteration = 
+2793.8
+2017-12-03 04:46:35.304214 - iteration 392
+TSNE
+loss at current iteration = 
+3160.92
+2017-12-03 04:47:25.389783 - iteration 393
+TSNE
+loss at current iteration = 
+2739.56
+2017-12-03 04:48:08.211884 - iteration 394
+TSNE
+loss at current iteration = 
+3106.0
+2017-12-03 04:49:00.862333 - iteration 395
+TSNE
+loss at current iteration = 
+2742.73
+2017-12-03 04:49:48.691647 - iteration 396
+TSNE
+loss at current iteration = 
+2750.96
+2017-12-03 04:50:28.668652 - iteration 397
+TSNE
+loss at current iteration = 
+2668.19
+2017-12-03 04:51:12.969699 - iteration 398
+TSNE
+loss at current iteration = 
+2714.91
+2017-12-03 04:51:56.424271 - iteration 399
+TSNE
+loss at current iteration = 
+2743.27
+2017-12-03 04:52:40.340709 - iteration 400
+TSNE
+loss at current iteration = 
+3238.3
+2017-12-03 04:53:21.223416 - iteration 401
+TSNE
+loss at current iteration = 
+2714.03
+2017-12-03 04:53:57.731785 - iteration 402
+TSNE
+loss at current iteration = 
+3148.52
+2017-12-03 04:54:43.481537 - iteration 403
+TSNE
+loss at current iteration = 
+3223.03
+2017-12-03 04:55:22.627659 - iteration 404
+TSNE
+loss at current iteration = 
+3154.44
+2017-12-03 04:56:07.007349 - iteration 405
+TSNE
+loss at current iteration = 
+3033.73
+2017-12-03 04:56:46.154184 - iteration 406
+TSNE
+loss at current iteration = 
+3051.97
+2017-12-03 04:57:27.423712 - iteration 407
+TSNE
+loss at current iteration = 
+2597.59
+2017-12-03 04:58:06.579498 - iteration 408
+TSNE
+loss at current iteration = 
+3097.96
+2017-12-03 04:58:48.232277 - iteration 409
+TSNE
+loss at current iteration = 
+2531.14
+2017-12-03 04:59:40.051273 - iteration 410
+TSNE
+loss at current iteration = 
+2619.26
+2017-12-03 05:00:19.473421 - iteration 411
+TSNE
+loss at current iteration = 
+2524.76
+2017-12-03 05:01:14.108774 - iteration 412
+TSNE
+loss at current iteration = 
+2631.61
+2017-12-03 05:01:57.501359 - iteration 413
+TSNE
+loss at current iteration = 
+3000.65
+2017-12-03 05:02:32.663860 - iteration 414
+TSNE
+loss at current iteration = 
+2896.85
+2017-12-03 05:03:15.150236 - iteration 415
+TSNE
+loss at current iteration = 
+3042.67
+2017-12-03 05:04:07.675823 - iteration 416
+TSNE
+loss at current iteration = 
+2613.25
+2017-12-03 05:04:40.172162 - iteration 417
+TSNE
+loss at current iteration = 
+3039.2
+2017-12-03 05:05:26.319780 - iteration 418
+TSNE
+loss at current iteration = 
+2519.88
+2017-12-03 05:06:06.977668 - iteration 419
+TSNE
+loss at current iteration = 
+2944.05
+2017-12-03 05:06:54.894082 - iteration 420
+TSNE
+loss at current iteration = 
+2549.19
+2017-12-03 05:07:38.001028 - iteration 421
+TSNE
+loss at current iteration = 
+2665.0
+2017-12-03 05:08:20.728028 - iteration 422
+TSNE
+loss at current iteration = 
+2926.95
+2017-12-03 05:09:23.406880 - iteration 423
+TSNE
+loss at current iteration = 
+3085.05
+2017-12-03 05:10:07.327070 - iteration 424
+TSNE
+loss at current iteration = 
+3002.51
+2017-12-03 05:10:51.881970 - iteration 425
+TSNE
+loss at current iteration = 
+2599.24
+2017-12-03 05:11:32.741657 - iteration 426
+TSNE
+loss at current iteration = 
+2595.8
+2017-12-03 05:12:16.471796 - iteration 427
+TSNE
+loss at current iteration = 
+2475.95
+2017-12-03 05:12:54.180998 - iteration 428
+TSNE
+loss at current iteration = 
+2433.14
+2017-12-03 05:13:36.287841 - iteration 429
+TSNE
+loss at current iteration = 
+2871.9
+2017-12-03 05:14:17.033142 - iteration 430
+TSNE
+loss at current iteration = 
+2490.69
+2017-12-03 05:14:55.900758 - iteration 431
+TSNE
+loss at current iteration = 
+2510.47
+2017-12-03 05:15:40.719597 - iteration 432
+TSNE
+loss at current iteration = 
+2396.65
+2017-12-03 05:16:23.592899 - iteration 433
+TSNE
+loss at current iteration = 
+2910.8
+2017-12-03 05:16:57.848833 - iteration 434
+TSNE
+loss at current iteration = 
+2372.07
+2017-12-03 05:17:32.574983 - iteration 435
+TSNE
+loss at current iteration = 
+3014.3
+2017-12-03 05:18:03.612189 - iteration 436
+TSNE
+loss at current iteration = 
+2304.09
+2017-12-03 05:18:36.372990 - iteration 437
+TSNE
+loss at current iteration = 
+2892.23
+2017-12-03 05:19:22.116306 - iteration 438
+TSNE
+loss at current iteration = 
+2465.4
+2017-12-03 05:19:55.196681 - iteration 439
+TSNE
+loss at current iteration = 
+2485.47
+2017-12-03 05:20:26.402538 - iteration 440
+TSNE
+loss at current iteration = 
+2849.79
+2017-12-03 05:21:12.805765 - iteration 441
+TSNE
+loss at current iteration = 
+2683.59
+2017-12-03 05:21:52.192930 - iteration 442
+TSNE
+loss at current iteration = 
+2824.91
+2017-12-03 05:22:27.612484 - iteration 443
+TSNE
+loss at current iteration = 
+2937.1
+2017-12-03 05:23:04.563886 - iteration 444
+TSNE
+loss at current iteration = 
+2508.42
+2017-12-03 05:23:42.560499 - iteration 445
+TSNE
+loss at current iteration = 
+2472.99
+2017-12-03 05:24:38.828373 - iteration 446
+TSNE
+loss at current iteration = 
+2469.24
+2017-12-03 05:25:17.147647 - iteration 447
+TSNE
+loss at current iteration = 
+2443.61
+2017-12-03 05:25:57.854511 - iteration 448
+TSNE
+loss at current iteration = 
+2834.54
+2017-12-03 05:26:40.470165 - iteration 449
+TSNE
+loss at current iteration = 
+2774.47
+2017-12-03 05:27:15.540537 - iteration 450
+TSNE
+loss at current iteration = 
+2797.92
+2017-12-03 05:28:01.876399 - iteration 451
+TSNE
+loss at current iteration = 
+2815.88
+2017-12-03 05:28:38.338418 - iteration 452
+TSNE
+loss at current iteration = 
+2858.35
+2017-12-03 05:29:26.472902 - iteration 453
+TSNE
+loss at current iteration = 
+2797.26
+2017-12-03 05:30:11.439812 - iteration 454
+TSNE
+loss at current iteration = 
+2818.77
+2017-12-03 05:30:50.224591 - iteration 455
+TSNE
+loss at current iteration = 
+2359.11
+2017-12-03 05:31:27.752051 - iteration 456
+TSNE
+loss at current iteration = 
+2827.81
+2017-12-03 05:32:01.540295 - iteration 457
+TSNE
+loss at current iteration = 
+2666.39
+2017-12-03 05:32:33.738470 - iteration 458
+TSNE
+loss at current iteration = 
+2273.19
+2017-12-03 05:33:21.052878 - iteration 459
+TSNE
+loss at current iteration = 
+2810.5
+2017-12-03 05:34:06.785078 - iteration 460
+TSNE
+loss at current iteration = 
+2333.62
+2017-12-03 05:34:50.424217 - iteration 461
+TSNE
+loss at current iteration = 
+2384.41
+2017-12-03 05:35:27.106796 - iteration 462
+TSNE
+loss at current iteration = 
+2746.68
+2017-12-03 05:36:00.114157 - iteration 463
+TSNE
+loss at current iteration = 
+2235.17
+2017-12-03 05:36:50.524461 - iteration 464
+TSNE
+loss at current iteration = 
+2793.4
+2017-12-03 05:37:38.078359 - iteration 465
+TSNE
+loss at current iteration = 
+2606.7
+2017-12-03 05:38:19.168058 - iteration 466
+TSNE
+loss at current iteration = 
+2260.6
+2017-12-03 05:38:52.607002 - iteration 467
+TSNE
+loss at current iteration = 
+2695.54
+2017-12-03 05:39:34.976971 - iteration 468
+TSNE
+loss at current iteration = 
+2382.44
+2017-12-03 05:40:06.153452 - iteration 469
+TSNE
+loss at current iteration = 
+2201.2
+2017-12-03 05:40:44.644044 - iteration 470
+TSNE
+loss at current iteration = 
+2295.72
+2017-12-03 05:41:25.892292 - iteration 471
+TSNE
+loss at current iteration = 
+2738.82
+2017-12-03 05:42:05.757474 - iteration 472
+TSNE
+loss at current iteration = 
+2349.72
+2017-12-03 05:42:50.227521 - iteration 473
+TSNE
+loss at current iteration = 
+2243.83
+2017-12-03 05:43:44.454427 - iteration 474
+TSNE
+loss at current iteration = 
+2667.2
+2017-12-03 05:44:23.180042 - iteration 475
+TSNE
+loss at current iteration = 
+2266.81
+2017-12-03 05:45:05.527846 - iteration 476
+TSNE
+loss at current iteration = 
+2607.88
+2017-12-03 05:45:42.406817 - iteration 477
+TSNE
+loss at current iteration = 
+2152.09
+2017-12-03 05:46:40.462603 - iteration 478
+TSNE
+loss at current iteration = 
+2591.49
+2017-12-03 05:47:24.476933 - iteration 479
+TSNE
+loss at current iteration = 
+2786.71
+2017-12-03 05:48:10.612678 - iteration 480
+TSNE
+loss at current iteration = 
+2543.13
+2017-12-03 05:48:48.818620 - iteration 481
+TSNE
+loss at current iteration = 
+2324.75
+2017-12-03 05:49:35.986148 - iteration 482
+TSNE
+loss at current iteration = 
+2731.47
+2017-12-03 05:50:18.357893 - iteration 483
+TSNE
+loss at current iteration = 
+2231.31
+2017-12-03 05:51:05.416618 - iteration 484
+TSNE
+loss at current iteration = 
+2283.63
+2017-12-03 05:52:01.259852 - iteration 485
+TSNE
+loss at current iteration = 
+2216.43
+2017-12-03 05:52:48.644926 - iteration 486
+TSNE
+loss at current iteration = 
+2231.04
+2017-12-03 05:53:36.902381 - iteration 487
+TSNE
+loss at current iteration = 
+2149.34
+2017-12-03 05:54:10.636962 - iteration 488
+TSNE
+loss at current iteration = 
+2213.17
+2017-12-03 05:55:00.370378 - iteration 489
+TSNE
+loss at current iteration = 
+2626.96
+2017-12-03 05:55:39.703082 - iteration 490
+TSNE
+loss at current iteration = 
+2162.29
+2017-12-03 05:56:17.587703 - iteration 491
+TSNE
+loss at current iteration = 
+2603.74
+2017-12-03 05:56:52.104464 - iteration 492
+TSNE
+loss at current iteration = 
+2641.33
+2017-12-03 05:57:29.657757 - iteration 493
+TSNE
+loss at current iteration = 
+2556.89
+2017-12-03 05:58:14.305578 - iteration 494
+TSNE
+loss at current iteration = 
+2571.17
+2017-12-03 05:58:59.004662 - iteration 495
+TSNE
+loss at current iteration = 
+2537.25
+2017-12-03 05:59:32.955068 - iteration 496
+TSNE
+loss at current iteration = 
+2577.66
+2017-12-03 06:00:12.842246 - iteration 497
+TSNE
+loss at current iteration = 
+2408.66
+2017-12-03 06:00:48.807138 - iteration 498
+TSNE
+loss at current iteration = 
+2238.81
+2017-12-03 06:01:28.527144 - iteration 499
+TSNE
+loss at current iteration = 
+2620.2
+2017-12-03 06:02:08.236837 - iteration 500
+TSNE
+loss at current iteration = 
+2315.71
+2017-12-03 06:02:39.012570 - iteration 501
+TSNE
+loss at current iteration = 
+2511.15
+2017-12-03 06:03:11.700659 - iteration 502
+TSNE
+loss at current iteration = 
+2459.33
+2017-12-03 06:03:50.417344 - iteration 503
+TSNE
+loss at current iteration = 
+2150.06
+2017-12-03 06:04:27.518061 - iteration 504
+TSNE
+loss at current iteration = 
+2124.8
+2017-12-03 06:05:01.053455 - iteration 505
+TSNE
+loss at current iteration = 
+2487.32
+2017-12-03 06:05:41.333751 - iteration 506
+TSNE
+loss at current iteration = 
+2195.66
+2017-12-03 06:06:15.032268 - iteration 507
+TSNE
+loss at current iteration = 
+2496.1
+2017-12-03 06:06:51.947486 - iteration 508
+TSNE
+loss at current iteration = 
+2271.95
+2017-12-03 06:07:21.964977 - iteration 509
+TSNE
+loss at current iteration = 
+2118.25
+2017-12-03 06:08:04.765354 - iteration 510
+TSNE
+loss at current iteration = 
+2513.82
+2017-12-03 06:08:55.535735 - iteration 511
+TSNE
+loss at current iteration = 
+2207.54
+2017-12-03 06:09:39.880981 - iteration 512
+TSNE
+loss at current iteration = 
+2148.27
+2017-12-03 06:10:19.731083 - iteration 513
+TSNE
+loss at current iteration = 
+2553.23
+2017-12-03 06:11:12.419893 - iteration 514
+TSNE
+loss at current iteration = 
+2115.45
+2017-12-03 06:11:52.493644 - iteration 515
+TSNE
+loss at current iteration = 
+2548.83
+2017-12-03 06:12:29.479508 - iteration 516
+TSNE
+loss at current iteration = 
+2098.42
+2017-12-03 06:13:17.148304 - iteration 517
+TSNE
+loss at current iteration = 
+2511.98
+2017-12-03 06:13:48.274875 - iteration 518
+TSNE
+loss at current iteration = 
+2336.28
+2017-12-03 06:14:22.900495 - iteration 519
+TSNE
+loss at current iteration = 
+2128.75
+2017-12-03 06:15:01.467148 - iteration 520
+TSNE
+loss at current iteration = 
+2464.1
+2017-12-03 06:15:35.785618 - iteration 521
+TSNE
+loss at current iteration = 
+2037.08
+2017-12-03 06:16:09.847632 - iteration 522
+TSNE
+loss at current iteration = 
+2490.75
+2017-12-03 06:16:51.164564 - iteration 523
+TSNE
+loss at current iteration = 
+2030.7
+2017-12-03 06:17:34.178332 - iteration 524
+TSNE
+loss at current iteration = 
+2469.9
+2017-12-03 06:18:08.780249 - iteration 525
+TSNE
+loss at current iteration = 
+2457.93
+2017-12-03 06:18:46.772325 - iteration 526
+TSNE
+loss at current iteration = 
+2393.74
+2017-12-03 06:19:22.965471 - iteration 527
+TSNE
+loss at current iteration = 
+2416.42
+2017-12-03 06:19:59.553677 - iteration 528
+TSNE
+loss at current iteration = 
+2493.43
+2017-12-03 06:20:45.122289 - iteration 529
+TSNE
+loss at current iteration = 
+2087.94
+2017-12-03 06:21:19.188392 - iteration 530
+TSNE
+loss at current iteration = 
+2075.71
+2017-12-03 06:22:02.107290 - iteration 531
+TSNE
+loss at current iteration = 
+2325.6
+2017-12-03 06:23:01.498544 - iteration 532
+TSNE
+loss at current iteration = 
+2050.91
+2017-12-03 06:23:40.428163 - iteration 533
+TSNE
+loss at current iteration = 
+2011.87
+2017-12-03 06:24:14.260243 - iteration 534
+TSNE
+loss at current iteration = 
+2086.46
+2017-12-03 06:24:56.324129 - iteration 535
+TSNE
+loss at current iteration = 
+2386.8
+2017-12-03 06:25:33.561673 - iteration 536
+TSNE
+loss at current iteration = 
+2328.96
+2017-12-03 06:26:18.709135 - iteration 537
+TSNE
+loss at current iteration = 
+1988.91
+2017-12-03 06:26:57.524614 - iteration 538
+TSNE
+loss at current iteration = 
+2091.78
+2017-12-03 06:27:33.862875 - iteration 539
+TSNE
+loss at current iteration = 
+2093.5
+2017-12-03 06:28:22.301357 - iteration 540
+TSNE
+loss at current iteration = 
+2233.12
+2017-12-03 06:29:01.781972 - iteration 541
+TSNE
+loss at current iteration = 
+2380.03
+2017-12-03 06:29:37.556863 - iteration 542
+TSNE
+loss at current iteration = 
+2360.76
+2017-12-03 06:30:14.024398 - iteration 543
+TSNE
+loss at current iteration = 
+1967.95
+2017-12-03 06:30:57.242469 - iteration 544
+TSNE
+loss at current iteration = 
+2120.55
+2017-12-03 06:31:30.824327 - iteration 545
+TSNE
+loss at current iteration = 
+1996.77
+2017-12-03 06:32:12.652860 - iteration 546
+TSNE
+loss at current iteration = 
+1992.7
+2017-12-03 06:32:58.800734 - iteration 547
+TSNE
+loss at current iteration = 
+1897.38
+2017-12-03 06:33:47.986602 - iteration 548
+TSNE
+loss at current iteration = 
+2049.15
+2017-12-03 06:34:50.543688 - iteration 549
+TSNE
+loss at current iteration = 
+2029.61
+2017-12-03 06:35:34.559911 - iteration 550
+TSNE
+loss at current iteration = 
+1949.19
+2017-12-03 06:36:18.082489 - iteration 551
+TSNE
+loss at current iteration = 
+2265.75
+2017-12-03 06:36:55.035234 - iteration 552
+TSNE
+loss at current iteration = 
+2401.13
+2017-12-03 06:37:46.446129 - iteration 553
+TSNE
+loss at current iteration = 
+2325.75
+2017-12-03 06:38:32.833487 - iteration 554
+TSNE
+loss at current iteration = 
+2011.46
+2017-12-03 06:39:15.815868 - iteration 555
+TSNE
+loss at current iteration = 
+2060.4
+2017-12-03 06:39:57.588077 - iteration 556
+TSNE
+loss at current iteration = 
+1917.23
+2017-12-03 06:40:38.456777 - iteration 557
+TSNE
+loss at current iteration = 
+1911.44
+2017-12-03 06:41:11.695427 - iteration 558
+TSNE
+loss at current iteration = 
+1989.85
+2017-12-03 06:41:53.362743 - iteration 559
+TSNE
+loss at current iteration = 
+2317.85
+2017-12-03 06:42:42.150235 - iteration 560
+TSNE
+loss at current iteration = 
+2255.8
+2017-12-03 06:43:19.381142 - iteration 561
+TSNE
+loss at current iteration = 
+2229.72
+2017-12-03 06:43:56.944063 - iteration 562
+TSNE
+loss at current iteration = 
+1996.69
+2017-12-03 06:44:38.427761 - iteration 563
+TSNE
+loss at current iteration = 
+2256.11
+2017-12-03 06:45:26.211730 - iteration 564
+TSNE
+loss at current iteration = 
+1972.24
+2017-12-03 06:46:06.614255 - iteration 565
+TSNE
+loss at current iteration = 
+2286.08
+2017-12-03 06:46:42.258149 - iteration 566
+TSNE
+loss at current iteration = 
+2277.31
+2017-12-03 06:47:22.136248 - iteration 567
+TSNE
+loss at current iteration = 
+2359.27
+2017-12-03 06:48:08.319738 - iteration 568
+TSNE
+loss at current iteration = 
+1917.02
+2017-12-03 06:48:46.782222 - iteration 569
+TSNE
+loss at current iteration = 
+1916.29
+2017-12-03 06:49:20.926083 - iteration 570
+TSNE
+loss at current iteration = 
+1917.39
+2017-12-03 06:50:14.040895 - iteration 571
+TSNE
+loss at current iteration = 
+1932.47
+2017-12-03 06:50:53.978884 - iteration 572
+TSNE
+loss at current iteration = 
+2245.32
+2017-12-03 06:51:34.060192 - iteration 573
+TSNE
+loss at current iteration = 
+1943.42
+2017-12-03 06:52:06.619214 - iteration 574
+TSNE
+loss at current iteration = 
+1921.11
+2017-12-03 06:52:39.705314 - iteration 575
+TSNE
+loss at current iteration = 
+2169.68
+2017-12-03 06:53:18.471545 - iteration 576
+TSNE
+loss at current iteration = 
+2162.9
+2017-12-03 06:53:57.101158 - iteration 577
+TSNE
+loss at current iteration = 
+1877.06
+2017-12-03 06:54:31.848940 - iteration 578
+TSNE
+loss at current iteration = 
+2187.02
+2017-12-03 06:55:12.188794 - iteration 579
+TSNE
+loss at current iteration = 
+2240.05
+2017-12-03 06:55:43.262400 - iteration 580
+TSNE
+loss at current iteration = 
+2246.92
+2017-12-03 06:56:28.858678 - iteration 581
+TSNE
+loss at current iteration = 
+1811.1
+2017-12-03 06:57:08.478686 - iteration 582
+TSNE
+loss at current iteration = 
+1881.93
+2017-12-03 06:57:50.190544 - iteration 583
+TSNE
+loss at current iteration = 
+2143.31
+2017-12-03 06:58:33.203941 - iteration 584
+TSNE
+loss at current iteration = 
+2249.13
+2017-12-03 06:59:15.825596 - iteration 585
+TSNE
+loss at current iteration = 
+1818.98
+2017-12-03 07:00:01.018056 - iteration 586
+TSNE
+loss at current iteration = 
+1876.8
+2017-12-03 07:00:48.550584 - iteration 587
+TSNE
+loss at current iteration = 
+1893.25
+2017-12-03 07:01:24.624563 - iteration 588
+TSNE
+loss at current iteration = 
+2232.88
+2017-12-03 07:02:06.991194 - iteration 589
+TSNE
+loss at current iteration = 
+1868.12
+2017-12-03 07:02:40.411260 - iteration 590
+TSNE
+loss at current iteration = 
+2195.57
+2017-12-03 07:03:10.820434 - iteration 591
+TSNE
+loss at current iteration = 
+2099.27
+2017-12-03 07:03:44.717458 - iteration 592
+TSNE
+loss at current iteration = 
+1855.44
+2017-12-03 07:04:30.043345 - iteration 593
+TSNE
+loss at current iteration = 
+2164.96
+2017-12-03 07:05:06.463101 - iteration 594
+TSNE
+loss at current iteration = 
+1843.06
+2017-12-03 07:05:50.851153 - iteration 595
+TSNE
+loss at current iteration = 
+1878.87
+2017-12-03 07:06:35.002979 - iteration 596
+TSNE
+loss at current iteration = 
+1892.28
+2017-12-03 07:07:08.744261 - iteration 597
+TSNE
+loss at current iteration = 
+1783.35
+2017-12-03 07:07:46.960812 - iteration 598
+TSNE
+loss at current iteration = 
+2127.89
+2017-12-03 07:08:29.900600 - iteration 599
+TSNE
+loss at current iteration = 
+2209.53
+2017-12-03 07:09:13.486019 - iteration 600
+TSNE
+loss at current iteration = 
+2036.77
+2017-12-03 07:09:53.409937 - iteration 601
+TSNE
+loss at current iteration = 
+2118.55
+2017-12-03 07:10:32.100880 - iteration 602
+TSNE
+loss at current iteration = 
+1816.68
+2017-12-03 07:11:07.503669 - iteration 603
+TSNE
+loss at current iteration = 
+1786.53
+2017-12-03 07:11:52.865138 - iteration 604
+TSNE
+loss at current iteration = 
+1821.02
+2017-12-03 07:12:31.989232 - iteration 605
+TSNE
+loss at current iteration = 
+1784.87
+2017-12-03 07:13:12.014671 - iteration 606
+TSNE
+loss at current iteration = 
+1809.64
+2017-12-03 07:13:49.687040 - iteration 607
+TSNE
+loss at current iteration = 
+1725.04
+2017-12-03 07:14:29.965919 - iteration 608
+TSNE
+loss at current iteration = 
+2148.46
+2017-12-03 07:15:09.951595 - iteration 609
+TSNE
+loss at current iteration = 
+1814.07
+2017-12-03 07:15:49.806727 - iteration 610
+TSNE
+loss at current iteration = 
+2052.25
+2017-12-03 07:16:40.188979 - iteration 611
+TSNE
+loss at current iteration = 
+2136.32
+2017-12-03 07:17:13.523472 - iteration 612
+TSNE
+loss at current iteration = 
+1810.17
+2017-12-03 07:17:59.091786 - iteration 613
+TSNE
+loss at current iteration = 
+1781.16
+2017-12-03 07:18:35.357789 - iteration 614
+TSNE
+loss at current iteration = 
+1886.87
+2017-12-03 07:19:24.681715 - iteration 615
+TSNE
+loss at current iteration = 
+1826.82
+2017-12-03 07:20:05.274700 - iteration 616
+TSNE
+loss at current iteration = 
+1730.99
+2017-12-03 07:20:51.037402 - iteration 617
+TSNE
+loss at current iteration = 
+2080.83
+2017-12-03 07:21:33.598874 - iteration 618
+TSNE
+loss at current iteration = 
+2122.73
+2017-12-03 07:22:15.567809 - iteration 619
+TSNE
+loss at current iteration = 
+1747.14
+2017-12-03 07:22:50.882097 - iteration 620
+TSNE
+loss at current iteration = 
+1739.52
+2017-12-03 07:23:35.737285 - iteration 621
+TSNE
+loss at current iteration = 
+1811.26
+2017-12-03 07:24:10.763213 - iteration 622
+TSNE
+loss at current iteration = 
+2048.26
+2017-12-03 07:24:44.764996 - iteration 623
+TSNE
+loss at current iteration = 
+1834.11
+2017-12-03 07:25:22.410212 - iteration 624
+TSNE
+loss at current iteration = 
+1767.89
+2017-12-03 07:26:09.895503 - iteration 625
+TSNE
+loss at current iteration = 
+2113.51
+2017-12-03 07:26:49.270577 - iteration 626
+TSNE
+loss at current iteration = 
+2136.27
+2017-12-03 07:27:29.390436 - iteration 627
+TSNE
+loss at current iteration = 
+2088.44
+2017-12-03 07:28:01.869797 - iteration 628
+TSNE
+loss at current iteration = 
+1710.15
+2017-12-03 07:28:42.044161 - iteration 629
+TSNE
+loss at current iteration = 
+2117.49
+2017-12-03 07:29:17.048396 - iteration 630
+TSNE
+loss at current iteration = 
+2050.94
+2017-12-03 07:29:59.313490 - iteration 631
+TSNE
+loss at current iteration = 
+1795.84
+2017-12-03 07:30:36.035733 - iteration 632
+TSNE
+loss at current iteration = 
+1740.81
+2017-12-03 07:31:10.708342 - iteration 633
+TSNE
+loss at current iteration = 
+1830.42
+2017-12-03 07:31:50.020030 - iteration 634
+TSNE
+loss at current iteration = 
+2022.94
+2017-12-03 07:32:41.483762 - iteration 635
+TSNE
+loss at current iteration = 
+2049.19
+2017-12-03 07:33:23.722102 - iteration 636
+TSNE
+loss at current iteration = 
+1814.43
+2017-12-03 07:34:21.095919 - iteration 637
+TSNE
+loss at current iteration = 
+2008.4
+2017-12-03 07:34:55.739086 - iteration 638
+TSNE
+loss at current iteration = 
+1710.16
+2017-12-03 07:35:40.973315 - iteration 639
+TSNE
+loss at current iteration = 
+2030.19
+2017-12-03 07:36:30.710399 - iteration 640
+TSNE
+loss at current iteration = 
+1756.1
+2017-12-03 07:37:09.142487 - iteration 641
+TSNE
+loss at current iteration = 
+1933.72
+2017-12-03 07:37:59.973765 - iteration 642
+TSNE
+loss at current iteration = 
+1999.11
+2017-12-03 07:38:46.685387 - iteration 643
+TSNE
+loss at current iteration = 
+2087.74
+2017-12-03 07:39:20.588274 - iteration 644
+TSNE
+loss at current iteration = 
+1852.56
+2017-12-03 07:39:59.164091 - iteration 645
+TSNE
+loss at current iteration = 
+1675.24
+2017-12-03 07:40:44.548296 - iteration 646
+TSNE
+loss at current iteration = 
+1770.53
+2017-12-03 07:41:19.706369 - iteration 647
+TSNE
+loss at current iteration = 
+2058.28
+2017-12-03 07:42:00.095062 - iteration 648
+TSNE
+loss at current iteration = 
+1725.79
+2017-12-03 07:42:34.754525 - iteration 649
+TSNE
+loss at current iteration = 
+2029.59
+2017-12-03 07:43:17.072154 - iteration 650
+TSNE
+loss at current iteration = 
+1592.66
+2017-12-03 07:43:51.578474 - iteration 651
+TSNE
+loss at current iteration = 
+1681.56
+2017-12-03 07:44:29.291772 - iteration 652
+TSNE
+loss at current iteration = 
+1738.28
+2017-12-03 07:45:10.709318 - iteration 653
+TSNE
+loss at current iteration = 
+2013.35
+2017-12-03 07:45:41.651289 - iteration 654
+TSNE
+loss at current iteration = 
+1722.99
+2017-12-03 07:46:20.720551 - iteration 655
+TSNE
+loss at current iteration = 
+2013.65
+2017-12-03 07:46:58.158225 - iteration 656
+TSNE
+loss at current iteration = 
+1745.13
+2017-12-03 07:47:33.971291 - iteration 657
+TSNE
+loss at current iteration = 
+1669.33
+2017-12-03 07:48:12.089948 - iteration 658
+TSNE
+loss at current iteration = 
+1768.95
+2017-12-03 07:48:49.164130 - iteration 659
+TSNE
+loss at current iteration = 
+1586.36
+2017-12-03 07:49:34.057630 - iteration 660
+TSNE
+loss at current iteration = 
+1995.29
+2017-12-03 07:50:11.734943 - iteration 661
+TSNE
+loss at current iteration = 
+2059.78
+2017-12-03 07:50:47.811565 - iteration 662
+TSNE
+loss at current iteration = 
+1921.75
+2017-12-03 07:51:23.752596 - iteration 663
+TSNE
+loss at current iteration = 
+1985.85
+2017-12-03 07:52:05.156887 - iteration 664
+TSNE
+loss at current iteration = 
+1712.62
+2017-12-03 07:52:53.576783 - iteration 665
+TSNE
+loss at current iteration = 
+2009.24
+2017-12-03 07:53:41.658739 - iteration 666
+TSNE
+loss at current iteration = 
+1978.02
+2017-12-03 07:54:23.416504 - iteration 667
+TSNE
+loss at current iteration = 
+1906.37
+2017-12-03 07:55:02.589163 - iteration 668
+TSNE
+loss at current iteration = 
+1929.66
+2017-12-03 07:55:48.714957 - iteration 669
+TSNE
+loss at current iteration = 
+1933.46
+2017-12-03 07:56:30.747418 - iteration 670
+TSNE
+loss at current iteration = 
+1953.34
+2017-12-03 07:57:05.808910 - iteration 671
+TSNE
+loss at current iteration = 
+1688.04
+2017-12-03 07:57:37.172938 - iteration 672
+TSNE
+loss at current iteration = 
+1685.69
+2017-12-03 07:58:22.253120 - iteration 673
+TSNE
+loss at current iteration = 
+1693.64
+2017-12-03 07:59:00.182047 - iteration 674
+TSNE
+loss at current iteration = 
+1977.84
+2017-12-03 07:59:40.038895 - iteration 675
+TSNE
+loss at current iteration = 
+1671.4
+2017-12-03 08:00:13.332534 - iteration 676
+TSNE
+loss at current iteration = 
+1635.85
+2017-12-03 08:00:48.212240 - iteration 677
+TSNE
+loss at current iteration = 
+1615.76
+2017-12-03 08:01:20.866982 - iteration 678
+TSNE
+loss at current iteration = 
+1671.32
+2017-12-03 08:01:56.111318 - iteration 679
+TSNE
+loss at current iteration = 
+1689.5
+2017-12-03 08:02:30.181852 - iteration 680
+TSNE
+loss at current iteration = 
+1674.14
+2017-12-03 08:03:08.699405 - iteration 681
+TSNE
+loss at current iteration = 
+1687.61
+2017-12-03 08:03:42.300406 - iteration 682
+TSNE
+loss at current iteration = 
+1930.32
+2017-12-03 08:04:17.705492 - iteration 683
+TSNE
+loss at current iteration = 
+1825.89
+2017-12-03 08:04:53.261698 - iteration 684
+TSNE
+loss at current iteration = 
+1934.57
+2017-12-03 08:05:34.346921 - iteration 685
+TSNE
+loss at current iteration = 
+1876.3
+2017-12-03 08:06:13.153095 - iteration 686
+TSNE
+loss at current iteration = 
+1591.97
+2017-12-03 08:06:49.128523 - iteration 687
+TSNE
+loss at current iteration = 
+1885.19
+2017-12-03 08:07:22.357942 - iteration 688
+TSNE
+loss at current iteration = 
+1856.74
+2017-12-03 08:08:02.371992 - iteration 689
+TSNE
+loss at current iteration = 
+1566.4
+2017-12-03 08:08:37.871523 - iteration 690
+TSNE
+loss at current iteration = 
+1584.76
+2017-12-03 08:09:16.590871 - iteration 691
+TSNE
+loss at current iteration = 
+1581.65
+2017-12-03 08:10:06.317781 - iteration 692
+TSNE
+loss at current iteration = 
+1958.7
+2017-12-03 08:10:49.437052 - iteration 693
+TSNE
+loss at current iteration = 
+1905.3
+2017-12-03 08:11:28.102172 - iteration 694
+TSNE
+loss at current iteration = 
+1641.84
+2017-12-03 08:12:07.936252 - iteration 695
+TSNE
+loss at current iteration = 
+1918.14
+2017-12-03 08:12:40.047688 - iteration 696
+TSNE
+loss at current iteration = 
+1885.32
+2017-12-03 08:13:15.509073 - iteration 697
+TSNE
+loss at current iteration = 
+1917.15
+2017-12-03 08:14:05.649705 - iteration 698
+TSNE
+loss at current iteration = 
+1553.1
+2017-12-03 08:14:39.384368 - iteration 699
+TSNE
+loss at current iteration = 
+1623.13
+2017-12-03 08:15:17.126381 - iteration 700
+TSNE
+loss at current iteration = 
+1865.92
+2017-12-03 08:16:04.865549 - iteration 701
+TSNE
+loss at current iteration = 
+1598.14
+2017-12-03 08:16:51.678507 - iteration 702
+TSNE
+loss at current iteration = 
+1626.38
+2017-12-03 08:17:28.909060 - iteration 703
+TSNE
+loss at current iteration = 
+1589.05
+2017-12-03 08:18:08.021197 - iteration 704
+TSNE
+loss at current iteration = 
+1526.79
+2017-12-03 08:18:41.794570 - iteration 705
+TSNE
+loss at current iteration = 
+1652.99
+2017-12-03 08:19:21.199105 - iteration 706
+TSNE
+loss at current iteration = 
+1844.68
+2017-12-03 08:20:01.666558 - iteration 707
+TSNE
+loss at current iteration = 
+1940.4
+2017-12-03 08:20:39.242296 - iteration 708
+TSNE
+loss at current iteration = 
+1880.22
+2017-12-03 08:21:12.877696 - iteration 709
+TSNE
+loss at current iteration = 
+1564.52
+2017-12-03 08:21:46.966794 - iteration 710
+TSNE
+loss at current iteration = 
+1550.39
+2017-12-03 08:22:24.507404 - iteration 711
+TSNE
+loss at current iteration = 
+1849.52
+2017-12-03 08:23:09.470459 - iteration 712
+TSNE
+loss at current iteration = 
+1468.33
+2017-12-03 08:23:49.197553 - iteration 713
+TSNE
+loss at current iteration = 
+1547.88
+2017-12-03 08:24:30.576729 - iteration 714
+TSNE
+loss at current iteration = 
+1477.1
+2017-12-03 08:25:10.237020 - iteration 715
+TSNE
+loss at current iteration = 
+1558.71
+2017-12-03 08:25:51.102861 - iteration 716
+TSNE
+loss at current iteration = 
+1834.02
+2017-12-03 08:26:30.776879 - iteration 717
+TSNE
+loss at current iteration = 
+1515.71
+2017-12-03 08:27:12.847732 - iteration 718
+TSNE
+loss at current iteration = 
+1791.16
+2017-12-03 08:27:52.888930 - iteration 719
+TSNE
+loss at current iteration = 
+1509.4
+2017-12-03 08:28:24.550850 - iteration 720
+TSNE
+loss at current iteration = 
+1906.97
+2017-12-03 08:29:10.792775 - iteration 721
+TSNE
+loss at current iteration = 
+1869.76
+2017-12-03 08:29:45.404201 - iteration 722
+TSNE
+loss at current iteration = 
+1859.41
+2017-12-03 08:30:21.376345 - iteration 723
+TSNE
+loss at current iteration = 
+1820.46
+2017-12-03 08:31:18.799112 - iteration 724
+TSNE
+loss at current iteration = 
+1516.6
+2017-12-03 08:31:58.265241 - iteration 725
+TSNE
+loss at current iteration = 
+1483.1
+2017-12-03 08:32:40.344264 - iteration 726
+TSNE
+loss at current iteration = 
+1802.9
+2017-12-03 08:33:19.796352 - iteration 727
+TSNE
+loss at current iteration = 
+1598.4
+2017-12-03 08:34:03.969896 - iteration 728
+TSNE
+loss at current iteration = 
+1545.69
+2017-12-03 08:34:44.695495 - iteration 729
+TSNE
+loss at current iteration = 
+1751.33
+2017-12-03 08:35:19.908012 - iteration 730
+TSNE
+loss at current iteration = 
+1820.34
+2017-12-03 08:36:01.039142 - iteration 731
+TSNE
+loss at current iteration = 
+1857.41
+2017-12-03 08:36:35.866827 - iteration 732
+TSNE
+loss at current iteration = 
+1796.81
+2017-12-03 08:37:19.764678 - iteration 733
+TSNE
+loss at current iteration = 
+1770.15
+2017-12-03 08:37:56.856984 - iteration 734
+TSNE
+loss at current iteration = 
+1856.01
+2017-12-03 08:38:34.607437 - iteration 735
+TSNE
+loss at current iteration = 
+1705.46
+2017-12-03 08:39:09.107705 - iteration 736
+TSNE
+loss at current iteration = 
+1579.08
+2017-12-03 08:39:55.830706 - iteration 737
+TSNE
+loss at current iteration = 
+1739.6
+2017-12-03 08:40:33.209002 - iteration 738
+TSNE
+loss at current iteration = 
+1789.53
+2017-12-03 08:41:11.410852 - iteration 739
+TSNE
+loss at current iteration = 
+1802.15
+2017-12-03 08:42:02.254914 - iteration 740
+TSNE
+loss at current iteration = 
+1799.35
+2017-12-03 08:42:44.780164 - iteration 741
+TSNE
+loss at current iteration = 
+1747.68
+2017-12-03 08:43:21.600940 - iteration 742
+TSNE
+loss at current iteration = 
+1433.35
+2017-12-03 08:44:02.758638 - iteration 743
+TSNE
+loss at current iteration = 
+1485.6
+2017-12-03 08:44:54.360170 - iteration 744
+TSNE
+loss at current iteration = 
+1796.46
+2017-12-03 08:45:36.247704 - iteration 745
+TSNE
+loss at current iteration = 
+1744.56
+2017-12-03 08:46:11.595635 - iteration 746
+TSNE
+loss at current iteration = 
+1834.48
+2017-12-03 08:46:52.107151 - iteration 747
+TSNE
+loss at current iteration = 
+1780.23
+2017-12-03 08:47:26.910732 - iteration 748
+TSNE
+loss at current iteration = 
+1830.25
+2017-12-03 08:48:10.129391 - iteration 749
+TSNE
+loss at current iteration = 
+1784.47
+2017-12-03 08:48:47.405390 - iteration 750
+TSNE
+loss at current iteration = 
+1765.86
+2017-12-03 08:49:26.428903 - iteration 751
+TSNE
+loss at current iteration = 
+1510.2
+2017-12-03 08:50:05.871599 - iteration 752
+TSNE
+loss at current iteration = 
+1492.26
+2017-12-03 08:50:38.867594 - iteration 753
+TSNE
+loss at current iteration = 
+1474.13
+2017-12-03 08:51:15.029647 - iteration 754
+TSNE
+loss at current iteration = 
+1456.62
+2017-12-03 08:51:53.989875 - iteration 755
+TSNE
+loss at current iteration = 
+1442.6
+2017-12-03 08:52:28.859337 - iteration 756
+TSNE
+loss at current iteration = 
+1741.57
+2017-12-03 08:53:08.335830 - iteration 757
+TSNE
+loss at current iteration = 
+1778.26
+2017-12-03 08:53:57.282020 - iteration 758
+TSNE
+loss at current iteration = 
+1753.94
+2017-12-03 08:54:41.879035 - iteration 759
+TSNE
+loss at current iteration = 
+1745.36
+2017-12-03 08:55:34.374481 - iteration 760
+TSNE
+loss at current iteration = 
+1608.49
+2017-12-03 08:56:07.398622 - iteration 761
+TSNE
+loss at current iteration = 
+1745.58
+2017-12-03 08:56:42.260414 - iteration 762
+TSNE
+loss at current iteration = 
+1490.04
+2017-12-03 08:57:20.582217 - iteration 763
+TSNE
+loss at current iteration = 
+1862.93
+2017-12-03 08:58:00.544006 - iteration 764
+TSNE
+loss at current iteration = 
+1717.64
+2017-12-03 08:58:41.612542 - iteration 765
+TSNE
+loss at current iteration = 
+1757.02
+2017-12-03 08:59:32.868495 - iteration 766
+TSNE
+loss at current iteration = 
+1736.61
+2017-12-03 09:00:04.108476 - iteration 767
+TSNE
+loss at current iteration = 
+1754.31
+2017-12-03 09:00:47.158343 - iteration 768
+TSNE
+loss at current iteration = 
+1682.65
+2017-12-03 09:01:29.184505 - iteration 769
+TSNE
+loss at current iteration = 
+1552.49
+2017-12-03 09:02:06.999553 - iteration 770
+TSNE
+loss at current iteration = 
+1555.48
+2017-12-03 09:02:43.285430 - iteration 771
+TSNE
+loss at current iteration = 
+1821.2
+2017-12-03 09:03:20.226815 - iteration 772
+TSNE
+loss at current iteration = 
+1671.82
+2017-12-03 09:03:59.799057 - iteration 773
+TSNE
+loss at current iteration = 
+1731.86
+2017-12-03 09:04:40.492162 - iteration 774
+TSNE
+loss at current iteration = 
+1643.28
+2017-12-03 09:05:23.159588 - iteration 775
+TSNE
+loss at current iteration = 
+1772.4
+2017-12-03 09:06:08.301393 - iteration 776
+TSNE
+loss at current iteration = 
+1666.78
+2017-12-03 09:06:44.153755 - iteration 777
+TSNE
+loss at current iteration = 
+1404.77
+2017-12-03 09:07:23.477546 - iteration 778
+TSNE
+loss at current iteration = 
+1421.71
+2017-12-03 09:07:59.432775 - iteration 779
+TSNE
+loss at current iteration = 
+1647.22
+2017-12-03 09:08:38.449227 - iteration 780
+TSNE
+loss at current iteration = 
+1375.03
+2017-12-03 09:09:16.057141 - iteration 781
+TSNE
+loss at current iteration = 
+1697.51
+2017-12-03 09:09:52.690189 - iteration 782
+TSNE
+loss at current iteration = 
+1367.71
+2017-12-03 09:10:44.656869 - iteration 783
+TSNE
+loss at current iteration = 
+1525.11
+2017-12-03 09:11:25.937052 - iteration 784
+TSNE
+loss at current iteration = 
+1375.56
+2017-12-03 09:12:04.472244 - iteration 785
+TSNE
+loss at current iteration = 
+1760.88
+2017-12-03 09:12:52.953434 - iteration 786
+TSNE
+loss at current iteration = 
+1696.5
+2017-12-03 09:13:29.017463 - iteration 787
+TSNE
+loss at current iteration = 
+1642.26
+2017-12-03 09:14:12.955346 - iteration 788
+TSNE
+loss at current iteration = 
+1674.87
+2017-12-03 09:14:48.303539 - iteration 789
+TSNE
+loss at current iteration = 
+1660.34
+2017-12-03 09:15:21.506389 - iteration 790
+TSNE
+loss at current iteration = 
+1504.52
+2017-12-03 09:15:56.691356 - iteration 791
+TSNE
+loss at current iteration = 
+1437.74
+2017-12-03 09:16:30.104531 - iteration 792
+TSNE
+loss at current iteration = 
+1435.12
+2017-12-03 09:17:13.395484 - iteration 793
+TSNE
+loss at current iteration = 
+1497.4
+2017-12-03 09:17:53.043700 - iteration 794
+TSNE
+loss at current iteration = 
+1442.48
+2017-12-03 09:18:29.598748 - iteration 795
+TSNE
+loss at current iteration = 
+1491.04
+2017-12-03 09:19:16.946548 - iteration 796
+TSNE
+loss at current iteration = 
+1626.06
+2017-12-03 09:20:00.355758 - iteration 797
+TSNE
+loss at current iteration = 
+1684.07
+2017-12-03 09:20:33.527786 - iteration 798
+TSNE
+loss at current iteration = 
+1620.83
+2017-12-03 09:21:13.271424 - iteration 799
+TSNE
+loss at current iteration = 
+1409.98
+2017-12-03 09:21:48.859010 - iteration 800
+TSNE
+loss at current iteration = 
+1598.72
+2017-12-03 09:22:33.887102 - iteration 801
+TSNE
+loss at current iteration = 
+1425.85
+2017-12-03 09:23:09.190645 - iteration 802
+TSNE
+loss at current iteration = 
+1683.85
+2017-12-03 09:23:50.121587 - iteration 803
+TSNE
+loss at current iteration = 
+1714.35
+2017-12-03 09:24:32.252635 - iteration 804
+TSNE
+loss at current iteration = 
+1623.54
+2017-12-03 09:25:12.955407 - iteration 805
+TSNE
+loss at current iteration = 
+1425.22
+2017-12-03 09:26:05.022587 - iteration 806
+TSNE
+loss at current iteration = 
+1621.5
+2017-12-03 09:26:41.037216 - iteration 807
+TSNE
+loss at current iteration = 
+1426.61
+2017-12-03 09:27:13.027932 - iteration 808
+TSNE
+loss at current iteration = 
+1397.65
+2017-12-03 09:27:52.721403 - iteration 809
+TSNE
+loss at current iteration = 
+1395.36
+2017-12-03 09:28:24.738847 - iteration 810
+TSNE
+loss at current iteration = 
+1596.14
+2017-12-03 09:29:08.964338 - iteration 811
+TSNE
+loss at current iteration = 
+1618.72
+2017-12-03 09:29:52.977751 - iteration 812
+TSNE
+loss at current iteration = 
+1560.85
+2017-12-03 09:30:35.707489 - iteration 813
+TSNE
+loss at current iteration = 
+1386.24
+2017-12-03 09:31:18.039754 - iteration 814
+TSNE
+loss at current iteration = 
+1597.69
+2017-12-03 09:32:01.837179 - iteration 815
+TSNE
+loss at current iteration = 
+1391.84
+2017-12-03 09:32:47.621901 - iteration 816
+TSNE
+loss at current iteration = 
+1411.6
+2017-12-03 09:33:29.302877 - iteration 817
+TSNE
+loss at current iteration = 
+1424.5
+2017-12-03 09:34:07.888344 - iteration 818
+TSNE
+loss at current iteration = 
+1388.92
+2017-12-03 09:34:40.493169 - iteration 819
+TSNE
+loss at current iteration = 
+1350.35
+2017-12-03 09:35:35.828971 - iteration 820
+TSNE
+loss at current iteration = 
+1634.05
+2017-12-03 09:36:11.317579 - iteration 821
+TSNE
+loss at current iteration = 
+1332.99
+2017-12-03 09:36:48.402272 - iteration 822
+TSNE
+loss at current iteration = 
+1663.32
+2017-12-03 09:37:52.036983 - iteration 823
+TSNE
+loss at current iteration = 
+1355.87
+2017-12-03 09:38:37.259992 - iteration 824
+TSNE
+loss at current iteration = 
+1665.99
+2017-12-03 09:39:19.940601 - iteration 825
+TSNE
+loss at current iteration = 
+1442.45
+2017-12-03 09:39:53.171974 - iteration 826
+TSNE
+loss at current iteration = 
+1422.53
+2017-12-03 09:40:36.955000 - iteration 827
+TSNE
+loss at current iteration = 
+1610.47
+2017-12-03 09:41:30.017410 - iteration 828
+TSNE
+loss at current iteration = 
+1615.38
+2017-12-03 09:42:12.429077 - iteration 829
+TSNE
+loss at current iteration = 
+1430.0
+2017-12-03 09:42:55.035125 - iteration 830
+TSNE
+loss at current iteration = 
+1531.71
+2017-12-03 09:43:34.857158 - iteration 831
+TSNE
+loss at current iteration = 
+1299.49
+2017-12-03 09:44:12.343684 - iteration 832
+TSNE
+loss at current iteration = 
+1648.66
+2017-12-03 09:44:50.652529 - iteration 833
+TSNE
+loss at current iteration = 
+1574.82
+2017-12-03 09:45:34.262344 - iteration 834
+TSNE
+loss at current iteration = 
+1424.26
+2017-12-03 09:46:09.785935 - iteration 835
+TSNE
+loss at current iteration = 
+1313.4
+2017-12-03 09:46:42.173028 - iteration 836
+TSNE
+loss at current iteration = 
+1386.31
+2017-12-03 09:47:16.745426 - iteration 837
+TSNE
+loss at current iteration = 
+1331.84
+2017-12-03 09:47:57.300537 - iteration 838
+TSNE
+loss at current iteration = 
+1314.99
+2017-12-03 09:48:44.050845 - iteration 839
+TSNE
+loss at current iteration = 
+1555.0
+2017-12-03 09:49:19.225477 - iteration 840
+TSNE
+loss at current iteration = 
+1545.76
+2017-12-03 09:49:51.216292 - iteration 841
+TSNE
+loss at current iteration = 
+1320.81
+2017-12-03 09:50:40.079819 - iteration 842
+TSNE
+loss at current iteration = 
+1698.66
+2017-12-03 09:51:12.948669 - iteration 843
+TSNE
+loss at current iteration = 
+1562.63
+2017-12-03 09:51:54.109806 - iteration 844
+TSNE
+loss at current iteration = 
+1509.13
+2017-12-03 09:52:26.167922 - iteration 845
+TSNE
+loss at current iteration = 
+1593.71
+2017-12-03 09:53:02.108814 - iteration 846
+TSNE
+loss at current iteration = 
+1310.09
+2017-12-03 09:53:36.681792 - iteration 847
+TSNE
+loss at current iteration = 
+1417.5
+2017-12-03 09:54:14.298136 - iteration 848
+TSNE
+loss at current iteration = 
+1459.31
+2017-12-03 09:55:08.346875 - iteration 849
+TSNE
+loss at current iteration = 
+1373.47
+2017-12-03 09:55:50.109073 - iteration 850
+TSNE
+loss at current iteration = 
+1562.59
+2017-12-03 09:56:25.570668 - iteration 851
+TSNE
+loss at current iteration = 
+1327.22
+2017-12-03 09:57:01.191120 - iteration 852
+TSNE
+loss at current iteration = 
+1348.05
+2017-12-03 09:57:43.633507 - iteration 853
+TSNE
+loss at current iteration = 
+1610.31
+2017-12-03 09:58:18.525825 - iteration 854
+TSNE
+loss at current iteration = 
+1326.48
+2017-12-03 09:59:11.119029 - iteration 855
+TSNE
+loss at current iteration = 
+1565.88
+2017-12-03 09:59:54.916304 - iteration 856
+TSNE
+loss at current iteration = 
+1410.72
+2017-12-03 10:00:36.058395 - iteration 857
+TSNE
+loss at current iteration = 
+1327.78
+2017-12-03 10:01:24.592402 - iteration 858
+TSNE
+loss at current iteration = 
+1537.43
+2017-12-03 10:02:01.229947 - iteration 859
+TSNE
+loss at current iteration = 
+1287.31
+2017-12-03 10:02:55.948038 - iteration 860
+TSNE
+loss at current iteration = 
+1568.45
+2017-12-03 10:03:32.403698 - iteration 861
+TSNE
+loss at current iteration = 
+1373.15
+2017-12-03 10:04:16.298819 - iteration 862
+TSNE
+loss at current iteration = 
+1552.25
+2017-12-03 10:04:52.763115 - iteration 863
+TSNE
+loss at current iteration = 
+1342.97
+2017-12-03 10:05:26.183354 - iteration 864
+TSNE
+loss at current iteration = 
+1357.29
+2017-12-03 10:05:58.441594 - iteration 865
+TSNE
+loss at current iteration = 
+1329.87
+2017-12-03 10:06:33.174475 - iteration 866
+TSNE
+loss at current iteration = 
+1564.96
+2017-12-03 10:07:17.342916 - iteration 867
+TSNE
+loss at current iteration = 
+1579.27
+2017-12-03 10:07:49.783431 - iteration 868
+TSNE
+loss at current iteration = 
+1336.03
+2017-12-03 10:08:22.719146 - iteration 869
+TSNE
+loss at current iteration = 
+1337.34
+2017-12-03 10:09:03.855950 - iteration 870
+TSNE
+loss at current iteration = 
+1279.97
+2017-12-03 10:09:45.397340 - iteration 871
+TSNE
+loss at current iteration = 
+1333.75
+2017-12-03 10:10:23.671532 - iteration 872
+TSNE
+loss at current iteration = 
+1533.7
+2017-12-03 10:11:17.380996 - iteration 873
+TSNE
+loss at current iteration = 
+1485.99
+2017-12-03 10:11:52.704158 - iteration 874
+TSNE
+loss at current iteration = 
+1560.58
+2017-12-03 10:12:26.593666 - iteration 875
+TSNE
+loss at current iteration = 
+1543.67
+2017-12-03 10:13:11.895415 - iteration 876
+TSNE
+loss at current iteration = 
+1513.73
+2017-12-03 10:13:57.222285 - iteration 877
+TSNE
+loss at current iteration = 
+1521.78
+2017-12-03 10:14:27.719933 - iteration 878
+TSNE
+loss at current iteration = 
+1324.33
+2017-12-03 10:15:03.383576 - iteration 879
+TSNE
+loss at current iteration = 
+1512.89
+2017-12-03 10:15:41.073538 - iteration 880
+TSNE
+loss at current iteration = 
+1286.83
+2017-12-03 10:16:25.533311 - iteration 881
+TSNE
+loss at current iteration = 
+1386.52
+2017-12-03 10:17:03.191633 - iteration 882
+TSNE
+loss at current iteration = 
+1496.54
+2017-12-03 10:17:37.534048 - iteration 883
+TSNE
+loss at current iteration = 
+1337.93
+2017-12-03 10:18:23.373614 - iteration 884
+TSNE
+loss at current iteration = 
+1561.25
+2017-12-03 10:18:59.957579 - iteration 885
+TSNE
+loss at current iteration = 
+1338.1
+2017-12-03 10:19:49.346947 - iteration 886
+TSNE
+loss at current iteration = 
+1424.01
+2017-12-03 10:20:29.067306 - iteration 887
+TSNE
+loss at current iteration = 
+1509.96
+2017-12-03 10:21:02.380237 - iteration 888
+TSNE
+loss at current iteration = 
+1393.41
+2017-12-03 10:21:37.455592 - iteration 889
+TSNE
+loss at current iteration = 
+1286.53
+2017-12-03 10:22:12.047372 - iteration 890
+TSNE
+loss at current iteration = 
+1526.02
+2017-12-03 10:22:48.670413 - iteration 891
+TSNE
+loss at current iteration = 
+1562.27
+2017-12-03 10:23:30.769354 - iteration 892
+TSNE
+loss at current iteration = 
+1331.14
+2017-12-03 10:24:11.503728 - iteration 893
+TSNE
+loss at current iteration = 
+1563.0
+2017-12-03 10:24:44.416518 - iteration 894
+TSNE
+loss at current iteration = 
+1322.8
+2017-12-03 10:25:14.826502 - iteration 895
+TSNE
+loss at current iteration = 
+1351.83
+2017-12-03 10:25:59.607631 - iteration 896
+TSNE
+loss at current iteration = 
+1294.37
+2017-12-03 10:26:40.538044 - iteration 897
+TSNE
+loss at current iteration = 
+1406.73
+2017-12-03 10:27:12.182751 - iteration 898
+TSNE
+loss at current iteration = 
+1481.91
+2017-12-03 10:27:43.609428 - iteration 899
+TSNE
+loss at current iteration = 
+1341.13
+2017-12-03 10:28:24.152621 - iteration 900
+TSNE
+loss at current iteration = 
+1501.4
+2017-12-03 10:29:11.877855 - iteration 901
+TSNE
+loss at current iteration = 
+1550.81
+2017-12-03 10:29:42.888625 - iteration 902
+TSNE
+loss at current iteration = 
+1509.98
+2017-12-03 10:30:16.028846 - iteration 903
+TSNE
+loss at current iteration = 
+1502.77
+2017-12-03 10:30:54.140376 - iteration 904
+TSNE
+loss at current iteration = 
+1558.58
+2017-12-03 10:31:22.231237 - iteration 905
+TSNE
+loss at current iteration = 
+1450.99
+2017-12-03 10:31:52.963073 - iteration 906
+TSNE
+loss at current iteration = 
+1489.35
+2017-12-03 10:32:32.666918 - iteration 907
+TSNE
+loss at current iteration = 
+1279.9
+2017-12-03 10:33:17.289437 - iteration 908
+TSNE
+loss at current iteration = 
+1457.08
+2017-12-03 10:33:54.263725 - iteration 909
+TSNE
+loss at current iteration = 
+1295.5
+2017-12-03 10:34:30.714291 - iteration 910
+TSNE
+loss at current iteration = 
+1235.8
+2017-12-03 10:35:13.191207 - iteration 911
+TSNE
+loss at current iteration = 
+1216.23
+2017-12-03 10:36:06.451577 - iteration 912
+TSNE
+loss at current iteration = 
+1439.28
+2017-12-03 10:36:43.199953 - iteration 913
+TSNE
+loss at current iteration = 
+1526.04
+2017-12-03 10:37:15.972217 - iteration 914
+TSNE
+loss at current iteration = 
+1293.58
+2017-12-03 10:37:52.840484 - iteration 915
+TSNE
+loss at current iteration = 
+1499.01
+2017-12-03 10:38:37.793089 - iteration 916
+TSNE
+loss at current iteration = 
+1521.46
+2017-12-03 10:39:33.043946 - iteration 917
+TSNE
+loss at current iteration = 
+1416.8
+2017-12-03 10:40:17.120083 - iteration 918
+TSNE
+loss at current iteration = 
+1317.77
+2017-12-03 10:40:54.182948 - iteration 919
+TSNE
+loss at current iteration = 
+1338.07
+2017-12-03 10:41:31.977463 - iteration 920
+TSNE
+loss at current iteration = 
+1419.73
+2017-12-03 10:42:12.726721 - iteration 921
+TSNE
+loss at current iteration = 
+1298.13
+2017-12-03 10:42:53.175617 - iteration 922
+TSNE
+loss at current iteration = 
+1380.09
+2017-12-03 10:43:27.191313 - iteration 923
+TSNE
+loss at current iteration = 
+1451.97
+2017-12-03 10:44:06.060627 - iteration 924
+TSNE
+loss at current iteration = 
+1453.15
+2017-12-03 10:44:46.772853 - iteration 925
+TSNE
+loss at current iteration = 
+1399.08
+2017-12-03 10:45:30.399674 - iteration 926
+TSNE
+loss at current iteration = 
+1448.55
+2017-12-03 10:46:25.103522 - iteration 927
+TSNE
+loss at current iteration = 
+1254.42
+2017-12-03 10:47:14.593644 - iteration 928
+TSNE
+loss at current iteration = 
+1193.11
+2017-12-03 10:47:57.862659 - iteration 929
+TSNE
+loss at current iteration = 
+1266.16
+2017-12-03 10:48:36.903112 - iteration 930
+TSNE
+loss at current iteration = 
+1218.45
+2017-12-03 10:49:11.672898 - iteration 931
+TSNE
+loss at current iteration = 
+1403.07
+2017-12-03 10:49:58.957981 - iteration 932
+TSNE
+loss at current iteration = 
+1319.25
+2017-12-03 10:50:42.114477 - iteration 933
+TSNE
+loss at current iteration = 
+1206.67
+2017-12-03 10:51:29.310738 - iteration 934
+TSNE
+loss at current iteration = 
+1511.88
+2017-12-03 10:52:27.799879 - iteration 935
+TSNE
+loss at current iteration = 
+1223.38
+2017-12-03 10:53:07.331115 - iteration 936
+TSNE
+loss at current iteration = 
+1426.95
+2017-12-03 10:53:41.976800 - iteration 937
+TSNE
+loss at current iteration = 
+1407.32
+2017-12-03 10:54:35.242903 - iteration 938
+TSNE
+loss at current iteration = 
+1237.85
+2017-12-03 10:55:18.575356 - iteration 939
+TSNE
+loss at current iteration = 
+1418.33
+2017-12-03 10:56:12.756414 - iteration 940
+TSNE
+loss at current iteration = 
+1180.85
+2017-12-03 10:56:54.761639 - iteration 941
+TSNE
+loss at current iteration = 
+1402.29
+2017-12-03 10:57:29.015401 - iteration 942
+TSNE
+loss at current iteration = 
+1348.45
+2017-12-03 10:58:11.889796 - iteration 943
+TSNE
+loss at current iteration = 
+1415.45
+2017-12-03 10:58:53.699306 - iteration 944
+TSNE
+loss at current iteration = 
+1446.64
+2017-12-03 10:59:29.063215 - iteration 945
+TSNE
+loss at current iteration = 
+1270.85
+2017-12-03 11:00:06.866584 - iteration 946
+TSNE
+loss at current iteration = 
+1425.25
+2017-12-03 11:00:57.104296 - iteration 947
+TSNE
+loss at current iteration = 
+1430.63
+2017-12-03 11:01:34.089218 - iteration 948
+TSNE
+loss at current iteration = 
+1378.19
+2017-12-03 11:02:12.567797 - iteration 949
+TSNE
+loss at current iteration = 
+1189.76
+2017-12-03 11:02:51.349841 - iteration 950
+TSNE
+loss at current iteration = 
+1411.05
+2017-12-03 11:03:24.379003 - iteration 951
+TSNE
+loss at current iteration = 
+1404.09
+2017-12-03 11:04:01.280572 - iteration 952
+TSNE
+loss at current iteration = 
+1279.7
+2017-12-03 11:04:33.595175 - iteration 953
+TSNE
+loss at current iteration = 
+1298.88
+2017-12-03 11:05:09.587179 - iteration 954
+TSNE
+loss at current iteration = 
+1232.38
+2017-12-03 11:05:50.804853 - iteration 955
+TSNE
+loss at current iteration = 
+1211.81
+2017-12-03 11:06:39.426476 - iteration 956
+TSNE
+loss at current iteration = 
+1451.95
+2017-12-03 11:07:18.598297 - iteration 957
+TSNE
+loss at current iteration = 
+1087.34
+2017-12-03 11:08:05.205038 - iteration 958
+TSNE
+loss at current iteration = 
+1448.96
+2017-12-03 11:09:05.817175 - iteration 959
+TSNE
+loss at current iteration = 
+1201.94
+2017-12-03 11:09:53.353181 - iteration 960
+TSNE
+loss at current iteration = 
+1259.11
+2017-12-03 11:10:35.479913 - iteration 961
+TSNE
+loss at current iteration = 
+1172.99
+2017-12-03 11:11:08.665577 - iteration 962
+TSNE
+loss at current iteration = 
+1218.27
+2017-12-03 11:11:45.068733 - iteration 963
+TSNE
+loss at current iteration = 
+1431.2
+2017-12-03 11:12:23.044466 - iteration 964
+TSNE
+loss at current iteration = 
+1384.83
+2017-12-03 11:12:59.327862 - iteration 965
+TSNE
+loss at current iteration = 
+1424.66
+2017-12-03 11:13:31.440145 - iteration 966
+TSNE
+loss at current iteration = 
+1427.56
+2017-12-03 11:14:13.283848 - iteration 967
+TSNE
+loss at current iteration = 
+1185.16
+2017-12-03 11:14:45.299164 - iteration 968
+TSNE
+loss at current iteration = 
+1369.81
+2017-12-03 11:15:20.785750 - iteration 969
+TSNE
+loss at current iteration = 
+1118.53
+2017-12-03 11:15:55.046961 - iteration 970
+TSNE
+loss at current iteration = 
+1278.6
+2017-12-03 11:16:32.713291 - iteration 971
+TSNE
+loss at current iteration = 
+1206.38
+2017-12-03 11:17:13.821268 - iteration 972
+TSNE
+loss at current iteration = 
+1141.09
+2017-12-03 11:17:59.878558 - iteration 973
+TSNE
+loss at current iteration = 
+1230.12
+2017-12-03 11:18:48.770874 - iteration 974
+TSNE
+loss at current iteration = 
+1386.39
+2017-12-03 11:19:25.902610 - iteration 975
+TSNE
+loss at current iteration = 
+1389.0
+2017-12-03 11:20:09.524937 - iteration 976
+TSNE
+loss at current iteration = 
+1227.51
+2017-12-03 11:20:52.579950 - iteration 977
+TSNE
+loss at current iteration = 
+1382.61
+2017-12-03 11:21:40.901300 - iteration 978
+TSNE
+loss at current iteration = 
+1134.56
+2017-12-03 11:22:27.227263 - iteration 979
+TSNE
+loss at current iteration = 
+1130.98
+2017-12-03 11:23:13.637063 - iteration 980
+TSNE
+loss at current iteration = 
+1407.23
+2017-12-03 11:23:52.119497 - iteration 981
+TSNE
+loss at current iteration = 
+1381.77
+2017-12-03 11:24:31.064051 - iteration 982
+TSNE
+loss at current iteration = 
+1462.77
+2017-12-03 11:25:12.299474 - iteration 983
+TSNE
+loss at current iteration = 
+1202.98
+2017-12-03 11:25:56.488054 - iteration 984
+TSNE
+loss at current iteration = 
+1364.72
+2017-12-03 11:26:39.627874 - iteration 985
+TSNE
+loss at current iteration = 
+1393.46
+2017-12-03 11:27:37.346116 - iteration 986
+TSNE
+loss at current iteration = 
+1418.09
+2017-12-03 11:28:13.734552 - iteration 987
+TSNE
+loss at current iteration = 
+1324.55
+2017-12-03 11:28:56.105837 - iteration 988
+TSNE
+loss at current iteration = 
+1192.36
+2017-12-03 11:29:35.319109 - iteration 989
+TSNE
+loss at current iteration = 
+1166.63
+2017-12-03 11:30:30.635082 - iteration 990
+TSNE
+loss at current iteration = 
+1363.43
+2017-12-03 11:31:21.325541 - iteration 991
+TSNE
+loss at current iteration = 
+1375.33
+2017-12-03 11:32:00.488880 - iteration 992
+TSNE
+loss at current iteration = 
+1305.86
+2017-12-03 11:32:40.685300 - iteration 993
+TSNE
+loss at current iteration = 
+1345.9
+2017-12-03 11:33:28.362944 - iteration 994
+TSNE
+loss at current iteration = 
+1120.39
+2017-12-03 11:34:07.685911 - iteration 995
+TSNE
+loss at current iteration = 
+1103.89
+2017-12-03 11:35:03.346988 - iteration 996
+TSNE
+loss at current iteration = 
+1334.21
+2017-12-03 11:35:43.443891 - iteration 997
+TSNE
+loss at current iteration = 
+1073.94
+2017-12-03 11:36:26.257103 - iteration 998
+TSNE
+loss at current iteration = 
+1274.23
+2017-12-03 11:37:00.517416 - iteration 999
+TSNE
+loss at current iteration = 
+1153.1
+elapsed time: 
+39751.538326740265
+Calculate thresholds for each predicate
+Determine ideal thresholds
+Test model
+Perform predictions
+test_labels
+[[1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0], [-1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0], [1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0], [-1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0], [1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0]]
+predictions
+[array([-0.72060335,  1.03081083, -0.25745699,  0.60485327,  1.03085542,
+        0.68574846,  0.98995233, -0.35521388, -0.74819756, -0.3299576 ,
+        1.03081059,  1.03058338,  1.03085148,  1.03084028,  1.03044438,
+        1.03085649, -0.24267554, -0.10657237, -0.68970579,  1.03076053,
+       -0.50454992,  1.03084719,  1.03085005,  1.00095558,  0.91994643,
+        1.02384377,  1.02693975, -0.33742809,  1.0302906 , -0.43551174,
+        0.93056977,  1.03084922,  0.96673071,  1.03084087, -0.5346055 ,
+        1.03084242,  1.03084767,  0.25228918,  1.03085744,  1.03022325,
+       -0.41845065, -0.69862926, -0.5269298 ,  0.87206912, -0.89891291,
+       -0.90602964,  0.39807484,  1.02861118,  1.03084886,  1.030846  ,
+        1.03077924,  1.03058755,  0.46186727,  1.0308367 , -0.91800684,
+       -0.89429492, -0.8634063 ,  1.03008008,  0.84025288,  0.22040433,
+       -0.97569805,  1.0308516 ,  1.01663923, -0.46976107,  0.93610126,
+        0.42630452, -0.33229393,  1.01774681,  1.02602422,  0.96488452,
+        1.03065205,  0.14288977,  1.0293119 , -0.3805069 , -0.46200672,
+        1.03084469, -0.37009135,  0.00651459,  1.01450074, -0.48201591,
+        0.85832673,  1.03085423,  1.03085208,  1.03070354,  1.03084373,
+        0.88852721,  1.03085685, -0.7361179 ,  1.0308398 , -0.34555462,
+        1.02948201,  1.02490139,  1.03081119, -0.64936543, -0.41900837,
+        1.00375021,  0.50097686,  1.03052258,  1.03083253,  1.03082335,
+       -1.00270498,  1.02810502, -0.0635867 ,  0.92790234,  0.27743548,
+        0.70964181, -0.84073561,  1.03066432,  0.92951465,  0.99763811,
+        1.03075385, -0.237192  ,  0.88956678,  0.4783006 , -0.2130786 ,
+        1.0267446 ,  1.03024459, -0.59135288,  1.02966237, -0.50497758,
+        1.03080726,  1.01724803, -0.35273606,  1.00314629, -0.28148448,
+        0.31919244,  1.0308553 ,  1.00119233,  1.01438427, -0.61810941,
+       -0.49420443,  1.02630246,  0.52849543,  1.02938795,  0.29089355,
+        1.03069258,  1.0255326 ,  1.01494157,  1.02959514, -0.72958481,
+        1.03001094,  1.03085673,  1.02987039,  1.03018284,  0.39972615,
+        0.46472177,  0.19284445, -0.70551729,  1.03078139, -0.96976143,
+        1.03072357,  0.53189349,  1.03085363,  0.47568959,  1.02958131,
+        0.6943047 ,  0.13689649,  1.02666998,  1.03083837,  1.02877307,
+       -0.78483891,  0.11146927,  1.03083909,  1.03072548,  0.83674705,
+        0.71092117,  1.03075242,  1.0308392 ,  1.0308547 ,  0.58859974,
+       -0.7960037 ,  1.03058887, -0.74198741,  0.53709817,  1.03078425,
+       -0.588705  , -0.6168946 ,  1.02994704, -0.22862193,  0.78370571,
+        1.03085685,  0.95025921,  1.0307951 ,  1.03085756,  1.0015974 ,
+        1.03070676,  1.03085601,  0.58472908,  0.30633864,  0.89181864,
+        1.03085446,  1.02515697,  0.99656582,  1.02875423,  0.13020247,
+        0.286448  ,  0.67244101, -0.5914039 , -0.60191596,  0.76873052,
+       -0.66459805,  1.00255382, -0.79197669, -0.25789404,  1.02910829,
+       -0.45806715,  0.93434781,  0.88247579, -0.8325628 ,  0.48166642,
+       -0.38510454, -0.95258844,  0.70056039, -0.10530265, -0.48446083,
+        1.03084075,  0.2671203 ,  1.02611172, -0.39144844, -0.50133687,
+        1.0308423 ,  0.18407315, -0.56190211,  1.03085148, -0.83169782,
+        1.0282042 ,  0.03324123, -0.22956017,  1.03082633, -0.71903932,
+        0.16516951,  0.21822977,  1.02209795, -0.07390366, -0.72514707,
+        1.03085697, -0.76694411, -0.12675843,  1.03072858,  0.62005508,
+       -0.90144032,  0.43859583,  1.02724349,  1.03056383,  1.030779  ,
+        1.03071654,  1.03085303,  0.52887321,  1.02634597,  0.66992557,
+        1.03059387, -0.34345531,  1.03057849, -0.01449787,  0.87457317,
+       -0.76238215,  1.0303694 , -0.09499176,  1.02955091,  1.03070593,
+        0.78213763,  0.72494286,  1.03084803,  1.02490747, -0.2356181 ,
+        0.98711437,  0.92427683,  0.59702039,  1.02711415,  1.03082669,
+        1.03085113,  0.07947025, -0.89339423,  0.35475653, -0.18298917,
+        0.94838274, -0.78098577, -0.43767694,  1.03028941, -0.27663854,
+        1.02617502, -0.91304588,  1.03071046, -0.54000074,  1.02371061,
+        1.02921367,  1.03034675,  1.00456548, -0.07575136,  1.03079045,
+        0.31719637,  1.03079343,  0.16083062,  0.90684175,  1.02963781,
+       -0.53016531, -0.6222263 ,  1.02926159,  1.03085709, -0.7635234 ,
+        1.0250963 ,  0.06799114,  0.8075248 ,  1.03076434,  1.03085542,
+        1.03077471, -0.58779031, -0.79925609,  1.03071642, -0.23550339,
+       -0.65010315, -0.11728925,  0.86522388,  1.03080511, -0.61215729,
+       -0.03664216,  1.03024411, -0.6951834 , -0.61940777,  1.02955687,
+        1.00355268, -0.4982025 ,  1.03052807,  1.02473438,  1.03085601,
+        1.02294111,  0.95194954,  0.67379594, -0.40202701,  1.03051639,
+        0.29484537,  1.03084779,  1.03065634,  0.08142973,  0.15092915,
+        1.03077102, -0.1353932 ,  1.01781774,  0.84330809,  1.02143657,
+       -0.47251502, -0.36167789,  0.7217617 ,  1.03082883, -0.323809  ,
+        0.04585814, -0.58314162,  0.11323003,  1.03085685, -0.02686405,
+        0.37618786, -0.48317701,  0.25873026,  1.0299443 ,  1.0301286 ,
+        1.02959859,  0.78548342,  1.03081429,  0.96031392,  1.01705313,
+        1.03083158,  0.55223668,  0.60965246,  1.03081226, -0.07373516,
+        1.03063321,  1.03085375,  1.03085709, -0.91463399,  1.03054881,
+        0.23728216,  0.42463616,  1.01842475,  0.34360391, -0.85057354,
+       -0.48890865,  1.01947081,  0.83316422, -0.96353543,  1.0308553 ,
+        1.03012574, -0.24772961,  1.02628922,  1.03085446, -0.77362883,
+       -0.30839813,  0.50937462,  1.02591586,  1.02816463,  1.03080904,
+       -0.60855961, -0.08433528,  1.02777362,  0.94274569,  1.02966988,
+        0.391067  ,  0.34646994, -0.59358621,  1.03084683,  1.012972  ,
+       -0.21352534, -0.11097901,  1.03074872,  1.00026333,  1.03058004,
+        1.03085744,  0.2632122 , -0.50315428,  1.03039551, -0.63026911,
+        0.50431585,  1.02960539,  1.02934623, -0.76592702, -0.34433338,
+        1.02853918, -0.59076685,  1.03015292,  1.03082323,  1.03085518,
+        1.02956617,  1.02221286, -0.29496914,  1.02718329, -0.56683475,
+        0.88690281, -0.15444079,  1.03081703,  0.99736959,  1.03049493,
+        1.0308001 ,  0.98830122,  1.02640069,  1.03008151,  0.79137599,
+        1.03049254,  0.78026748, -1.00772309,  1.02987373,  0.94376987,
+        1.02532661,  1.03081405, -0.86509216,  0.59275329, -0.01139115,
+        1.02970517,  1.03082907, -0.35860926,  0.98589206,  0.90606916,
+       -0.56122875,  1.02985263,  1.03070045,  0.71100014,  0.99959004,
+        1.02874601, -0.41757691,  0.95876926, -0.77583104, -0.49587825,
+        1.03085506,  0.97523832, -0.87824339,  0.99877775,  1.02866411,
+        0.29025713,  0.5641824 ,  1.03077149,  0.72491485,  1.0307759 ,
+        1.03057611,  0.05509534,  1.03061557,  0.93054205,  0.53467798,
+        1.03085279, -0.01740388,  1.03083813,  1.03085721,  0.00526996,
+       -0.11148518,  1.03023255,  0.44667917, -1.01164961,  1.03080618,
+        1.03073931,  1.03082228, -0.58011287,  1.0292393 , -0.61461055,
+        1.02942348,  1.03083658,  0.91292238, -0.57168627,  0.00523582,
+        0.58606607,  1.02521265,  1.0307374 ,  1.03085613,  1.03085661,
+        0.96238983,  0.53776181,  1.03084636,  1.03084648, -0.28416607,
+        1.00978518,  1.03081822,  1.0308553 , -0.9555946 ,  0.88535804,
+       -0.56933546, -0.07310656, -0.3137573 ,  0.65573263,  1.03085732,
+        0.15248847, -0.11536397, -0.37575606,  1.03032362,  1.03054667,
+        1.02543902,  1.02968013,  1.03077626,  1.03083956,  1.03081751,
+        1.01439154,  0.91509593,  0.90117955,  0.60372871,  1.02735341,
+       -0.56187099,  1.03085637,  1.02836466, -0.78308713,  1.02978194,
+        1.03085709,  1.02877069,  1.03068638, -0.85895663,  0.91411638,
+        1.01783633,  0.60379457,  0.85146046,  1.02963352,  1.0053637 ,
+       -0.6868816 ,  0.39800441,  0.86196172,  1.03002059,  1.02962983,
+        1.03064692,  0.70730728, -0.38025925,  0.62442029,  0.22339824,
+       -0.93952525,  1.03085351,  1.03072381, -0.89360344,  1.03052938,
+        1.03083932, -0.87545824,  1.03053403,  1.03085637, -0.11586351,
+       -0.88970208,  1.02829885,  1.03085709,  1.03081632, -0.37839359,
+        0.29433462, -0.34066483,  0.83185935,  0.95088488, -0.67246425,
+        1.03069365,  1.03082645, -0.35729837,  1.03081095,  0.31674713,
+        1.03067446, -0.31156895, -0.8212235 ,  1.02977347, -0.53136432,
+        1.0305624 ,  0.91651571,  1.03051662,  1.02732193,  1.03047073,
+       -0.63837713, -0.95063561,  0.8563298 , -0.69473529,  1.03051925,
+       -0.86617559, -0.93596965,  1.03055418, -0.94155931,  1.03084087,
+        1.02913523,  1.03053296,  0.82466114, -0.81310862, -0.4744297 ,
+        0.28306115,  1.01492953,  1.02381933,  0.92200911,  0.14406455,
+        0.9720906 , -0.65178394,  1.02724683,  1.02988172,  1.03077185,
+       -0.00790708,  1.02579975, -0.54009354,  1.03053045,  1.03084028,
+        0.51131952,  0.52539927, -0.79294217,  0.33223951,  0.95166939,
+        1.03078353, -0.18960285,  1.03081429, -0.66110992, -0.14023124,
+        1.03042936,  1.02733719, -0.27295208,  1.02903724, -0.43957654,
+        1.0229063 ,  1.03020072,  1.02547014,  0.84909302, -0.74454248,
+        1.02539754,  0.90369982,  0.01480753, -0.97038651,  0.15588491,
+        1.03085744,  0.24778558,  1.02946663,  1.03058517,  1.03024364,
+        0.3157815 ,  1.03064108, -0.02642026,  1.0303973 ,  1.03075325,
+        1.03074622,  1.03026915,  1.03085041,  1.0009346 ,  1.03085399,
+        0.98886716,  0.87442911,  1.03051198,  1.02663112, -0.03118561,
+        1.03061819,  1.03085732,  0.94073361,  1.03075147,  1.03085673,
+        0.43125007,  1.0308063 , -0.23180638,  1.03060091,  1.0308516 ,
+        1.03071415,  1.03085482,  1.02898622,  1.03009391,  1.03084457,
+        0.13913804,  1.03083992,  1.0308392 ,  1.03072727,  1.0303508 ,
+        1.02501714,  1.0306015 ,  1.03085577, -0.00473449,  1.03071737,
+       -0.24092928,  1.03077316,  1.03085721, -0.20434314, -0.06715453,
+        0.85727948,  1.03074622,  1.0291599 ,  1.02871561, -0.65866661,
+        1.01831555,  1.0232532 ,  1.03022599, -0.83238149,  1.03011429,
+        1.03085732,  1.03053737, -0.50716698,  1.03083789,  1.03083873,
+       -0.73642564,  0.58884692, -0.80252516,  1.03085673, -0.31524679,
+        1.02949715,  1.03024197, -0.84610999, -0.05671865, -0.81038517,
+        0.27456805,  1.03053069,  1.02822351,  0.44016445,  1.03057373,
+        0.60695636,  1.02482617, -0.69349593,  0.75993478,  1.03085756,
+       -0.43702704,  1.03080106,  1.03065157,  1.03006434,  1.0286479 ,
+        0.0403202 ,  1.03076935,  0.38432074,  0.94972759,  1.03064609,
+        1.03063154,  1.02364421,  1.0272193 ,  0.13317348,  1.03083789,
+        1.03085732,  1.03082752,  0.4275279 ,  1.03082681,  1.01777112,
+        1.03042746, -0.58830357, -0.07760674,  0.88576126,  1.03072572,
+       -0.45795524, -0.47560877,  0.88713181,  0.59320903,  1.02340269,
+        0.93260503,  0.34786776,  1.03077078,  0.88052458, -0.30254477,
+        1.03085685,  0.72933102,  1.030393  ,  0.21539681, -0.91118717,
+        1.03085756, -0.92422014,  1.03085613,  1.03055727,  1.02844501,
+        1.02974319, -0.09332736,  1.01818514, -0.87056911,  1.03084493,
+       -0.55723715, -0.25742662,  1.03074741,  1.00122344, -0.4972859 ,
+        1.0308075 ,  1.02862632,  1.02636266, -0.76738149,  0.97975981,
+        1.03069639,  0.37492335,  1.03048992, -0.40721446, -0.49417296,
+       -0.21610609,  1.02998817, -0.34751135, -0.10404354,  0.96540165,
+        0.59819078,  1.03074014,  1.03031743,  1.03085589, -0.82378459,
+        1.00959086,  1.01080179, -0.65625525,  0.45054814,  0.74759144,
+        1.03083324,  0.67098027,  0.95769131, -0.72987735,  1.03084099,
+        0.46376264,  1.0308342 ,  1.03084993,  1.00566506, -0.22877587,
+        1.03079557, -0.59444314,  0.14192867,  1.03075361,  1.02976727,
+        1.03085732,  1.03085566,  1.00894248,  0.89215606,  1.03082752,
+       -0.60873377,  1.03067887,  1.03084409,  1.03064072, -0.65815181,
+        1.03046954,  1.01851487,  1.03081477, -0.43674201,  0.01249723,
+       -0.27680674,  1.03080189,  0.20298548,  1.02918816,  1.03050387,
+        1.03025961,  1.02782583,  1.03085244,  1.03015578,  1.03059316,
+        1.03080463, -0.46633089,  0.86279476,  1.03085208,  1.03085577,
+       -0.98704684,  0.36284679,  1.03084683,  1.03061748,  1.0308497 ,
+        1.03085732,  0.98665565,  1.03083622, -0.17272356,  1.03085184,
+        1.03051567,  1.03085017,  1.01799989,  1.03055441,  0.67289144,
+       -0.25666168,  0.96710443,  0.66061896, -0.6487937 , -0.13904515,
+       -0.92307067,  1.02971423,  1.02599096, -0.21001104,  0.96735913,
+        1.0304147 , -0.67144632,  0.04587688, -0.56578386,  0.93851948,
+        0.41487575,  0.54053271,  1.03085744, -0.23983222,  1.02904081,
+        1.03042901,  1.01902568,  1.03080583,  0.33582041, -0.56294346,
+       -0.18406394,  1.02552891,  1.01582789,  1.03069305,  1.03081441,
+        1.03070629,  1.03022194,  1.01467788,  0.13420981,  0.5494135 ,
+        1.0075798 , -0.27949992,  1.01098645,  0.92289978,  1.03005397,
+        1.03085184,  1.03078806, -0.70866668,  1.03081226,  0.74545944,
+       -0.69450033, -0.13334468,  1.02270555,  0.40821952,  1.0308516 ], dtype=float32), array([  1.06245637e+00,   1.06929827e+00,   1.06009960e+00,
+         1.06943321e+00,   7.77515292e-01,   1.06838977e+00,
+        -5.48443019e-01,   1.06946707e+00,   9.99019146e-01,
+        -3.29733849e-01,   1.06750774e+00,   1.06946290e+00,
+        -4.52995181e-01,   1.06928086e+00,   1.06924188e+00,
+         1.04478097e+00,   1.06207347e+00,  -7.51842186e-02,
+         1.06946659e+00,   1.06887436e+00,   1.06505847e+00,
+         3.71846914e-01,   1.06140471e+00,   1.06794119e+00,
+        -2.33976468e-02,   1.27388895e-01,  -7.15356886e-01,
+         1.06939387e+00,   5.21892011e-01,   4.20742780e-01,
+         1.06945801e+00,   1.06943381e+00,  -3.64862382e-03,
+         1.06935632e+00,   1.06020224e+00,   1.06915236e+00,
+         1.04762673e+00,   1.06909263e+00,   1.06474769e+00,
+         1.04657257e+00,   1.06824291e+00,   1.26842801e-02,
+         1.98300734e-01,  -4.50752467e-01,   1.06728554e+00,
+         1.06946647e+00,  -7.47425616e-01,   9.76534247e-01,
+         8.36474359e-01,   1.06858206e+00,   1.06946540e+00,
+         9.55444813e-01,  -6.97999299e-01,   1.06946647e+00,
+         4.43157434e-01,   1.06191885e+00,  -9.78806555e-01,
+         1.05750763e+00,   1.05856609e+00,  -6.47729218e-01,
+         1.03794599e+00,   1.06889486e+00,   1.05808449e+00,
+         1.06600618e+00,   1.06930447e+00,  -9.17047024e-01,
+        -2.80208942e-02,   1.06936383e+00,   1.06850672e+00,
+        -5.39783835e-01,   1.05843794e+00,   1.06933880e+00,
+        -1.28401190e-01,   8.20168257e-01,   1.06938922e+00,
+         1.06942928e+00,   1.06030941e+00,   1.02951753e+00,
+         9.69643295e-01,   1.06892216e+00,   1.06945145e+00,
+         9.68654394e-01,   1.06900239e+00,   1.06938815e+00,
+         1.04909313e+00,   1.06901741e+00,  -7.67394483e-01,
+         1.05987644e+00,   1.06188691e+00,   1.42893001e-01,
+         1.06877732e+00,   1.06944394e+00,  -1.97525650e-01,
+         1.06892157e+00,  -7.97879994e-01,   1.06679440e+00,
+         1.06813002e+00,   1.06933808e+00,   1.06763518e+00,
+         5.20809889e-01,   6.05986357e-01,   1.06931281e+00,
+         1.06932509e+00,   1.06549335e+00,   1.06945205e+00,
+         4.13439274e-01,  -9.55626011e-01,   1.03940856e+00,
+         1.06779325e+00,   1.06936955e+00,   4.04810190e-01,
+        -8.91662657e-01,  -7.88642168e-01,   1.06945288e+00,
+         1.02166760e+00,  -2.79159367e-01,   1.06623614e+00,
+         6.69697642e-01,   6.92421198e-01,  -3.69482458e-01,
+         1.88672151e-02,   1.06940472e+00,   2.25713849e-01,
+         7.98121989e-01,   1.06702149e+00,  -9.87043262e-01,
+         1.06938064e+00,   1.67594165e-01,  -5.33232391e-01,
+         1.06940341e+00,  -7.11267173e-01,  -8.93857852e-02,
+         1.06884766e+00,   4.75889817e-03,  -2.51749307e-01,
+        -6.95108622e-03,   1.06946719e+00,   1.06931889e+00,
+         1.06887710e+00,  -2.54828572e-01,   1.06904447e+00,
+         9.84919786e-01,  -3.15733641e-01,   1.06527472e+00,
+        -9.33860719e-01,  -4.50989485e-01,   8.80872667e-01,
+         1.62692353e-01,   1.06934893e+00,   1.01031494e+00,
+         1.06858039e+00,   1.05089104e+00,   1.06931710e+00,
+        -8.52594256e-01,   1.06751585e+00,   1.05975521e+00,
+         7.26196945e-01,   1.06753480e+00,   1.06670070e+00,
+         1.06945288e+00,   1.06770277e+00,   1.06945825e+00,
+         1.06898928e+00,   3.04069459e-01,   1.04615045e+00,
+         1.06946683e+00,  -9.96451139e-01,   1.06946206e+00,
+        -9.20497417e-01,   9.38179851e-01,   1.06931603e+00,
+         6.06460989e-01,   1.06663287e+00,   1.06928349e+00,
+         1.05589223e+00,   1.06922448e+00,   1.06867397e+00,
+         1.04758954e+00,  -1.40268624e-01,   1.06834126e+00,
+         7.67580047e-02,   9.04908031e-02,  -1.38521880e-01,
+         1.06915700e+00,   1.04761803e+00,  -8.94601047e-01,
+         7.71088243e-01,   1.37121305e-01,   1.04315281e+00,
+         1.03371036e+00,   1.06945038e+00,   1.81869060e-01,
+         1.06932020e+00,   1.06589353e+00,   1.06888616e+00,
+         1.06939745e+00,   9.77238417e-01,   1.06911612e+00,
+         9.87721324e-01,   1.06861281e+00,   9.80476797e-01,
+        -3.96182299e-01,  -4.32133138e-01,   1.04025960e+00,
+         1.06946719e+00,   1.06942070e+00,   1.06908965e+00,
+         6.74240053e-01,  -7.83800244e-01,  -3.57935905e-01,
+        -4.95080091e-02,   1.05181336e+00,   9.56387043e-01,
+         1.05895007e+00,  -5.28547876e-02,   1.06937468e+00,
+         1.06944692e+00,   2.38159135e-01,   1.06828046e+00,
+         1.64151385e-01,   1.06946588e+00,  -6.95696622e-02,
+         1.06941366e+00,   1.04878187e+00,   1.06075668e+00,
+         1.06649351e+00,   1.00221395e+00,  -8.59355628e-01,
+         1.05240691e+00,   1.06828630e+00,   1.06943452e+00,
+        -3.03936034e-01,   1.06946599e+00,   1.06821251e+00,
+        -5.47793806e-01,   1.06862473e+00,   1.06068122e+00,
+         7.20415950e-01,   1.06817579e+00,   3.65353763e-01,
+         9.65129972e-01,   1.06589425e+00,   6.94817722e-01,
+         1.03909707e+00,   1.06945789e+00,   1.02665889e+00,
+         1.06935763e+00,   1.06560898e+00,   7.42431283e-01,
+         1.06944251e+00,   1.06944859e+00,   1.06635857e+00,
+         1.37258828e-01,   1.06926477e+00,   1.06930029e+00,
+        -5.67828238e-01,   1.04904258e+00,   6.35337412e-01,
+        -4.03804064e-01,   6.22643948e-01,   1.06731761e+00,
+         1.06946123e+00,   1.06891429e+00,   1.06911075e+00,
+         5.28913438e-01,   1.01468110e+00,  -7.79334486e-01,
+         1.04656649e+00,   1.06944823e+00,   8.98464561e-01,
+         1.06821108e+00,   1.06396961e+00,  -2.62199908e-01,
+         1.06530654e+00,   1.06867850e+00,   9.60265756e-01,
+        -1.28390372e-01,   1.06944203e+00,  -5.43297946e-01,
+        -4.91864383e-01,   1.05982578e+00,  -1.68354467e-01,
+         1.06926537e+00,  -1.51281774e-01,   1.06946659e+00,
+         7.05783010e-01,   1.06728935e+00,   1.05534720e+00,
+         8.32956076e-01,   4.71301600e-02,   1.06908154e+00,
+         1.06803679e+00,   2.51618773e-01,   7.99712658e-01,
+         7.23574698e-01,   1.06605268e+00,   9.28539097e-01,
+         1.06936908e+00,   1.06796062e+00,   1.06478691e+00,
+         2.91748166e-01,   1.06840646e+00,  -5.42418957e-01,
+         1.06865025e+00,   7.94530008e-03,   1.06946731e+00,
+        -7.73076892e-01,   1.06946731e+00,   1.06908977e+00,
+         7.57316113e-01,   3.99602473e-01,   1.04893553e+00,
+         9.56742406e-01,   1.06944871e+00,  -1.54306307e-01,
+         1.06945753e+00,   4.60598230e-01,  -9.47477758e-01,
+        -1.23660892e-01,  -5.77726245e-01,  -8.74568343e-01,
+         1.06939340e+00,   4.16689545e-01,   1.06934810e+00,
+        -5.02102733e-01,   8.83752882e-01,   1.06926620e+00,
+        -9.64802504e-02,   1.06863976e+00,   1.02732241e+00,
+         1.06887794e+00,   9.97228265e-01,  -5.81301212e-01,
+         9.12033439e-01,  -8.11612070e-01,   7.34451175e-01,
+        -4.83425647e-01,   4.50049192e-01,   1.06253934e+00,
+         1.06861079e+00,   7.84250379e-01,   1.06937206e+00,
+        -2.55607069e-01,   3.21419835e-02,   1.06703413e+00,
+         1.06940699e+00,   7.39901185e-01,   6.03934169e-01,
+         1.06946683e+00,   1.06897593e+00,   1.06797516e+00,
+         1.06946719e+00,   8.78978014e-01,  -3.78450513e-01,
+         1.06942630e+00,   8.35964978e-01,  -2.44851470e-01,
+         1.05881822e+00,   9.73800182e-01,  -2.26501539e-01,
+         1.06366634e+00,   1.06943643e+00,   1.06946611e+00,
+         1.06756854e+00,  -1.06412828e+00,   7.67184675e-01,
+         9.45702791e-01,   1.06946731e+00,   1.01746035e+00,
+         4.91140306e-01,  -4.43249419e-02,  -1.75516054e-01,
+        -1.70973003e-01,   1.03253591e+00,   1.05667377e+00,
+         1.06946671e+00,   9.87895727e-01,   1.06777883e+00,
+         1.06945837e+00,   1.06946015e+00,  -9.34258461e-01,
+         1.06872559e+00,  -6.08580947e-01,   5.11168599e-01,
+         1.06944001e+00,  -9.21452940e-01,   3.82843673e-01,
+         5.14286160e-01,   1.06946552e+00,   1.06946707e+00,
+         5.24481416e-01,   1.06708360e+00,   8.65522861e-01,
+         1.06946337e+00,   1.03840780e+00,   1.06943464e+00,
+        -6.54427290e-01,   1.06938934e+00,  -4.58376825e-01,
+         1.06824791e+00,   1.06067657e+00,   1.06449163e+00,
+        -9.76294041e-01,   1.06933510e+00,   5.74168563e-01,
+         1.06838727e+00,  -8.35936308e-01,   1.04402113e+00,
+         1.06847763e+00,   1.05564678e+00,   2.83934325e-02,
+         1.06653976e+00,   1.06746721e+00,   4.63673770e-01,
+         9.75723386e-01,   1.06434441e+00,   7.81094134e-01,
+         1.06942689e+00,   2.93159097e-01,   6.56770945e-01,
+         3.68978947e-01,  -6.30927265e-01,   1.06943512e+00,
+         8.46207619e-01,   1.01191854e+00,   1.99789703e-01,
+         1.87616348e-01,  -5.27086973e-01,   1.06946397e+00,
+        -6.02742612e-01,   1.02968574e+00,   3.13072354e-01,
+         1.06697345e+00,   1.06882298e+00,   5.10548115e-01,
+        -4.35233653e-01,  -6.05021060e-01,   1.06827545e+00,
+         1.03871870e+00,   1.06926060e+00,   6.12694144e-01,
+        -1.06052423e+00,   1.06942999e+00,   1.06946361e+00,
+         1.06566358e+00,   1.06940484e+00,   1.06934571e+00,
+         1.06900883e+00,   1.06583512e+00,   1.06670070e+00,
+         1.05198967e+00,   1.05954933e+00,  -1.03901958e+00,
+         9.09260571e-01,   1.06946468e+00,  -1.37942612e-01,
+         1.06938863e+00,   1.02940202e+00,  -8.53037119e-01,
+         1.06077671e+00,   1.06945562e+00,   9.22441304e-01,
+         6.03225052e-01,  -5.22370994e-01,   4.72709000e-01,
+         5.71176633e-02,   1.05866015e+00,  -8.97714376e-01,
+        -7.46628642e-01,   4.02416080e-01,   1.02872622e+00,
+         1.57720581e-01,   1.06944311e+00,   1.05708444e+00,
+         1.06935096e+00,   6.62957072e-01,  -5.88738441e-01,
+         1.06946576e+00,   1.06289935e+00,   1.06946659e+00,
+         7.96015441e-01,   1.05855632e+00,   1.06868172e+00,
+        -4.68992174e-01,   1.06297255e+00,   1.06931567e+00,
+         1.05279720e+00,   1.06651807e+00,   1.06887138e+00,
+        -6.40086770e-01,   1.06930804e+00,   1.06938243e+00,
+         1.06946731e+00,   1.06865501e+00,  -5.47040924e-02,
+         1.06933558e+00,   2.94697642e-01,   1.06945789e+00,
+         1.06063437e+00,  -9.59672809e-01,   3.60556185e-01,
+         1.06946731e+00,  -3.29649419e-01,   1.06946707e+00,
+         1.06946254e+00,   1.06913388e+00,   9.63154674e-01,
+         1.06930852e+00,   1.01559788e-01,   1.02646470e+00,
+         1.04585874e+00,   4.28954586e-02,   5.17936707e-01,
+         3.00823040e-02,   1.06946182e+00,   1.06942141e+00,
+         5.47048390e-01,   1.06564867e+00,  -2.07547024e-02,
+        -6.64611906e-03,   1.06494164e+00,   1.40875459e-01,
+         1.06841326e+00,   1.06936491e+00,   1.06848216e+00,
+         1.06846154e+00,  -6.14929497e-02,   1.06583834e+00,
+         1.05131590e+00,   1.06676364e+00,   1.06635463e+00,
+         1.06943154e+00,   3.91743809e-01,  -2.48744026e-01,
+        -6.56831384e-01,   1.06655538e+00,   1.06943858e+00,
+         1.06621814e+00,   1.06894374e+00,   1.06893802e+00,
+        -4.18365777e-01,   1.06906247e+00,  -7.93992996e-01,
+        -3.60626489e-01,   1.06940949e+00,   1.06767762e+00,
+         1.04046738e+00,   1.06936038e+00,   4.15320098e-01,
+         5.90639234e-01,   1.05262780e+00,   1.06941581e+00,
+         7.90227592e-01,  -6.72142744e-01,   1.06942606e+00,
+         2.37682223e-01,   1.06941497e+00,  -7.23968983e-01,
+         1.06933045e+00,   1.19603492e-01,   8.02179813e-01,
+         1.06906796e+00,  -2.11697325e-01,   7.05406725e-01,
+        -3.13685685e-01,   1.06838357e+00,  -9.09561634e-01,
+         1.06426454e+00,   1.06904030e+00,   1.06935215e+00,
+         9.29750085e-01,   1.06876385e+00,   1.06660175e+00,
+         1.06925619e+00,  -6.07209861e-01,  -9.10589814e-01,
+        -3.66836786e-01,   1.06882358e+00,   1.06946552e+00,
+         1.06943619e+00,   1.06904972e+00,   9.95508134e-01,
+         1.06933057e+00,   1.06946707e+00,   1.06899142e+00,
+         7.71814406e-01,   4.49888408e-04,   1.06936526e+00,
+         7.36684561e-01,   1.06603563e+00,   1.06837606e+00,
+        -6.88333273e-01,   1.06939340e+00,   1.06946719e+00,
+        -1.07795037e-02,   2.47506052e-03,   1.06640720e+00,
+         1.06943846e+00,   1.06911111e+00,   1.06932783e+00,
+         1.06944633e+00,   1.06561399e+00,  -2.62991756e-01,
+         1.06121337e+00,   1.06933689e+00,   1.05424476e+00,
+         1.06935298e+00,  -1.14166796e-01,   4.37099248e-01,
+         1.06931376e+00,   1.06944275e+00,   1.06743753e+00,
+         1.06937051e+00,  -1.09124109e-01,  -9.52586830e-01,
+         1.06911254e+00,   1.06835318e+00,   1.06946707e+00,
+         1.06252170e+00,   2.45629296e-01,   1.06940103e+00,
+         9.97806191e-01,   1.06300628e+00,   9.80188608e-01,
+        -6.28319800e-01,   1.06940460e+00,  -3.32087249e-01,
+        -3.23396683e-01,  -5.63091218e-01,  -6.15984946e-03,
+         7.63719678e-01,   7.48743057e-01,   1.06884825e+00,
+         8.24486017e-01,   1.05143476e+00,   4.04007107e-01,
+         1.06937551e+00,  -9.28281844e-01,   4.00069654e-02,
+         1.00217104e+00,   8.23255181e-01,   1.06374586e+00,
+         1.06920934e+00,  -5.54670334e-01,   1.06946433e+00,
+         9.90868270e-01,   1.06944156e+00,   1.06941175e+00,
+         1.06946623e+00,   1.06922305e+00,   1.06941044e+00,
+        -3.94084692e-01,   6.85197830e-01,   4.15170670e-01,
+         3.55975688e-01,   9.02998567e-01,  -1.81415603e-01,
+         1.06944299e+00,   1.06787109e+00,  -1.00852215e+00,
+        -6.70844257e-01,   1.06767774e+00,   5.93289852e-01,
+        -9.31599557e-01,   1.06945872e+00,   1.06010556e+00,
+         1.05649567e+00,   1.06914663e+00,   1.06884217e+00,
+         1.06908679e+00,   1.06215334e+00,   1.02973890e+00,
+        -7.03211546e-01,   7.69414365e-01,   1.06901228e+00,
+         1.06785929e+00,   9.75735366e-01,   1.03111565e+00,
+         7.54196048e-01,   1.06944990e+00,   1.06936586e+00,
+         1.06946218e+00,  -3.29626352e-02,   7.28545904e-01,
+        -2.08783180e-01,   1.06621647e+00,   1.04623580e+00,
+         1.06811881e+00,   5.13621718e-02,   1.06941795e+00,
+         1.06784368e+00,   1.06927514e+00,   1.06782746e+00,
+         1.06874156e+00,   1.06118965e+00,  -9.80109498e-02,
+         9.35281754e-01,   1.06946731e+00,  -7.66221434e-04,
+         1.06946111e+00,   1.06935740e+00,  -2.89354444e-01,
+         1.06929457e+00,  -1.42857894e-01,  -2.45549396e-01,
+         2.56484468e-02,   1.06868863e+00,   1.06397760e+00,
+        -4.26908374e-01,   1.06917071e+00,   1.49682999e-01,
+         1.06828713e+00,  -1.21349841e-01,   1.05040121e+00,
+         1.18487418e-01,   6.51911318e-01,   1.09674722e-01,
+         1.06773806e+00,  -2.01134473e-01,   1.05520725e+00,
+         1.06922650e+00,  -1.47881344e-01,  -1.03667200e+00,
+         9.12828982e-01,   1.57145515e-01,   1.06915569e+00,
+         4.78937745e-01,  -4.19269316e-02,   1.06904984e+00,
+         1.06410122e+00,   3.24860454e-01,   8.82501483e-01,
+         1.06945622e+00,   1.06946445e+00,   1.02838480e+00,
+        -6.83806658e-01,   1.05645621e+00,   1.06558931e+00,
+         1.01466262e+00,   1.04411960e+00,  -1.04131937e-01,
+         4.64135647e-01,   1.06946683e+00,   1.06936097e+00,
+        -2.72966772e-02,   1.02402878e+00,   7.60402501e-01,
+        -8.18096638e-01,   1.06784642e+00,  -3.24243695e-01,
+         1.06945574e+00,   1.06945956e+00,   1.06824398e+00,
+        -7.39479542e-01,   8.80900741e-01,   1.06942630e+00,
+        -3.96509841e-02,   1.06908715e+00,   1.06943774e+00,
+         1.06937361e+00,   7.49142826e-01,   9.36186194e-01,
+        -7.05668569e-01,   1.76612526e-01,   7.57791221e-01,
+         1.06918836e+00,   9.89341259e-01,   1.06942046e+00,
+         1.04351282e+00,   2.24333927e-01,   1.06938577e+00,
+        -1.00689042e+00,  -5.12192994e-02,  -7.40532994e-01,
+         1.06936383e+00,   9.98967528e-01,  -3.72344673e-01,
+         1.06941164e+00,   1.06701279e+00,   1.06946707e+00,
+        -1.02009785e+00,  -5.67981541e-01,   1.06910098e+00,
+         1.06931233e+00,  -9.70659435e-01,  -3.37761998e-01,
+        -4.81641173e-01,   1.06944919e+00,  -5.34533620e-01,
+         1.06678224e+00,   1.06946731e+00,   8.13816726e-01,
+        -1.40795493e-02,   1.06799686e+00,   6.41915381e-01,
+         5.67037046e-01,   8.44240308e-01,   9.47323143e-01,
+        -4.54000294e-01,   1.06602848e+00,   1.06187427e+00,
+         1.67391688e-01,   1.05672002e+00,   1.17976312e-02,
+         6.83966696e-01,  -9.02689695e-01,   9.95258391e-01,
+        -1.75650582e-01,   1.06800675e+00,   5.86159170e-01,
+         1.06581378e+00,   1.06943691e+00,   1.04487598e+00,
+         1.06910872e+00,   8.38099122e-01,   1.06934786e+00,
+         1.05899537e+00,   1.06939411e+00,   1.73777848e-01,
+         8.20503831e-01,   1.06896937e+00,   1.06578612e+00,
+         1.06553280e+00,   1.06943274e+00,   1.06942773e+00,
+         1.06943309e+00,   1.06676137e+00,   1.00503099e+00,
+         1.06945550e+00,   9.84816313e-01,   6.87616244e-02,
+         1.06946468e+00,   1.06791973e+00,   1.06923103e+00,
+         1.06908751e+00,   1.06399047e+00,   1.06922591e+00,
+         1.06010580e+00,   2.42650568e-01,   1.06938255e+00,
+        -8.40888381e-01,   1.47393942e-02,   1.06943405e+00,
+         1.06834137e+00,   1.04508996e+00,  -3.09831917e-01,
+         1.06946337e+00,   1.05143380e+00,  -5.89146018e-01,
+         1.06023192e+00,   1.06424737e+00,   1.06943440e+00,
+         3.64389658e-01,   1.06941473e+00,   7.38684237e-01,
+         1.06136167e+00,   1.06946397e+00,   2.09859401e-01,
+        -8.23318601e-01,   8.50559652e-01,   1.05994380e+00,
+         1.06690788e+00,   1.06866610e+00,   5.24435461e-01,
+         1.06834245e+00,   1.05686426e+00,   1.06678939e+00,
+         1.06895554e+00,   1.06910026e+00,  -1.01298189e+00,
+         1.05718458e+00,   1.06945431e+00,   1.06946731e+00,
+        -6.56591535e-01,   9.25373495e-01,   1.06446266e+00], dtype=float32), array([-0.52133411,  0.99367499,  0.99878633, ...,  0.63616037,
+        0.99877989,  0.99805325], dtype=float32), array([ 1.03317118,  0.46045119,  1.01757431, ..., -0.66361129,
+        0.59874332,  0.77499777], dtype=float32), array([ 0.05862827, -0.9323312 , -0.00268292, ...,  0.73928678,
+        0.06871524,  1.03840959], dtype=float32)]
+pred
+0
+0.9119565217391304
+pred
+1
+0.8698630136986302
+pred
+2
+0.9168418593786498
+pred
+3
+0.7803617571059431
+pred
+4
+0.8555555555555555
+plot ROC
+auc
+0.9151637675
+overall accuracy
+0.8786099345398537
+TSNE
+Plot semantic space
+Plot loss per iteration
