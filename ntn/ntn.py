@@ -16,6 +16,7 @@ import random
 from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
+import csv
 
 preds = {'P26':'spouse',
     'P40':'child',
@@ -230,10 +231,10 @@ low_dim_embedding_init = tsne.fit_transform(embedding_init)
 print('Plot semantic space')
 plot_with_labels_for_TSNE(low_dim_embedding_init, words_init, "img/tsne_words_init.png")
 
-num_iters = 800
+num_iters = 2 
 batch_size=10000
 corrupt_size = 10
-slice_size = 3
+slice_size = 4
 num_entities = len(entity_dic)
 num_preds = len(pred_dic)
 embedding_size = 300
@@ -363,6 +364,26 @@ def predict(ent_to_word_indices, test_batch_placeholders,E_tensor, W_tensor, V_t
     max_score = tf.reduce_max(tf.concat(predictions_list, 0))
     return min_score, max_score, predictions_list
 
+def generate_tSNE_dimensions(word_vectors):
+    embedding = np.array([])
+    words = [None] * len(words_dic)
+    for k,v in words_dic.items():
+        words[v] = k
+    word_vectors = word_vectors[:500,:]
+    words = words[:500]
+
+
+    embedding = np.array(word_vectors)
+    limit=500
+    vector_dim = 300
+
+    embedding = embedding.reshape(limit, vector_dim)
+    print('TSNE')
+    tsne = TSNE(perplexity=30.0, n_components=2, init='pca', n_iter=5000)
+
+    low_dim_embedding = tsne.fit_transform(embedding)
+    return words, low_dim_embedding
+
 g = tf.Graph()
 with g.as_default():
     print('create graph...')
@@ -386,26 +407,25 @@ with g.as_default():
         
         init = tf.global_variables_initializer()
         sess.run(init)
-        # saver = tf.train.Saver()
-        # reg_list = [0.00007,0.00008,0.00009,0.0001,0.00011,0.00012,0.00013]
-        # list_of_lost_list = [None]*len(num_iters)
-        # for j in range(len(reg_list)):
-        #     reg = reg_list[j]
         iter_list = []
         loss_list = []
         print('Begin training...')
-        for i in range(0, num_iters):
-            print(str(datetime.datetime.now())+" - iteration "+str(i))
-            data_batch = get_batch(indexed_data)
-            pred_batches = distribute_batch(data_batch)
-            feed_dict = fill_feed_dict(pred_batches, batch_placeholders)
-            _, iter_loss = sess.run([train_step,loss],feed_dict=feed_dict)
-            iter_list.append(i)
-            loss_list.append(iter_loss)
-            print('loss at current iteration = ' )
-            # if i==num_iters:
-            #     list_of_lost_list.append(loss_list)
-            print(iter_loss)
+        with open('tSNE.csv', 'w') as csvfile:
+            filewriter = csv.writer(csvfile, delimiter=',',
+                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            for i in range(0, num_iters):
+                print(str(datetime.datetime.now())+" - iteration "+str(i))
+                words, low_dim_embedding = generate_tSNE_dimensions(E_tensor.eval())
+                for j in range(len(low_dim_embedding)): 
+                    filewriter.writerow([i, low_dim_embedding[j][0],low_dim_embedding[j][1],words[j]])
+                data_batch = get_batch(indexed_data)
+                pred_batches = distribute_batch(data_batch)
+                feed_dict = fill_feed_dict(pred_batches, batch_placeholders)
+                _, iter_loss = sess.run([train_step,loss],feed_dict=feed_dict)
+                iter_list.append(i)
+                loss_list.append(iter_loss)
+                print('loss at current iteration = ' )
+                print(iter_loss)
         print('Calculate thresholds for each predicate')
         dev_batch,dev_labels = distribute_testing_data( indexed_dev_data )
         feed_dev_dict = fill_dev_feed_dict(dev_batch, test_batch_placeholders)

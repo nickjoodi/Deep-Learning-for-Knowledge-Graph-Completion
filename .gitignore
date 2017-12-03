@@ -18,3 +18,7 @@ TeX/*.aux
 TeX/*.out
 TeX/*.toc
 TeX/*.synctex.gz
+TeX/*.log
+
+# Microsoft Products save swp files with ~
+**/~*

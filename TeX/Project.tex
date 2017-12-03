@@ -75,8 +75,9 @@
 
 \begin{document}
 \title{Deep Learning for Knowledge Graph Completion}
-\author{Nick Joodi$^\dagger$, Kevin Jesse$^\dagger$, Cesar Bartolo-Perez$^\dagger$, Doug Sherman$^\dagger$\\
-	{\small\textit{$^\dagger$ University of California - Davis}}
+\author{Nick Joodi$^1$, Kevin Jesse$^1$, Cesar Bartolo-Perez$^1$, Doug Sherman$^1$\\
+	{\small
+	\textit{$^1$University of California - Davis}}
 } 
 \date{November 30th, 2017}
 \maketitle
@@ -249,6 +250,13 @@ This decision is confirmed comparing their ROC curves for each NN structure.
   \caption{From left to right:Contrastive Max margin loss with respect to iteration for pretrained initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve. Note: There was a significant portion of words that were missing from the pretrained FastText embedding model the more than likely impacted the results}
 \label{pretrain_perf.jpg}
 \end{figure}
+
+\begin{figure}[h!]
+ \includegraphics[width=1\textwidth]{report_mlp/CV-ROC.png}
+  \caption{\small A comparison of the ROC curves between Random and Pre-trained word embeddings during the entity embedding construction of the MLP model. The different points were obtained through 5-bin cross-validation for each of the 5 predicates; with the AUC is computed using natural cubic splines. Notice that the sensitivity, or true positive rate, suffers from the random embeddings. The model with random embeddings heavily biases false negative calls in order to guarantee the vastly disproportional true negative calls for the MLP dataset. A problem decreased by the pre-trained embeddings.}
+ \label{CV-ROC}
+\end{figure}
+
 
 \section{Discussion}
 
