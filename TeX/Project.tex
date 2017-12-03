@@ -190,6 +190,13 @@ This decision is confirmed comparing their ROC curves for each NN structure.
 
 
 
+\begin{figure}[h!]
+ \includegraphics[width=1\textwidth]{report_mlp/CV-ROC.png}
+  \caption{\small A comparison of the ROC curves between Random and Pre-trained word embeddings during the entity embedding construction of the MLP model. The different points were obtained through 5-bin cross-validation for each of the 5 predicates; with the AUC is computed using natural cubic splines. Notice that the sensitivity, or true positive rate, suffers from the random embeddings. The model with random embeddings heavily biases false negative calls in order to guarantee the vastly disproportional true negative calls for the MLP dataset. A problem decreased by the pre-trained embeddings.}
+ \label{CV-ROC}
+\end{figure}
+
+
 \section{Discussion}
 
 \bibliographystyle{ieeetr}
