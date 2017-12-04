@@ -1,6 +1,10 @@
 # Deep-Learning-for-Knowledge-Graph-Completion
 
-For this project, we took Deep Learning approaches to knowledge graph completion. Rather than using one of the standard knoweldge bases that many literary articles reference, we decided to apply our models on a subset of the Wikidata knowledge base. We built two models with differing architectures : the neural tensor network and the multi layered perceptron.
+For this project, we took Deep Learning approaches to knowledge graph completion. Rather than using one of the standard knoweldge bases that many literary articles reference, we decided to apply our models on a subset of the Wikidata knowledge base. We built two models with differing architectures : the neural tensor network (NTN) and the multi layered perceptron (MLP). 
+
+The NTN model builds word embeddings, and associated entity embeddings, during the training of the hidden layer weights. Below shows an example of the embeddings updating after each iteration. ![t-SNE of embeddings after each iteration](https://raw.githubusercontent.com/nickjoodi/Deep-Learning-for-Knowledge-Graph-Completion/master/ntn/tsne.gif)
+In this image we see how each of the embeddings is adjusted after each iteration. The *(x,y)* coordinates of each point is a reduction from the 300 dimensional embeddings to 2 dimensions following [t-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) reduction scheme. The color of each embedding is the result of using k-means clustering on the final iteration; thus the .gif shows the convergence into these clusters. Trajectories for selected samples are also shown and illustrate the past 2 iterations for these entities. 
+
 
 Below is a list of the contents of the repository. Please update when you commit.
 

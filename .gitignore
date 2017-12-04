@@ -14,6 +14,7 @@ data/embeddings/*.pkl
 MLP/**/*.rda
 
 # Excess TeX stuff
+TeX/Project_Save.*
 TeX/*.aux
 TeX/*.out
 TeX/*.toc
@@ -22,3 +23,6 @@ TeX/*.log
 
 # Microsoft Products save swp files with ~
 **/~*
+
+# Don't track the t-SNE .gif intermediary files
+ntn/tsnes/
