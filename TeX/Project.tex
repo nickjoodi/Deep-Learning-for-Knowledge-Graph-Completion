@@ -123,7 +123,7 @@
 
 
 \begin{figure}[h!]
- \includegraphics[width=1\textwidth]{report_mlp/GenArchitecture.png}
+\centerline { \includegraphics[width=0.7\textwidth]{report_mlp/GenArchitecture.png}}
   \caption{\small A general look at the Neural Network architecture used for a MLP model with $k$ hidden layers with $N_{L_i}$ nodes for the $i$th layer, a common activation function $a_h(z)$ for each layer, and a final output activation function $a_{out}(z)$. The way that these activations propagate through the network is defined by the update function (e.g. simultaneously or sequentially), and the error propagates back according to the learning function. We have 600 features from our input, 1 for each dimension of both entity embeddings, and we are predicting the true/false value of our 5 output predicates. Note that $l(p_1)$ is the likelihood that the predicate $p_1$ is true.  }
   \label{MLPArch}
 \end{figure}
@@ -169,7 +169,7 @@ J(\Omega)  = \sum_{i=1}^{N} \sum_{c=1}^{C} max \bigg(0,1 - g\bigg( T^(i) \bigg) 
 \paragraph{}  Where $ \Omega $ represents the training parameters, $N$ is the number of training samples, $C$ is the corruption size, and $T$ represents the inputs of the triplet to the scoring function. At every training step, each positive triplet, $T$, is duplicated $C$ times. The score for that triplet and then also a corrupted triplet is determined using the neural tensor network scoring function. The corrupted triplet is created by removing either the head entity or tail entity from the triplet with a randomly chosen entity in the entity set. The objective is to increase the margin between the correct and corrupted triplet. We used AdaGrad optimization to train the model. \cite{socher2013reasoning} used L-BFGS optimization; however, this type of optimization does not come with the standard distribution of TensorFlow 1.3.
 
  \begin{figure}[h!]
-\centerline { \includegraphics[width=.5\textwidth]{report_ntn/ntn_arch.png}}
+\centerline { \includegraphics[width=.6\textwidth]{report_ntn/ntn_arch.png}}
   \caption{\small The architecture of the Neural Tensor Network. A layer of the tensor is indicated by a dashed rectangle}
   \label{ntn_arch.png}
 \end{figure}
@@ -201,12 +201,20 @@ where the last 5 columns represents the truth values for each of the 5 predicate
 
 \paragraph{} The training, development, and testing sets contained the triplets, representing a fact in the knowledge graph. The data sets were loaded into an n size matrix, where n was the number of triplets, and each row of the matrix contained the index mapping to the corresponding entity, predicate, as well as the truth value for that triplet. From there, the matrix was grouped into subset matrices corresponding to each predicate.
 
+
+
 \section{Results}
 \subsection{MLP}
 
 \paragraph{} We tuned the MLP model significantly in order to handle the complexity of knowledge graph completion. This included determining the best hidden layer architecture and activation functions as well as tuning the learning rate and momentum hyper-parameters.  We test increasing the number of hidden layers as well as the number of nodes per layer.  One statistic we employed for these tests was measuring the weighted SSE after each iteration, where weighted SSE is given as 
 $$ SSE = \sum_{k=1}^m \sum_{p=1}^P (p_k - h_\theta(x_k))^2 $$
 where we have $m$ sets of triplets, $P$ predicates, and $h_\theta(x_k)$ is the predicted output of the entity-entity pair defined by their concatenated entity embeddings $x_k\in \R^{2 W}$ for $W$ dimensional word embedding sizes. For our MLP model, $m$ is 64950 during the final cross-validation, $W$ is 300, and we have 5 predicates ($P=5$). 
+
+\begin{figure}[h!]
+\centerline{\includegraphics[width=1\textwidth]{report_mlp/MSEperEpochMLP.png}}
+  \caption{\small  The weighted SSE after each iteration of the MLP model for 3 different hidden layer architectures. Here both training error (black) and testing error (red) are plotted per epoch, and the min of the testing error is displayed with the dotted line. We noticed that increasing the number of layers only delayed overfitting, but significantly increased its effects once overfitting occured.  }
+\label{MSEperEpochMLP}
+\end{figure}
  
 \paragraph{} Figure \ref{MSEperEpochMLP} illustrates the change is MSE for each iteration. This shows that for the model with three hidden layers the training error is not decreasing considerably before the 40th iteration. Suddenly, the SSE in this NN structure drops abruptly. The training error, shows that the error keep increasing at that range of iterations. This beahvior, can be attributed to an overfitting in our model.  This trend described above is similar for two hidden layers. For the case of just one hidden layer with 256 nodes, the error does not drop abruptly for the training set but we can see an increase in the error for after 30 iterations, approximately. Moreover, the minimal SSE is smallest with the single hidden layer architecture. These results suggest that only one hidden layer is ideal for our MLP model. Thus, since there is not an improvement in the reduction of error with more layers, and with the benefit of less computational resources being required, we selected single layer architectures moving forward. Note, we tried other sizes for this single layer and found 256 to return the highest specificity, sensitivity, and accuracy when compared with other architectures. 
  
@@ -216,23 +224,32 @@ where we have $m$ sets of triplets, $P$ predicates, and $h_\theta(x_k)$ is the p
 $$ \Delta w_{ij} (\theta_{i+1}) = -\alpha \delta_{ij}  + \beta \Delta w_{ij} (\theta_i)$$
 
 Since the MLP was relatively simple, we determined the best parameters for $\alpha$ and $\beta$ using a grid search method. Figure \ref{GridSearch} shows that the mean accuracy after running a single 256 layer network with each of the associated $\alpha$ and $\beta$ coordinates; where the opacity of the points in the plot is the mean accuracy. This plot shows that a learning rate, $\alpha$, of $1e-4$ and a momentum, $\beta$, of $1e-3$ produced the highest accuracy across the whole dataset. Thus, we used these hyper-parameter values for our full model. 
- 
- \paragraph{} Once the full models were determined, we ran a 5-bin cross-validation to truly test our model. Figure \ref{CV-ROC} shows the ROC curves for using both randomly initialized embeddings and Fasttext pre-trained embeddings as the inputs to the model. Moreover, the accuracy for this is shown in Table \ref{accuracy}. We found that the overall accuracy and area under the ROC curve improved significantly for the model with pre-trained embeddings. 
 
-\begin{figure}[h!]
+
+ \begin{figure}[h!]
 \centerline{\includegraphics[width=0.7\textwidth]{report_mlp/GridSearch.png}}
   \caption{\small A grid search of the $\alpha$ and $\beta$ hyper-parameters associated with the MLP backpropagation algorithm. Each point represents a full run on the full dataset using an architecture with a single 256 node hidden layer, and the associated mean accuracy is reflected in the transparency of the points. We found the highest accuracy when $\alpha = 1e-4$ and $\beta =1e-3$. }
 \label{GridSearch}
 \end{figure}
 
+ 
+ \paragraph{} Once the full models were determined, we ran a 5-bin cross-validation to truly test our model. Figure \ref{ROC-Curve} shows the ROC curves for using both randomly initialized embeddings and Fasttext pre-trained embeddings as the inputs to the model. Notice that the sensitivity, or true positive rate, suffers from the random embeddings. The model with random embeddings heavily biases false negative calls in order to guarantee the vastly disproportional true negative calls for the MLP dataset. A problem decreased by the pre-trained embeddings. Moreover, the accuracy for this is shown in Table \ref{accuracy}.  
+ 
+
+\begin{figure}[h!]
+\centerline{\includegraphics[width=1\textwidth]{report_mlp/ROC-Curves.png}}
+  \caption{\small  A comparison of the ROC curves between Random and Pre-trained word embedding initializations  for the entity embedding construction of the NTN and MLP models. The different points were obtained through 5-bin cross-validation for each of the 5 predicates; with the AUC is computed using natural cubic splines. }
+\label{ROC-Curve}
+\end{figure}
+
 \subsection{NTN}
 \paragraph{} When training the NTN, the embedding size was set to 300 to be inline with the FastText pretrained embedding size, corruption size set to 10, tensor layer slice size set to 3, L2 regularization set to .0001, and the number of iterations set to 1500 with a batch size of 10000. We cross validated over a development set to determine the threshold for each relation network. 
 
-\paragraph{} We first trained the model on randomly initialized word embeddings . We then cross validated on our testing set. See Figure \ref{performanceRandomNtn.jpg} for detailed statistics. The loss began to converge at about 800. The ROC curve showed a respectable 0.906 AUC. With the exception of the spouse classification, all accuracies were 80\% or higher, with the overall accuracy being 88\%. With respect to the MLP implementation, these are very respectable results.
+\paragraph{} We first trained the model on randomly initialized word embeddings . We then cross validated on our testing set. See Figure \ref{ROC-Curve} for detailed statistics. The loss began to converge at about 800. The ROC curve showed a respectable 0.906 AUC. With the exception of the spouse classification, all accuracies were 80\% or higher, with the overall accuracy being 88\%. With respect to the MLP implementation, these are very respectable results.
 
 \paragraph{} Also of interest, is the noticeable clustering of the word embeddings after training the model. See Figure \ref{tSNE}. Both tSNE plots show the same 500 word embeddings before and after training. These groupings of the word embeddings that are occurring indicate a learned semantic relationship with one another.
 
-\paragraph{} We also trained the model over pretrained word embeddings and evaluated it over the same testing set. See Figure \ref{pretrain_perf.jpg} for detailed statistics. One will quickly notice that the pretrained word embedding model actually performed worse than the randomly initialized word embedding model. This more than likely occurred due to the large portion of words represented in the entities were missing from the pretrained FastText embedding model. We only saw a total of 1735 words from the FastText pretrained model that matched the over 6035 unique words found in the entities. We had to drop 2305 entities since there was no word contained in the respective entity that was found in the pretrained model. Additionally, given that we dropped a word from the entity if we did not have a match in our pretrained model, we had over 50\% of the entities have at least one other duplicated embedding value with respect to another entity. Although this is not an ideal testing condition for the nueral tensor network over pretrained word embeddings, we still found it intriguing that the results were actually worse than the randomly initialized word embedding model. This further argues, in line with \cite{socher2013reasoning}, that the initialization technique performed on the word embeddings plays a powerful role in the performance of the model.
+\paragraph{} We also trained the model over pretrained word embeddings and evaluated it over the same testing set. See Figure \ref{ROC-Curve} for detailed statistics. One will quickly notice that the pretrained word embedding model actually performed worse than the randomly initialized word embedding model. This more than likely occurred due to the large portion of words represented in the entities were missing from the pretrained FastText embedding model. We only saw a total of 1735 words from the FastText pretrained model that matched the over 6035 unique words found in the entities. We had to drop 2305 entities since there was no word contained in the respective entity that was found in the pretrained model. Additionally, given that we dropped a word from the entity if we did not have a match in our pretrained model, we had over 50\% of the entities have at least one other duplicated embedding value with respect to another entity. Although this is not an ideal testing condition for the nueral tensor network over pretrained word embeddings, we still found it intriguing that the results were actually worse than the randomly initialized word embedding model. This further argues, in line with \cite{socher2013reasoning}, that the initialization technique performed on the word embeddings plays a powerful role in the performance of the model.
 
  \begin{table}[h!]
 \begin{center}
@@ -255,24 +272,20 @@ MLP & Pre-Train 		& 0.915 & 0.917 & 0.906 & 0.749 & 0.805 & \textbf{0.858}	& 0.0
   \label{accuracy}
 \end{table}
 
-\begin{figure}[h!]
-\centerline{\includegraphics[width=1\textwidth]{report_ntn/performanceRandomNtn.jpg}}
-  \caption{\small  From left to right:Contrastive Max margin loss with respect to iteration for random initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve}
-\label{performanceRandomNtn.jpg}
-\end{figure}
+
+%\begin{figure}[h!]
+%\centerline{\includegraphics[width=1\textwidth]{report_ntn/ROC-Curves.jpg}}
+%  \caption{\small  From left to right:Contrastive Max margin loss with respect to iteration for random initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve}
+%\label{performanceRandomNtn.jpg}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\centerline{\includegraphics[width=1\textwidth]{report_ntn/pretrain_perf.jpg}}
+%  \caption{\small  From left to right:Contrastive Max margin loss with respect to iteration for pretrained initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve. Note: There was a significant portion of words that were missing from the pretrained FastText embedding model that more than likely impacted the results}
+%\label{pretrain_perf.jpg}
+%\end{figure}
 
 
-\begin{figure}[h!]
-\centerline{\includegraphics[width=1\textwidth]{report_ntn/pretrain_perf.jpg}}
-  \caption{\small  From left to right:Contrastive Max margin loss with respect to iteration for pretrained initialization of word embeddings, Accuracy for each relation network for the ideal threshold, the overall ROC curve. Note: There was a significant portion of words that were missing from the pretrained FastText embedding model that more than likely impacted the results}
-\label{pretrain_perf.jpg}
-\end{figure}
-
-\begin{figure}[h!]
- \includegraphics[width=1\textwidth]{report_mlp/CV-ROC.png}
-  \caption{\small A comparison of the ROC curves between Random and Pre-trained word embeddings during the entity embedding construction of the MLP model. The different points were obtained through 5-bin cross-validation for each of the 5 predicates; with the AUC is computed using natural cubic splines. Notice that the sensitivity, or true positive rate, suffers from the random embeddings. The model with random embeddings heavily biases false negative calls in order to guarantee the vastly disproportional true negative calls for the MLP dataset. A problem decreased by the pre-trained embeddings.}
- \label{CV-ROC}
-\end{figure}
 
 
 \section{Discussion}
@@ -291,6 +304,7 @@ MLP & Pre-Train 		& 0.915 & 0.917 & 0.906 & 0.749 & 0.805 & \textbf{0.858}	& 0.0
 
 \paragraph{} In our analysis of both MLP and NTN we can deduct reasons for choosing each of the models. When training time is of concern and design iterations need to happen more frequently, MLP can be a better solution. However, NTN demonstrated better precision at a cost of training time.
 
+\pagebreak
 \bibliographystyle{ieeetr}
 \bibliography{bib}{}
 
