@@ -91,15 +91,27 @@
 	{\small
 	\textit{$^1$University of California - Davis}}
 } 
-\date{November 30th, 2017}
+\date{\today}
 \maketitle
 \rule{\textwidth}{1pt}
 
 \begin{abstract}
+Following the advent of knowledge graph based datasets such as Wikidata, Freebase, and Google's Knowledge Graph, we compared different deep learning models for the purpose of completing these graphs. We used Wikidata's free knowledge base to construct our knowledge graph consisting of the relationships between 3195 different people throughout history; such as Cleopatra and her 3rd husband Mark Antony.  Of these different people, or entities, we looked at 5 different facts, or predicates, describing if one person is the Father, Mother, Spouse, Sibling, or Child of another. We queried Wikidata for around 31000 true predicates about a pair of entities relationship and constructed around the same number of false predicates; such as Cleopatra is definitely not Mark Antony's Father. Moreover to transform the entity names into something we could classify, we followed standard Natural Language Processing classification techniques of using word embeddings to describe each person's name in a 300 dimensional numerical space. We implemented both a standard Multi-Layer Perceptron (MLP) and a complex Neural Tensor Network (NTN) and compared the results of these models when using both random word embeddings or an incomplete set of FastText pre-trained word embeddings. We found that the MLP model performed best with only a single layer, adding a momentum term to the backpropagation of error, and with minimal iterations. This allowed for extensive hyper-parameter tuning as it only took about 70 minutes to run the full dataset. The NTN model was significantly more complex and took many hours to fully train with over a 1000 iterations; hence, minimal hyper-paramater tuning was performed. We found that the NTN model with random word embeddings significantly the MLP with random word embeddings. When using the incomplete pre-trained word embeddings, the MLP model's accuracy increased substantially, by about 12\%, but didn't beat the random NTN model. However, the NTN model's accuracy significantly decreased with the incomplete set of pre-trained word embeddings; implying that the complexity of this model requires a much more thorough curation of the data. Overall, the added complexity of the NTN outweighed the ease of implementation that the MLP model provided, but requires much detail in data pre-processing.
 
 \end{abstract}
 
+\pagebreak
+
 \tableofcontents
+
+\vfill
+\section*{Author Contributions}
+\paragraph{}
+Doug Sherman and Cesar Bartolo-Perez worked on building, tuning, and data curation for the MLP model. 
+\paragraph{}
+Nick Joodi did nothing because he's a punk. You should ask him to leave your lab.
+
+\pagebreak
 
 \section{Introduction}
 \paragraph{} With the advent of Google's knowledge Graph, Wikidata, Freebase, and many others, the representation of data in the form of a knowledge base or ontology is affecting our lives everyday. Data in this format has been used to power advanced reasoning systems, chat bots, and in general, artificial intelligence. However, these knowledge bases are many times incomplete. To counter this, knowledge graph completion has been researched extensively over recent years. 
@@ -299,10 +311,10 @@ MLP & Pre-Train 		& 0.915 & 0.917 & 0.906 & 0.749 & 0.805 & \textbf{0.858}	& 0.0
 \bibliographystyle{ieeetr}
 \bibliography{bib}{}
 
-
+\pagebreak
 \section*{Appendix}
 \begin{figure}[h!]
-\centerline{\includegraphics[width=1\textwidth]{report_ntn/FirstLast-tSNE.png}}
+\centerline{\includegraphics[width=0.95\textwidth]{report_ntn/FirstLast-tSNE.png}}
   \caption{\small  The word embeddings both before and after training the NTN model on randomly initialized embeddings. The clustering is performed using k-Means to show how much each embedding has changed. }
 \label{tSNE}
 \end{figure}
