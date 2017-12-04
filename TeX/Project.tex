@@ -230,7 +230,7 @@ Since the MLP was relatively simple, we determined the best parameters for $\alp
 
 \paragraph{} We first trained the model on randomly initialized word embeddings . We then cross validated on our testing set. See Figure \ref{performanceRandomNtn.jpg} for detailed statistics. The loss began to converge at about 800. The ROC curve showed a respectable 0.906 AUC. With the exception of the spouse classification, all accuracies were 80\% or higher, with the overall accuracy being 88\%. With respect to the MLP implementation, these are very respectable results.
 
-\paragraph{} Also of interest, is the noticeable clustering of the word embeddings after training the model. See Figure \ref{random_init_tsne.jpg}. Both tSNE plots show the same 500 word embeddings before and after training. These groupings of the word embeddings that are occurring indicate a learned semantic relationship with one another.
+\paragraph{} Also of interest, is the noticeable clustering of the word embeddings after training the model. See Figure \ref{tSNE}. Both tSNE plots show the same 500 word embeddings before and after training. These groupings of the word embeddings that are occurring indicate a learned semantic relationship with one another.
 
 \paragraph{} We also trained the model over pretrained word embeddings and evaluated it over the same testing set. See Figure \ref{pretrain_perf.jpg} for detailed statistics. One will quickly notice that the pretrained word embedding model actually performed worse than the randomly initialized word embedding model. This more than likely occurred due to the large portion of words represented in the entities were missing from the pretrained FastText embedding model. We only saw a total of 1735 words from the FastText pretrained model that matched the over 6035 unique words found in the entities. We had to drop 2305 entities since there was no word contained in the respective entity that was found in the pretrained model. Additionally, given that we dropped a word from the entity if we did not have a match in our pretrained model, we had over 50\% of the entities have at least one other duplicated embedding value with respect to another entity. Although this is not an ideal testing condition for the nueral tensor network over pretrained word embeddings, we still found it intriguing that the results were actually worse than the randomly initialized word embedding model. This further argues, in line with \cite{socher2013reasoning}, that the initialization technique performed on the word embeddings plays a powerful role in the performance of the model.
 
@@ -261,11 +261,6 @@ MLP & Pre-Train 		& 0.915 & 0.917 & 0.906 & 0.749 & 0.805 & \textbf{0.858}	& 0.0
 \label{performanceRandomNtn.jpg}
 \end{figure}
 
-\begin{figure}[h!]
-\centerline{\includegraphics[width=1\textwidth]{report_ntn/random_init_tsne.jpg}}
-  \caption{\small  The left tSNE plot visualizes the word embeddings at the start of training. The right tSNE plot visualizes the word embeddings at the end of training. There is a noticeable clustering of the word embeddings after training the model.}
-\label{random_init_tsne.jpg}
-\end{figure}
 
 \begin{figure}[h!]
 \centerline{\includegraphics[width=1\textwidth]{report_ntn/pretrain_perf.jpg}}
@@ -298,5 +293,14 @@ MLP & Pre-Train 		& 0.915 & 0.917 & 0.906 & 0.749 & 0.805 & \textbf{0.858}	& 0.0
 
 \bibliographystyle{ieeetr}
 \bibliography{bib}{}
+
+
+\section*{Appendix}
+\begin{figure}[h!]
+\centerline{\includegraphics[width=1\textwidth]{report_ntn/FirstLast-tSNE.png}}
+  \caption{\small  The entity embeddings both before and after training the NTN model. The clustering is performed using k-Means to show how much each embedding has changed. }
+\label{tSNE}
+\end{figure}
+
 
 \end{document}
