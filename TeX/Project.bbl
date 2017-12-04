@@ -10,6 +10,13 @@ R.~Socher, D.~Chen, C.~D. Manning, and A.~Ng, ``Reasoning with neural tensor
   networks for knowledge base completion,'' in {\em Advances in neural
   information processing systems}, pp.~926--934, 2013.
 
+\bibitem{dong2014knowledge}
+X.~Dong, E.~Gabrilovich, G.~Heitz, W.~Horn, N.~Lao, K.~Murphy, T.~Strohmann,
+  S.~Sun, and W.~Zhang, ``Knowledge vault: A web-scale approach to
+  probabilistic knowledge fusion,'' in {\em Proceedings of the 20th ACM SIGKDD
+  international conference on Knowledge discovery and data mining},
+  pp.~601--610, ACM, 2014.
+
 \bibitem{RSNNS}
 C.~Bergmeir and J.~M. Ben\'itez, ``Neural networks in {R} using the stuttgart
   neural network simulator: {RSNNS},'' {\em Journal of Statistical Software},
