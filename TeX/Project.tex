@@ -130,7 +130,7 @@ Nick Joodi and Kevin Jesse worked on building, tuning, and data curation for the
 
 \section{Methods}
 \subsection{Architecture}
-\subsubsection{Multilayered Perceptron Model (MLP}
+\subsubsection{Multilayered Perceptron Model (MLP)}
 \paragraph{}We implemented a Multilayered Perceptron (MLP) model using the RSNNS package following the Stuttgart Neural Network Simulator\cite{RSNNS}. Figure \ref{MLPArch} shows a general look at the architecture for our MLP design. We tested a few variations of the MLP model to determine the suitable parameters for our dataset; including a variable number of layers, activation functions, and nodes per layer. Moreover, we tuned the hyper-parameters such as the learning rate and momentum term for backpropagation. We will reference Figure \ref{MLPArch} as we discuss the effects of the different architectures. 
 
 
@@ -205,8 +205,8 @@ J(\Omega)  = \sum_{i=1}^{N} \sum_{c=1}^{C} max \bigg(0,1 - g\bigg( T^(i) \bigg) 
 
 \subsubsection{Data staging (MLP)}
 \paragraph{}  Once we encoded each entity with their embedding we produced a dataset where each row contains the numeric representation of a triplet. Hence, for a triplet given by \texttt{(EntityA,Pred2,EntityB,1)}, where the embedding for \texttt{EntityA} and \texttt{EntityB }is $[a_1,a_2,\cdots,a_{300}]^T$ and $[b_1,b_2,\cdots,b_{300}]^T$ respectively, the associated row in our data set is given by
-$$ \Mat{a_1,a_2,a_3,\cdots,a_{300},b_1,b_2,\cdots,b_{300},0,1,0,0,0} $$
-where the last 5 columns represents the truth values for each of the 5 predicates (Father, Mother, Spouse, Sibling, Child).
+$$ \Mat{a_1,a_2,a_3,\cdots,a_{300},b_1,b_2,\cdots,b_{300},\emptyset,1,\emptyset,\emptyset,\emptyset} $$
+where the last 5 columns represents the truth values for each of the 5 predicates (Father, Mother, Spouse, Sibling, Child), following $1$ is True, $-1$ is False, and $\emptyset$ is unknown. 
 
 \subsubsection{Data staging (NTN)}
 \paragraph{}  One of the learned parameters for the NTN is the word embeddings. Therefore, before every training step, the entity embeddings had to be recalculated. The word embeddings were represented as a $n \times d$ matrix, where n represents the number of unique words across all the entities, and d representing the size of the embedding. Each row index mapped to a unique word. The entity embeddings were then determined by taking the average of the word embeddings that were contained in that entity. The resulting entity embeddings were stored in an $n \times d$ matrix, where $n$ was the number of entities across the knowledge graph, and d was the size of the embeddings.
