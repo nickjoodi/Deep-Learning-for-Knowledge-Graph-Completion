@@ -20,6 +20,7 @@ TeX/*.out
 TeX/*.toc
 TeX/*.synctex.gz
 TeX/*.log
+TeX/*.pdf
 
 # Microsoft Products save swp files with ~
 **/~*
