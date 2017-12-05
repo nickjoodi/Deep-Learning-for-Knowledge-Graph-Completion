@@ -27,3 +27,6 @@ TeX/*.pdf
 
 # Don't track the t-SNE .gif intermediary files
 ntn/tsnes/
+
+# Don't track my local plots
+MLP/plots/
